@@ -18,26 +18,26 @@ export function useSocket(interests: string[]) {
 
     // ── Create WebRTC peer connection ─────────────────────────────────────────
     const createPeer = useCallback((stream: MediaStream) => {
-        const peer = new RTCPeerConnection({
-            iceServers: [
-                { urls: "stun:stun.l.google.com:19302" },
-                {
-                    urls: "turn:relay.metered.ca:80",
-                    username: "2IaEqXmvCzreIHOI",
-                    credential: "4d5a54a8f93a9a0f7e86fe4c",
-                },
-                {
-                    urls: "turn:relay.metered.ca:443",
-                    username: "2IaEqXmvCzreIHOI",
-                    credential: "4d5a54a8f93a9a0f7e86fe4c",
-                },
-                {
-                    urls: "turn:relay.metered.ca:443?transport=tcp",
-                    username: "2IaEqXmvCzreIHOI",
-                    credential: "4d5a54a8f93a9a0f7e86fe4c",
-                },
-            ],
-        })
+       const peer = new RTCPeerConnection({
+        iceServers: [
+            { urls: "stun:stun.l.google.com:19302" },
+            {
+                urls: "turn:relay.metered.ca:80",
+                username: "2IaEqXmvCzreIHOI",
+                credential: "4d5a54a8f93a9a0f7e86fe4c",
+            },
+            {
+                urls: "turn:relay.metered.ca:443",
+                username: "2IaEqXmvCzreIHOI",
+                credential: "4d5a54a8f93a9a0f7e86fe4c",
+            },
+            {
+                urls: "turns:relay.metered.ca:443?transport=tcp",
+                username: "2IaEqXmvCzreIHOI",
+                credential: "4d5a54a8f93a9a0f7e86fe4c",
+            },
+        ],
+    })
 
         // Add local stream tracks to peer
         stream.getTracks().forEach((track) => peer.addTrack(track, stream))
