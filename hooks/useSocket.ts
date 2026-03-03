@@ -125,7 +125,7 @@ export function useSocket(interests: string[]) {
 
     // ── Socket setup ──────────────────────────────────────────────────────────
     useEffect(() => {
-        const socket = io("http://10.5.114.117:3001")
+        const socket = io("https://campuslink-server-production.up.railway.app")
         socketRef.current = socket
 
         // Online count
