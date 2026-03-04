@@ -5,8 +5,9 @@ import { Button } from "@/components/ui/button"
 import {
   ArrowRight, BookOpen, Music, Gamepad2, Film, Dumbbell, Code2,
   Palette, Globe, Coffee, Camera, Mic, HeartPulse, Utensils,
-  Telescope, GraduationCap, Dog, Mountain, Sparkles,
+  Telescope, GraduationCap, Dog, Mountain, Sparkles, LogOut,
 } from "lucide-react"
+import type { User } from "@supabase/supabase-js"
 
 const INTERESTS = [
   { label: "Computer Science", icon: Code2 },
@@ -67,9 +68,11 @@ function HallwayIcon({ size = 64 }: { size?: number }) {
 
 interface InterestSelectionProps {
   onStart: (interests: string[]) => void
+  user?: User | null
+  onSignOut?: () => void
 }
 
-export function InterestSelection({ onStart }: InterestSelectionProps) {
+export function InterestSelection({ onStart, user, onSignOut }: InterestSelectionProps) {
   const [selected, setSelected] = useState<string[]>([])
 
   function toggleInterest(label: string) {
@@ -81,6 +84,7 @@ export function InterestSelection({ onStart }: InterestSelectionProps) {
   return (
     <div className="flex min-h-dvh flex-col items-center justify-center bg-background px-4 py-12">
       <div className="mx-auto flex w-full max-w-2xl flex-col items-center gap-8">
+
         {/* Logo & branding */}
         <div className="flex flex-col items-center gap-3">
           <HallwayIcon size={64} />
@@ -94,6 +98,21 @@ export function InterestSelection({ onStart }: InterestSelectionProps) {
             college video chat
           </span>
         </div>
+
+        {/* Signed in as + sign out */}
+        {user && onSignOut && (
+          <div className="flex items-center gap-2 rounded-full border border-border bg-secondary px-4 py-2">
+            <div className="h-2 w-2 rounded-full" style={{ background: "#00c896" }} />
+            <span className="text-xs text-muted-foreground">{user.email}</span>
+            <button
+              onClick={onSignOut}
+              className="ml-1 flex items-center gap-1 text-xs text-muted-foreground transition-colors hover:text-destructive"
+            >
+              <LogOut className="h-3 w-3" />
+              Sign out
+            </button>
+          </div>
+        )}
 
         {/* Interest bubbles */}
         <div className="flex flex-wrap justify-center gap-2.5">
