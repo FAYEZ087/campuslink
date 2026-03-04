@@ -3,10 +3,9 @@
 import { useEffect, useRef, useCallback, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { AlertTriangle, SkipForward, LogOut, Users, Shield, Mic, MicOff, Video, VideoOff } from "lucide-react"
+import { AlertTriangle, SkipForward, LogOut, Users, Shield, Mic, MicOff, Video, VideoOff, FlipHorizontal } from "lucide-react"
 import { useSocket } from "@/hooks/useSocket"
-import { ..., FlipHorizontal } from "lucide-react"
-const { ..., switchCamera, facingMode } = useSocket(interests)
+
 
 function HallwayIcon({ size = 28 }: { size?: number }) {
   return (
@@ -47,7 +46,7 @@ interface ChatRoomProps {
 }
 
 export function ChatRoom({ interests, onExit }: ChatRoomProps) {
-  const { status, onlineCount, messages, localStream, remoteStream, findMatch, next, sendMessage, report } =
+  const { status, onlineCount, messages, localStream, remoteStream, findMatch, next, sendMessage, report, switchCamera, facingMode } =
     useSocket(interests)
 
   const [showReport, setShowReport] = useState(false)
