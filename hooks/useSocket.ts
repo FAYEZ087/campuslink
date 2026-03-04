@@ -19,23 +19,30 @@ export function useSocket(interests: string[]) {
 
     const createPeer = useCallback((stream: MediaStream) => {
         const peer = new RTCPeerConnection({
-            iceServers: [
-                { urls: "stun:stun.l.google.com:19302" },
-                {
-                    urls: "turn:relay.metered.ca:80",
-                    username: "2IaEqXmvCzreIHOI",
-                    credential: "4d5a54a8f93a9a0f7e86fe4c",
-                },
-                {
-                    urls: "turn:relay.metered.ca:443",
-                    username: "2IaEqXmvCzreIHOI",
-                    credential: "4d5a54a8f93a9a0f7e86fe4c",
-                },
-                {
-                    urls: "turns:relay.metered.ca:443?transport=tcp",
-                    username: "2IaEqXmvCzreIHOI",
-                    credential: "4d5a54a8f93a9a0f7e86fe4c",
-                },
+           iceServers: [
+    {
+    urls: "stun:stun.relay.metered.ca:80",
+    },
+    {
+    urls: "turn:global.relay.metered.ca:80",
+    username: "4d5a54a8f93a9a0f7e86fe4c",
+    credential: "2IaEqXmvCzreIHOI",
+    },
+    {
+    urls: "turn:global.relay.metered.ca:80?transport=tcp",
+    username: "4d5a54a8f93a9a0f7e86fe4c",
+    credential: "2IaEqXmvCzreIHOI",
+    },
+    {
+    urls: "turn:global.relay.metered.ca:443",
+    username: "4d5a54a8f93a9a0f7e86fe4c",
+    credential: "2IaEqXmvCzreIHOI",
+    },
+    {
+    urls: "turns:global.relay.metered.ca:443?transport=tcp",
+    username: "4d5a54a8f93a9a0f7e86fe4c",
+    credential: "2IaEqXmvCzreIHOI",
+    },
             ],
         })
 
