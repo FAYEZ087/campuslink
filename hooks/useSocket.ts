@@ -91,23 +91,30 @@ export function useSocket(interests: string[]) {
     }, [interests, createPeer])
 
     // ── Skip to next person ───────────────────────────────────────────────────
-    const next = useCallback(() => {
+   const next = useCallback(() => {
         if (!socketRef.current) return
 
-        // Stop remote stream
         setRemoteStream(null)
         setMessages([])
         partnerIdRef.current = null
 
-        // Clean up peer
+        // ✅ Properly stop all tracks before closing
         if (peerRef.current) {
+            peerRef.current.getSenders().forEach(sender => {
+                sender.track?.stop()
+            })
             peerRef.current.close()
             peerRef.current = null
         }
 
+        // ✅ Recreate fresh peer with local stream
+        if (localStream) {
+            peerRef.current = createPeer(localStream)
+        }
+
         setStatus("waiting")
         socketRef.current.emit("next")
-    }, [])
+    }, [localStream, createPeer])
 
     // ── Send chat message ─────────────────────────────────────────────────────
     const sendMessage = useCallback((text: string) => {
