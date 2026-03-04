@@ -7,12 +7,16 @@ const _inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const _spaceMono = Space_Mono({ weight: ["400", "700"], subsets: ["latin"], variable: "--font-space-mono" });
 
 export const metadata: Metadata = {
-  title: 'CampusLink - Video Chat for College Students',
-  description: 'Connect with fellow students through random video chat. Find people with shared interests across campuses.',
+  title: 'Hallway - College Video Chat',
+  description: 'Meet students who share your vibe. Random video chat exclusively for college students.',
+  icons: {
+    icon: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
 }
 
 export const viewport: Viewport = {
-  themeColor: '#1a1a2e',
+  themeColor: '#00c896',
   width: 'device-width',
   initialScale: 1,
   userScalable: false,
