@@ -6,6 +6,39 @@ import { Badge } from "@/components/ui/badge"
 import { AlertTriangle, SkipForward, LogOut, Users, Shield, Mic, MicOff, Video, VideoOff } from "lucide-react"
 import { useSocket } from "@/hooks/useSocket"
 
+function HallwayIcon({ size = 28 }: { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width={size} height={size} fill="none">
+      <defs>
+        <filter id="glow-nav" x="-30%" y="-30%" width="160%" height="160%">
+          <feGaussianBlur stdDeviation="3" result="coloredBlur" />
+          <feMerge><feMergeNode in="coloredBlur" /><feMergeNode in="SourceGraphic" /></feMerge>
+        </filter>
+        <radialGradient id="bgGrad-nav" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stopColor="#1a1a1a" />
+          <stop offset="100%" stopColor="#0d0d0d" />
+        </radialGradient>
+      </defs>
+      <rect width="100" height="100" rx="22" fill="url(#bgGrad-nav)" />
+      <rect width="100" height="100" rx="22" fill="none" stroke="#222222" strokeWidth="1" />
+      <polygon points="0,0 0,100 26,78 26,22" fill="#181818" />
+      <polygon points="100,0 100,100 74,78 74,22" fill="#202020" />
+      <polygon points="0,0 100,0 74,22 26,22" fill="#161616" />
+      <polygon points="0,100 100,100 74,78 26,78" fill="#141414" />
+      <rect x="26" y="22" width="48" height="56" fill="#111111" stroke="#2a2a2a" strokeWidth="1.2" />
+      <line x1="0" y1="0" x2="50" y2="50" stroke="#00c896" strokeWidth="0.8" opacity="0.22" />
+      <line x1="100" y1="0" x2="50" y2="50" stroke="#00c896" strokeWidth="0.8" opacity="0.22" />
+      <line x1="0" y1="100" x2="50" y2="50" stroke="#00c896" strokeWidth="0.8" opacity="0.22" />
+      <line x1="100" y1="100" x2="50" y2="50" stroke="#00c896" strokeWidth="0.8" opacity="0.22" />
+      <ellipse cx="50" cy="50" rx="3.5" ry="4.5" fill="#00c896" opacity="0.5" />
+      <ellipse cx="50" cy="50" rx="1.5" ry="2" fill="#00c896" opacity="1" />
+      <circle cx="50" cy="43" r="3.5" fill="#00c896" />
+      <rect x="47" y="47.5" width="6" height="10" rx="1.5" fill="#00c896" />
+      <rect x="63" y="40" width="9" height="22" rx="1.5" fill="none" stroke="#00c896" strokeWidth="1" opacity="0.45" />
+    </svg>
+  )
+}
+
 interface ChatRoomProps {
   interests: string[]
   onExit: () => void
@@ -24,37 +57,29 @@ export function ChatRoom({ interests, onExit }: ChatRoomProps) {
   const remoteVideoRef = useRef<HTMLVideoElement>(null)
   const messagesEndRef = useRef<HTMLDivElement>(null)
 
-  // Start finding match on mount
-  useEffect(() => {
-    findMatch()
-  }, [])
+  useEffect(() => { findMatch() }, [])
 
-  // Attach local stream to video element
   useEffect(() => {
     if (localVideoRef.current && localStream) {
       localVideoRef.current.srcObject = localStream
     }
   }, [localStream])
 
-  // Attach remote stream to video element
   useEffect(() => {
     if (remoteVideoRef.current && remoteStream) {
       remoteVideoRef.current.srcObject = remoteStream
     }
   }, [remoteStream])
 
-  // Auto scroll chat to bottom
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
   }, [messages])
 
-  // Toggle mic
   function toggleMic() {
     localStream?.getAudioTracks().forEach((t) => (t.enabled = !t.enabled))
     setMicOn((v) => !v)
   }
 
-  // Toggle camera
   function toggleCam() {
     localStream?.getVideoTracks().forEach((t) => (t.enabled = !t.enabled))
     setCamOn((v) => !v)
@@ -76,7 +101,10 @@ export function ChatRoom({ interests, onExit }: ChatRoomProps) {
       {/* Top bar */}
       <header className="flex items-center justify-between border-b border-border px-4 py-3 lg:px-6">
         <div className="flex items-center gap-3">
-          <h1 className="font-sans text-lg font-bold text-foreground">CampusLink</h1>
+          <HallwayIcon size={28} />
+          <h1 className="font-sans text-lg font-bold">
+            <span className="text-foreground">hall</span><span style={{ color: "#00c896" }}>way</span>
+          </h1>
           <div className="hidden items-center gap-1.5 sm:flex">
             <div className="h-2 w-2 rounded-full bg-green-500" />
             <span className="text-xs text-muted-foreground">
@@ -132,18 +160,11 @@ export function ChatRoom({ interests, onExit }: ChatRoomProps) {
               <div className="h-2 w-2 rounded-full bg-green-500" />
               <span className="text-xs font-medium text-white drop-shadow">You</span>
             </div>
-            {/* Mic + Cam toggles */}
             <div className="absolute bottom-3 right-3 flex gap-2">
-              <button
-                onClick={toggleMic}
-                className="flex h-8 w-8 items-center justify-center rounded-full bg-black/50 text-white backdrop-blur transition hover:bg-black/70"
-              >
+              <button onClick={toggleMic} className="flex h-8 w-8 items-center justify-center rounded-full bg-black/50 text-white backdrop-blur transition hover:bg-black/70">
                 {micOn ? <Mic className="h-4 w-4" /> : <MicOff className="h-4 w-4 text-red-400" />}
               </button>
-              <button
-                onClick={toggleCam}
-                className="flex h-8 w-8 items-center justify-center rounded-full bg-black/50 text-white backdrop-blur transition hover:bg-black/70"
-              >
+              <button onClick={toggleCam} className="flex h-8 w-8 items-center justify-center rounded-full bg-black/50 text-white backdrop-blur transition hover:bg-black/70">
                 {camOn ? <Video className="h-4 w-4" /> : <VideoOff className="h-4 w-4 text-red-400" />}
               </button>
             </div>
@@ -157,7 +178,7 @@ export function ChatRoom({ interests, onExit }: ChatRoomProps) {
               <div className="flex h-full flex-col items-center justify-center gap-2 text-muted-foreground">
                 {status === "waiting" ? (
                   <>
-                    <div className="h-8 w-8 animate-spin rounded-full border-2 border-primary border-t-transparent" />
+                    <div className="h-8 w-8 animate-spin rounded-full border-2 border-t-transparent" style={{ borderColor: "#00c896", borderTopColor: "transparent" }} />
                     <span className="text-sm">Finding a match...</span>
                   </>
                 ) : (
@@ -179,16 +200,11 @@ export function ChatRoom({ interests, onExit }: ChatRoomProps) {
 
         {/* Chat panel */}
         <div className="flex h-56 shrink-0 flex-col border-t border-border md:h-64">
-          {/* Messages */}
           <div className="flex-1 overflow-y-auto px-4 py-3 space-y-2">
             {messages.map((msg, i) => (
               <div key={i} className={`flex ${msg.self ? "justify-end" : "justify-start"}`}>
-                <div
-                  className={`max-w-[75%] rounded-2xl px-3 py-2 text-sm ${msg.self
-                    ? "bg-primary text-primary-foreground"
-                    : "bg-secondary text-foreground"
-                    }`}
-                >
+                <div className={`max-w-[75%] rounded-2xl px-3 py-2 text-sm ${msg.self ? "text-black" : "bg-secondary text-foreground"}`}
+                  style={msg.self ? { background: "#00c896" } : {}}>
                   {msg.text}
                 </div>
               </div>
@@ -196,7 +212,6 @@ export function ChatRoom({ interests, onExit }: ChatRoomProps) {
             <div ref={messagesEndRef} />
           </div>
 
-          {/* Input */}
           <div className="flex items-center gap-2 border-t border-border px-3 py-2">
             <input
               type="text"
@@ -205,12 +220,14 @@ export function ChatRoom({ interests, onExit }: ChatRoomProps) {
               onKeyDown={(e) => e.key === "Enter" && handleSend()}
               placeholder={status === "connected" ? "Type a message..." : "Waiting for connection..."}
               disabled={status !== "connected"}
-              className="flex-1 rounded-full bg-secondary px-4 py-2 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-primary disabled:opacity-50"
+              className="flex-1 rounded-full bg-secondary px-4 py-2 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 disabled:opacity-50"
+              style={{ "--tw-ring-color": "#00c896" } as React.CSSProperties}
             />
             <button
               onClick={handleSend}
               disabled={status !== "connected" || !inputText.trim()}
-              className="flex h-9 w-9 items-center justify-center rounded-full bg-primary text-primary-foreground transition hover:bg-primary/90 disabled:opacity-50"
+              className="flex h-9 w-9 items-center justify-center rounded-full text-black transition hover:opacity-90 disabled:opacity-50"
+              style={{ background: "#00c896" }}
             >
               <svg className="h-4 w-4 rotate-90" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
@@ -254,11 +271,12 @@ export function ChatRoom({ interests, onExit }: ChatRoomProps) {
             <span className="mr-2 hidden text-xs text-muted-foreground sm:inline">Connected with a student</span>
           )}
           {status === "waiting" && (
-            <span className="mr-2 hidden text-xs text-yellow-500 sm:inline">Finding match...</span>
+            <span className="mr-2 hidden text-xs sm:inline" style={{ color: "#00c896" }}>Finding match...</span>
           )}
           <Button
             onClick={next}
-            className="gap-2 rounded-full bg-primary px-6 font-semibold text-primary-foreground shadow-lg shadow-primary/20 transition-all hover:bg-primary/90"
+            className="gap-2 rounded-full px-6 font-semibold text-black shadow-lg transition-all hover:opacity-90"
+            style={{ background: "#00c896" }}
           >
             <SkipForward className="h-4 w-4" />
             Next
