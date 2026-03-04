@@ -14,40 +14,38 @@ export function useSocket(interests: string[]) {
     const [messages, setMessages] = useState<{ text: string; self: boolean }[]>([])
     const [remoteStream, setRemoteStream] = useState<MediaStream | null>(null)
     const [localStream, setLocalStream] = useState<MediaStream | null>(null)
+    const localStreamRef = useRef<MediaStream | null>(null)
     const partnerIdRef = useRef<string | null>(null)
 
-    // ── Create WebRTC peer connection ─────────────────────────────────────────
     const createPeer = useCallback((stream: MediaStream) => {
-       const peer = new RTCPeerConnection({
-        iceServers: [
-            { urls: "stun:stun.l.google.com:19302" },
-            {
-                urls: "turn:relay.metered.ca:80",
-                username: "2IaEqXmvCzreIHOI",
-                credential: "4d5a54a8f93a9a0f7e86fe4c",
-            },
-            {
-                urls: "turn:relay.metered.ca:443",
-                username: "2IaEqXmvCzreIHOI",
-                credential: "4d5a54a8f93a9a0f7e86fe4c",
-            },
-            {
-                urls: "turns:relay.metered.ca:443?transport=tcp",
-                username: "2IaEqXmvCzreIHOI",
-                credential: "4d5a54a8f93a9a0f7e86fe4c",
-            },
-        ],
-    })
+        const peer = new RTCPeerConnection({
+            iceServers: [
+                { urls: "stun:stun.l.google.com:19302" },
+                {
+                    urls: "turn:relay.metered.ca:80",
+                    username: "2IaEqXmvCzreIHOI",
+                    credential: "4d5a54a8f93a9a0f7e86fe4c",
+                },
+                {
+                    urls: "turn:relay.metered.ca:443",
+                    username: "2IaEqXmvCzreIHOI",
+                    credential: "4d5a54a8f93a9a0f7e86fe4c",
+                },
+                {
+                    urls: "turns:relay.metered.ca:443?transport=tcp",
+                    username: "2IaEqXmvCzreIHOI",
+                    credential: "4d5a54a8f93a9a0f7e86fe4c",
+                },
+            ],
+        })
 
-        // Add local stream tracks to peer
         stream.getTracks().forEach((track) => peer.addTrack(track, stream))
 
-        // When we get remote stream
         peer.ontrack = (event) => {
+            console.log("🎥 GOT REMOTE STREAM!", event.streams[0])
             setRemoteStream(event.streams[0])
         }
 
-        // Send ICE candidates to partner via server
         peer.onicecandidate = (event) => {
             if (event.candidate && partnerIdRef.current && socketRef.current) {
                 socketRef.current.emit("ice-candidate", {
@@ -60,7 +58,6 @@ export function useSocket(interests: string[]) {
         return peer
     }, [])
 
-    // ── Start looking for a match ─────────────────────────────────────────────
     const findMatch = useCallback(async () => {
         if (!socketRef.current) return
 
@@ -68,81 +65,77 @@ export function useSocket(interests: string[]) {
         setRemoteStream(null)
         setStatus("waiting")
 
-        // Get camera + mic
-        try {
-            const stream = await navigator.mediaDevices.getUserMedia({
-                video: true,
-                audio: true,
-            })
-            setLocalStream(stream)
-
-            // Clean up old peer
-            if (peerRef.current) {
-                peerRef.current.close()
-                peerRef.current = null 
+        // Get camera + mic only once
+        if (!localStreamRef.current) {
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({
+                    video: true,
+                    audio: true,
+                })
+                setLocalStream(stream)
+                localStreamRef.current = stream
+            } catch {
+                console.warn("Camera/mic not available, continuing without video")
             }
+        }
 
-            peerRef.current = createPeer(stream)
-        } catch {
-            console.warn("Camera/mic not available, continuing without video")
+        // Clean up old peer
+        if (peerRef.current) {
+            peerRef.current.close()
+            peerRef.current = null
+        }
+
+        // Create fresh peer with existing stream
+        if (localStreamRef.current) {
+            peerRef.current = createPeer(localStreamRef.current)
         }
 
         socketRef.current.emit("find-match", { interests })
     }, [interests, createPeer])
 
-    // ── Skip to next person ───────────────────────────────────────────────────
-   const next = useCallback(() => {
+    const next = useCallback(() => {
         if (!socketRef.current) return
 
         setRemoteStream(null)
         setMessages([])
         partnerIdRef.current = null
 
-        // ✅ Properly stop all tracks before closing
         if (peerRef.current) {
-            peerRef.current.getSenders().forEach(sender => {
-                sender.track?.stop()
-            })
             peerRef.current.close()
             peerRef.current = null
         }
 
-        // ✅ Recreate fresh peer with local stream
-        if (localStream) {
-            peerRef.current = createPeer(localStream)
+        // Recreate fresh peer with EXISTING local stream
+        if (localStreamRef.current) {
+            peerRef.current = createPeer(localStreamRef.current)
         }
 
         setStatus("waiting")
         socketRef.current.emit("next")
-    }, [localStream, createPeer])
+    }, [createPeer])
 
-    // ── Send chat message ─────────────────────────────────────────────────────
     const sendMessage = useCallback((text: string) => {
         if (!socketRef.current || !text.trim()) return
         socketRef.current.emit("chat-message", { message: text })
         setMessages((prev) => [...prev, { text, self: true }])
     }, [])
 
-    // ── Report user ───────────────────────────────────────────────────────────
     const report = useCallback((reason: string) => {
         if (!socketRef.current) return
         socketRef.current.emit("report", { reason })
         next()
     }, [next])
 
-    // ── Socket setup ──────────────────────────────────────────────────────────
     useEffect(() => {
         const socket = io("https://campuslink-server-production.up.railway.app")
         socketRef.current = socket
 
-        // Online count
         socket.on("online-count", (count: number) => setOnlineCount(count))
-
-        // Waiting in queue
         socket.on("waiting", () => setStatus("waiting"))
 
-        // Match found!
+        // SINGLE match-found listener
         socket.on("match-found", async ({ partnerId, isInitiator, sharedInterests }) => {
+            console.log("🟢 MATCH FOUND - isInitiator:", isInitiator, "partnerId:", partnerId)
             partnerIdRef.current = partnerId
             setStatus("connected")
             setMessages([{
@@ -152,18 +145,13 @@ export function useSocket(interests: string[]) {
                 self: false,
             }])
 
-            // WebRTC handshake
-            if (peerRef.current) {
-                if (isInitiator) {
-                    // Create and send offer
-                    const offer = await peerRef.current.createOffer()
-                    await peerRef.current.setLocalDescription(offer)
-                    socket.emit("webrtc-offer", { offer, to: partnerId })
-                }
+            if (peerRef.current && isInitiator) {
+                const offer = await peerRef.current.createOffer()
+                await peerRef.current.setLocalDescription(offer)
+                socket.emit("webrtc-offer", { offer, to: partnerId })
             }
         })
 
-        // Receive WebRTC offer
         socket.on("webrtc-offer", async ({ offer, from }) => {
             if (!peerRef.current) return
             await peerRef.current.setRemoteDescription(new RTCSessionDescription(offer))
@@ -172,13 +160,11 @@ export function useSocket(interests: string[]) {
             socket.emit("webrtc-answer", { answer, to: from })
         })
 
-        // Receive WebRTC answer
         socket.on("webrtc-answer", async ({ answer }) => {
             if (!peerRef.current) return
             await peerRef.current.setRemoteDescription(new RTCSessionDescription(answer))
         })
 
-        // Receive ICE candidate
         socket.on("ice-candidate", async ({ candidate }) => {
             if (!peerRef.current) return
             try {
@@ -188,7 +174,6 @@ export function useSocket(interests: string[]) {
             }
         })
 
-        // Partner left or was skipped
         socket.on("partner-disconnected", () => {
             setRemoteStream(null)
             partnerIdRef.current = null
@@ -200,11 +185,12 @@ export function useSocket(interests: string[]) {
                 peerRef.current = null
             }
 
-            // Auto re-queue
+            if (localStreamRef.current) {
+                peerRef.current = createPeer(localStreamRef.current)
+            }
             socket.emit("find-match", { interests })
         })
 
-        // Receive chat message
         socket.on("chat-message", ({ message }: { message: string }) => {
             setMessages((prev) => [...prev, { text: message, self: false }])
         })
@@ -212,9 +198,9 @@ export function useSocket(interests: string[]) {
         return () => {
             socket.disconnect()
             peerRef.current?.close()
-            localStream?.getTracks().forEach((t) => t.stop())
+            localStreamRef.current?.getTracks().forEach((t) => t.stop())
         }
-    }, []) // only run once on mount
+    }, [])
 
     return {
         status,
