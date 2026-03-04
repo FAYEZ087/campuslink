@@ -8,6 +8,7 @@ export type MatchStatus = "idle" | "waiting" | "connected"
 export function useSocket(interests: string[]) {
     const socketRef = useRef<Socket | null>(null)
     const peerRef = useRef<RTCPeerConnection | null>(null)
+    const iceCandidateQueue = useRef<RTCIceCandidate[]>([])
 
     const [status, setStatus] = useState<MatchStatus>("idle")
     const [onlineCount, setOnlineCount] = useState(0)
@@ -19,30 +20,29 @@ export function useSocket(interests: string[]) {
 
     const createPeer = useCallback((stream: MediaStream) => {
         const peer = new RTCPeerConnection({
-           iceServers: [
-    {
-    urls: "stun:stun.relay.metered.ca:80",
-    },
-    {
-    urls: "turn:global.relay.metered.ca:80",
-    username: "4d5a54a8f93a9a0f7e86fe4c",
-    credential: "2IaEqXmvCzreIHOI",
-    },
-    {
-    urls: "turn:global.relay.metered.ca:80?transport=tcp",
-    username: "4d5a54a8f93a9a0f7e86fe4c",
-    credential: "2IaEqXmvCzreIHOI",
-    },
-    {
-    urls: "turn:global.relay.metered.ca:443",
-    username: "4d5a54a8f93a9a0f7e86fe4c",
-    credential: "2IaEqXmvCzreIHOI",
-    },
-    {
-    urls: "turns:global.relay.metered.ca:443?transport=tcp",
-    username: "4d5a54a8f93a9a0f7e86fe4c",
-    credential: "2IaEqXmvCzreIHOI",
-    },
+            iceServers: [
+                { urls: "stun:stun.l.google.com:19302" },
+                { urls: "stun:stun.relay.metered.ca:80" },
+                {
+                    urls: "turn:global.relay.metered.ca:80",
+                    username: "4d5a54a8f93a9a0f7e86fe4c",
+                    credential: "2IaEqXmvCzreIHOI",
+                },
+                {
+                    urls: "turn:global.relay.metered.ca:80?transport=tcp",
+                    username: "4d5a54a8f93a9a0f7e86fe4c",
+                    credential: "2IaEqXmvCzreIHOI",
+                },
+                {
+                    urls: "turn:global.relay.metered.ca:443",
+                    username: "4d5a54a8f93a9a0f7e86fe4c",
+                    credential: "2IaEqXmvCzreIHOI",
+                },
+                {
+                    urls: "turns:global.relay.metered.ca:443?transport=tcp",
+                    username: "4d5a54a8f93a9a0f7e86fe4c",
+                    credential: "2IaEqXmvCzreIHOI",
+                },
             ],
         })
 
@@ -62,7 +62,28 @@ export function useSocket(interests: string[]) {
             }
         }
 
+        peer.onconnectionstatechange = () => {
+            console.log("🔗 Connection state:", peer.connectionState)
+        }
+
+        peer.oniceconnectionstatechange = () => {
+            console.log("🧊 ICE state:", peer.iceConnectionState)
+        }
+
         return peer
+    }, [])
+
+    const flushIceCandidates = useCallback(async () => {
+        if (!peerRef.current) return
+        console.log(`🚿 Flushing ${iceCandidateQueue.current.length} queued ICE candidates`)
+        for (const candidate of iceCandidateQueue.current) {
+            try {
+                await peerRef.current.addIceCandidate(candidate)
+            } catch (e) {
+                console.error("ICE flush error", e)
+            }
+        }
+        iceCandidateQueue.current = []
     }, [])
 
     const findMatch = useCallback(async () => {
@@ -71,8 +92,8 @@ export function useSocket(interests: string[]) {
         setMessages([])
         setRemoteStream(null)
         setStatus("waiting")
+        iceCandidateQueue.current = []
 
-        // Get camera + mic only once
         if (!localStreamRef.current) {
             try {
                 const stream = await navigator.mediaDevices.getUserMedia({
@@ -82,17 +103,15 @@ export function useSocket(interests: string[]) {
                 setLocalStream(stream)
                 localStreamRef.current = stream
             } catch {
-                console.warn("Camera/mic not available, continuing without video")
+                console.warn("Camera/mic not available")
             }
         }
 
-        // Clean up old peer
         if (peerRef.current) {
             peerRef.current.close()
             peerRef.current = null
         }
 
-        // Create fresh peer with existing stream
         if (localStreamRef.current) {
             peerRef.current = createPeer(localStreamRef.current)
         }
@@ -106,13 +125,13 @@ export function useSocket(interests: string[]) {
         setRemoteStream(null)
         setMessages([])
         partnerIdRef.current = null
+        iceCandidateQueue.current = []
 
         if (peerRef.current) {
             peerRef.current.close()
             peerRef.current = null
         }
 
-        // Recreate fresh peer with EXISTING local stream
         if (localStreamRef.current) {
             peerRef.current = createPeer(localStreamRef.current)
         }
@@ -140,10 +159,10 @@ export function useSocket(interests: string[]) {
         socket.on("online-count", (count: number) => setOnlineCount(count))
         socket.on("waiting", () => setStatus("waiting"))
 
-        // SINGLE match-found listener
         socket.on("match-found", async ({ partnerId, isInitiator, sharedInterests }) => {
-            console.log("🟢 MATCH FOUND - isInitiator:", isInitiator, "partnerId:", partnerId)
+            console.log("🟢 MATCH FOUND - isInitiator:", isInitiator)
             partnerIdRef.current = partnerId
+            iceCandidateQueue.current = []
             setStatus("connected")
             setMessages([{
                 text: sharedInterests > 0
@@ -159,31 +178,45 @@ export function useSocket(interests: string[]) {
             }
         })
 
+        // Non-initiator receives offer
         socket.on("webrtc-offer", async ({ offer, from }) => {
+            console.log("📨 Got offer from", from)
             if (!peerRef.current) return
             await peerRef.current.setRemoteDescription(new RTCSessionDescription(offer))
+            await flushIceCandidates()
             const answer = await peerRef.current.createAnswer()
             await peerRef.current.setLocalDescription(answer)
             socket.emit("webrtc-answer", { answer, to: from })
         })
 
+        // Initiator receives answer
         socket.on("webrtc-answer", async ({ answer }) => {
+            console.log("📨 Got answer")
             if (!peerRef.current) return
             await peerRef.current.setRemoteDescription(new RTCSessionDescription(answer))
+            await flushIceCandidates()
         })
 
+        // Queue ICE candidates until remote description is set
         socket.on("ice-candidate", async ({ candidate }) => {
             if (!peerRef.current) return
-            try {
-                await peerRef.current.addIceCandidate(new RTCIceCandidate(candidate))
-            } catch (e) {
-                console.error("ICE candidate error", e)
+            if (peerRef.current.remoteDescription) {
+                try {
+                    await peerRef.current.addIceCandidate(new RTCIceCandidate(candidate))
+                } catch (e) {
+                    console.error("ICE error", e)
+                }
+            } else {
+                console.log("⏳ Queuing ICE candidate")
+                iceCandidateQueue.current.push(new RTCIceCandidate(candidate))
             }
         })
 
         socket.on("partner-disconnected", () => {
+            console.log("👋 Partner disconnected")
             setRemoteStream(null)
             partnerIdRef.current = null
+            iceCandidateQueue.current = []
             setStatus("waiting")
             setMessages([{ text: "Stranger disconnected. Finding new match...", self: false }])
 
