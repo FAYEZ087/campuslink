@@ -20,10 +20,10 @@ export function useSocket(interests: string[]) {
   const [localStream, setLocalStream] = useState<MediaStream | null>(null)
   const localStreamRef = useRef<MediaStream | null>(null)
   const partnerIdRef = useRef<string | null>(null)
+  const [facingMode, setFacingMode] = useState<"user" | "environment">("user")
 
-  // SECURITY: Fetch ICE config from server — TURN credentials never exposed in client code
   const fetchIceConfig = useCallback(async (): Promise<RTCConfiguration> => {
-    if (iceConfigRef.current) return iceConfigRef.current // cache it
+    if (iceConfigRef.current) return iceConfigRef.current
     try {
       const res = await fetch(`${SERVER_URL}/ice-config`)
       const config = await res.json()
@@ -55,26 +55,17 @@ export function useSocket(interests: string[]) {
       }
     }
 
-    peer.onconnectionstatechange = () => {
-      console.log("🔗 Connection state:", peer.connectionState)
-    }
-
-    peer.oniceconnectionstatechange = () => {
-      console.log("🧊 ICE state:", peer.iceConnectionState)
-    }
+    peer.onconnectionstatechange = () => console.log("🔗 Connection state:", peer.connectionState)
+    peer.oniceconnectionstatechange = () => console.log("🧊 ICE state:", peer.iceConnectionState)
 
     return peer
   }, [fetchIceConfig])
 
   const flushIceCandidates = useCallback(async () => {
     if (!peerRef.current) return
-    console.log(`🚿 Flushing ${iceCandidateQueue.current.length} queued ICE candidates`)
     for (const candidate of iceCandidateQueue.current) {
-      try {
-        await peerRef.current.addIceCandidate(candidate)
-      } catch (e) {
-        console.error("ICE flush error", e)
-      }
+      try { await peerRef.current.addIceCandidate(candidate) }
+      catch (e) { console.error("ICE flush error", e) }
     }
     iceCandidateQueue.current = []
   }, [])
@@ -89,7 +80,10 @@ export function useSocket(interests: string[]) {
 
     if (!localStreamRef.current) {
       try {
-        const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true })
+        const stream = await navigator.mediaDevices.getUserMedia({
+          video: { facingMode: "user" },
+          audio: true,
+        })
         setLocalStream(stream)
         localStreamRef.current = stream
       } catch {
@@ -97,14 +91,8 @@ export function useSocket(interests: string[]) {
       }
     }
 
-    if (peerRef.current) {
-      peerRef.current.close()
-      peerRef.current = null
-    }
-
-    if (localStreamRef.current) {
-      peerRef.current = await createPeer(localStreamRef.current)
-    }
+    if (peerRef.current) { peerRef.current.close(); peerRef.current = null }
+    if (localStreamRef.current) peerRef.current = await createPeer(localStreamRef.current)
 
     socketRef.current.emit("find-match", { interests })
   }, [interests, createPeer])
@@ -117,18 +105,50 @@ export function useSocket(interests: string[]) {
     partnerIdRef.current = null
     iceCandidateQueue.current = []
 
-    if (peerRef.current) {
-      peerRef.current.close()
-      peerRef.current = null
-    }
-
-    if (localStreamRef.current) {
-      peerRef.current = await createPeer(localStreamRef.current)
-    }
+    if (peerRef.current) { peerRef.current.close(); peerRef.current = null }
+    if (localStreamRef.current) peerRef.current = await createPeer(localStreamRef.current)
 
     setStatus("waiting")
     socketRef.current.emit("next")
   }, [createPeer])
+
+  // ── Rear/front camera toggle ───────────────────────────────────────────────
+  const switchCamera = useCallback(async () => {
+    if (!localStreamRef.current) return
+
+    const newFacing = facingMode === "user" ? "environment" : "user"
+
+    try {
+      // Stop current video track only
+      localStreamRef.current.getVideoTracks().forEach((t) => t.stop())
+
+      // Get new video track with switched facing mode
+      const newVideoStream = await navigator.mediaDevices.getUserMedia({
+        video: { facingMode: newFacing },
+        audio: false,
+      })
+      const newVideoTrack = newVideoStream.getVideoTracks()[0]
+
+      // Replace track in active peer connection (no renegotiation needed)
+      if (peerRef.current) {
+        const sender = peerRef.current.getSenders().find((s) => s.track?.kind === "video")
+        if (sender) await sender.replaceTrack(newVideoTrack)
+      }
+
+      // Rebuild local stream with new video + existing audio
+      const audioTrack = localStreamRef.current.getAudioTracks()[0]
+      const updatedStream = new MediaStream(
+        [newVideoTrack, audioTrack].filter(Boolean)
+      )
+      localStreamRef.current = updatedStream
+      setLocalStream(updatedStream)
+      setFacingMode(newFacing)
+
+      console.log(`📷 Switched to ${newFacing} camera`)
+    } catch (e) {
+      console.error("Camera switch failed — device may only have one camera", e)
+    }
+  }, [facingMode])
 
   const sendMessage = useCallback((text: string) => {
     if (!socketRef.current || !text.trim()) return
@@ -143,7 +163,6 @@ export function useSocket(interests: string[]) {
   }, [next])
 
   useEffect(() => {
-    // Pre-fetch ICE config on mount so it's ready when needed
     fetchIceConfig()
 
     const socket = io(SERVER_URL)
@@ -191,11 +210,8 @@ export function useSocket(interests: string[]) {
     socket.on("ice-candidate", async ({ candidate }) => {
       if (!peerRef.current) return
       if (peerRef.current.remoteDescription) {
-        try {
-          await peerRef.current.addIceCandidate(new RTCIceCandidate(candidate))
-        } catch (e) {
-          console.error("ICE error", e)
-        }
+        try { await peerRef.current.addIceCandidate(new RTCIceCandidate(candidate)) }
+        catch (e) { console.error("ICE error", e) }
       } else {
         console.log("⏳ Queuing ICE candidate")
         iceCandidateQueue.current.push(new RTCIceCandidate(candidate))
@@ -210,14 +226,8 @@ export function useSocket(interests: string[]) {
       setStatus("waiting")
       setMessages([{ text: "Stranger disconnected. Finding new match...", self: false }])
 
-      if (peerRef.current) {
-        peerRef.current.close()
-        peerRef.current = null
-      }
-
-      if (localStreamRef.current) {
-        peerRef.current = await createPeer(localStreamRef.current)
-      }
+      if (peerRef.current) { peerRef.current.close(); peerRef.current = null }
+      if (localStreamRef.current) peerRef.current = await createPeer(localStreamRef.current)
       socket.emit("find-match", { interests })
     })
 
@@ -239,5 +249,6 @@ export function useSocket(interests: string[]) {
   return {
     status, onlineCount, messages, localStream,
     remoteStream, findMatch, next, sendMessage, report,
+    switchCamera, facingMode,
   }
 }

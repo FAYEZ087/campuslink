@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { AlertTriangle, SkipForward, LogOut, Users, Shield, Mic, MicOff, Video, VideoOff } from "lucide-react"
 import { useSocket } from "@/hooks/useSocket"
+import { ..., FlipHorizontal } from "lucide-react"
+const { ..., switchCamera, facingMode } = useSocket(interests)
 
 function HallwayIcon({ size = 28 }: { size?: number }) {
   return (
@@ -166,6 +168,9 @@ export function ChatRoom({ interests, onExit }: ChatRoomProps) {
               </button>
               <button onClick={toggleCam} className="flex h-8 w-8 items-center justify-center rounded-full bg-black/50 text-white backdrop-blur transition hover:bg-black/70">
                 {camOn ? <Video className="h-4 w-4" /> : <VideoOff className="h-4 w-4 text-red-400" />}
+              </button>
+              <button onClick={switchCamera} className="flex h-8 w-8 items-center justify-center rounded-full bg-black/50 text-white backdrop-blur transition hover:bg-black/70" title="Switch camera">
+                <FlipHorizontal className="h-4 w-4" />
               </button>
             </div>
           </div>
