@@ -153,7 +153,7 @@ export function useSocket(interests: string[]) {
     }, [next])
 
     useEffect(() => {
-        const socket = io("https://campuslink-server-production.up.railway.app")
+        const socket = io("https://campuslink-server-1.onrender.com")
         socketRef.current = socket
 
         socket.on("online-count", (count: number) => setOnlineCount(count))
