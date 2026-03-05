@@ -142,7 +142,7 @@ export function AuthScreen() {
 
               {/* Allowed domains hint */}
               <p className="text-xs text-muted-foreground">
-                Accepted: <span style={{ color: "#00c896" }}>.edu · .ac.in · .edu.in</span>
+                Accepted: <span style={{ color: "#00c896" }}>.edu · .ac.in · .edu.in · tnu.in</span>
               </p>
             </div>
 

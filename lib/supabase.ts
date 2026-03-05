@@ -13,6 +13,7 @@ const ALLOWED_DOMAINS = [
   ".ac.in",
   ".edu.in",
   ".ernet.in",
+  "tnu.in",
 ]
 
 export function isCollegeEmail(email: string): boolean {
