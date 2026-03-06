@@ -88,6 +88,17 @@ export function Footer() {
           <p className="text-center text-sm text-muted-foreground">
             © 2026 Hallway. All rights reserved. For verified college students only.
           </p>
+          <p className="text-center text-sm text-muted-foreground mt-2">
+               Made with 💝 by{" "}
+  
+              <a href="https://github.com/FAYEZ087"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:underline"
+              >
+                Fayez
+              </a>
+            </p>
         </div>
       </div>
     </footer>
