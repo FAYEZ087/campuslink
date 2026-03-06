@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from 'next'
 import { Inter, Space_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
+import { DM_Sans } from 'next/font/google'
+const dmSans = DM_Sans({ subsets: ['latin'], variable: '--font-dm-sans' })
 
 const _inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const _spaceMono = Space_Mono({ weight: ["400", "700"], subsets: ["latin"], variable: "--font-space-mono" });
@@ -29,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body suppressHydrationWarning className={`${_inter.variable} ${_spaceMono.variable} font-sans antialiased`}>
+      <body suppressHydrationWarning className={`${dmSans.variable}${_inter.variable} ${_spaceMono.variable} font-sans antialiased`}>
         {children}
         <Analytics />
       </body>
