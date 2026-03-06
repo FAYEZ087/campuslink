@@ -57,7 +57,7 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
   const dark = darkMode
 
   return (
-    <div className={`min-h-dvh ${dark ? "bg-[#0a0a0a] text-white" : "bg-[#f4f7f4] text-[#0d1a0d]"}`}
+    <div className={`min-h-dvh ${dark ? "bg-[#0a0a0a] text-white" : "bg-[#eef2ee] text-[#0d1a0d]"}`}
       style={{ fontFamily: "'DM Sans', sans-serif", transition: "background 0.3s, color 0.3s" }}>
 
       {/* Ambient glow */}
@@ -67,7 +67,7 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
       </div>
 
       {/* Navbar */}
-      <nav className={`sticky top-0 z-50 border-b px-6 py-4 backdrop-blur-md ${dark ? "border-white/5 bg-[#0a0a0a]/80" : "border-black/5 bg-[#f4f7f4]/80"}`}>
+      <nav className={`sticky top-0 z-50 border-b px-6 py-4 backdrop-blur-md ${dark ? "border-white/5 bg-[#0a0a0a]/80" : "border-black/15 bg-[#eef2ee]/90"}`}>
         <div className="mx-auto flex max-w-5xl items-center justify-between">
           <div className="flex items-center gap-3">
             <HallwayIcon size={32} />
@@ -138,7 +138,7 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
       </section>
 
       {/* Features */}
-      <section className={`border-y px-6 py-20 ${dark ? "border-white/5 bg-white/[0.02]" : "border-black/5 bg-black/[0.02]"}`}>
+      <section className={`border-y px-6 py-20 ${dark ? "border-white/5 bg-white/[0.02]" : "border-black/15 bg-[#e5ece5]"}`}>
         <div className="mx-auto max-w-5xl">
           <h2 className="mb-12 text-center text-3xl font-bold">Why Hallway?</h2>
           <div className="grid gap-6 sm:grid-cols-3">
@@ -147,7 +147,7 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
               { icon: Zap, title: "Instant Matching", desc: "Get matched in seconds based on shared interests. No endless waiting, no empty rooms.", color: "#3b82f6" },
               { icon: Users, title: "Interest-Based", desc: "Pick what you're into — CS, music, gaming, fitness — and meet students who get it.", color: "#a855f7" },
             ].map(({ icon: Icon, title, desc, color }) => (
-              <div key={title} className={`rounded-2xl border p-6 transition ${dark ? "border-white/8 bg-white/3 hover:border-white/15" : "border-black/8 bg-white/60 hover:border-black/15"}`}>
+              <div key={title} className={`rounded-2xl border p-6 transition ${dark ? "border-white/8 bg-white/3 hover:border-white/15" : "border-black/20 bg-white hover:border-black/30 shadow-sm"}`}>
                 <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl"
                   style={{ background: color + "20" }}>
                   <Icon className="h-5 w-5" style={{ color }} />
@@ -192,7 +192,7 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
       </section>
 
       {/* Footer */}
-      <footer className={`border-t px-6 py-8 text-center text-sm ${dark ? "border-white/5 text-white/20" : "border-black/5 text-black/30"}`}>
+      <footer className={`border-t px-6 py-8 text-center text-sm ${dark ? "border-white/5 text-white/20" : "border-black/15 text-black/40"}`}>
         <div className="flex items-center justify-center gap-2">
           <HallwayIcon size={20} />
           <span>hallway · college video chat · {new Date().getFullYear()}</span>

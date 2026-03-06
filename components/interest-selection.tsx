@@ -76,11 +76,11 @@ export function InterestSelection({ onStart, user, onSignOut, darkMode, setDarkM
   }
 
   return (
-    <div className={`min-h-dvh ${dark ? "bg-[#0a0a0a] text-white" : "bg-[#f4f7f4] text-[#0d1a0d]"}`}
+    <div className={`min-h-dvh ${dark ? "bg-[#0a0a0a] text-white" : "bg-[#eef2ee] text-[#0d1a0d]"}`}
       style={{ fontFamily: "'DM Sans', sans-serif" }}>
 
       {/* Header */}
-      <header className={`sticky top-0 z-10 border-b px-6 py-4 backdrop-blur-md ${dark ? "border-white/5 bg-[#0a0a0a]/80" : "border-black/5 bg-[#f4f7f4]/80"}`}>
+      <header className={`sticky top-0 z-10 border-b px-6 py-4 backdrop-blur-md ${dark ? "border-white/5 bg-[#0a0a0a]/80" : "border-black/15 bg-[#eef2ee]/80"}`}>
         <div className="mx-auto flex max-w-4xl items-center justify-between">
           <div className="flex items-center gap-3">
             <HallwayIcon size={32} />

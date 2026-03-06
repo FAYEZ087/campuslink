@@ -61,11 +61,11 @@ export function ChatRoom({ interests, onExit, darkMode, setDarkMode }: ChatRoomP
   function handleReport(reason: string) { setShowReport(false); report(reason) }
 
   return (
-    <div className={`flex h-dvh flex-col ${dark ? "bg-[#0a0a0a] text-white" : "bg-[#f0f4f0] text-[#0d1a0d]"}`}
+    <div className={`flex h-dvh flex-col ${dark ? "bg-[#0a0a0a] text-white" : "bg-[#eef2ee] text-[#0d1a0d]"}`}
       style={{ fontFamily: "'DM Sans', sans-serif" }}>
 
       {/* Header */}
-      <header className={`flex shrink-0 items-center justify-between border-b px-4 py-3 ${dark ? "border-white/5 bg-[#0d0d0d]" : "border-black/8 bg-white"}`}>
+      <header className={`flex shrink-0 items-center justify-between border-b px-4 py-3 ${dark ? "border-white/5 bg-[#0d0d0d]" : "border-black/20 bg-white shadow-sm"}`}>
         <div className="flex items-center gap-3">
           <HallwayIcon size={28} />
           <span className="font-bold">hall<span style={{ color: "#00c896" }}>way</span></span>
@@ -172,7 +172,7 @@ export function ChatRoom({ interests, onExit, darkMode, setDarkMode }: ChatRoomP
           </div>
 
           {/* Bottom controls */}
-          <div className={`flex shrink-0 items-center justify-between rounded-2xl border px-4 py-3 ${dark ? "border-white/5 bg-[#111]" : "border-black/5 bg-white"}`}>
+          <div className={`flex shrink-0 items-center justify-between rounded-2xl border px-4 py-3 ${dark ? "border-white/5 bg-[#111]" : "border-black/15 bg-white"}`}>
             <div className="relative">
               <button onClick={() => setShowReport(!showReport)}
                 className={`flex items-center gap-1.5 rounded-xl border px-3 py-2 text-xs font-medium transition hover:border-red-500/30 hover:text-red-400 ${dark ? "border-white/10 bg-white/5" : "border-black/10 bg-black/5"}`}>
@@ -213,7 +213,7 @@ export function ChatRoom({ interests, onExit, darkMode, setDarkMode }: ChatRoomP
         <div className={`flex w-full shrink-0 flex-col border-t md:w-80 md:border-l md:border-t-0 lg:w-96 ${dark ? "border-white/5" : "border-black/8"}`}>
 
           {/* Chat header */}
-          <div className={`flex shrink-0 items-center justify-between border-b px-4 py-3 ${dark ? "border-white/5 bg-[#0d0d0d]" : "border-black/8 bg-white"}`}>
+          <div className={`flex shrink-0 items-center justify-between border-b px-4 py-3 ${dark ? "border-white/5 bg-[#0d0d0d]" : "border-black/20 bg-white shadow-sm"}`}>
             <span className="text-sm font-semibold">Room Chat</span>
             <div className={`flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-medium ${dark ? "bg-white/5" : "bg-black/5"}`}>
               <div className="h-1.5 w-1.5 rounded-full bg-[#00c896]" />
@@ -249,7 +249,7 @@ export function ChatRoom({ interests, onExit, darkMode, setDarkMode }: ChatRoomP
           </div>
 
           {/* Input */}
-          <div className={`shrink-0 border-t px-3 py-3 ${dark ? "border-white/5 bg-[#0d0d0d]" : "border-black/8 bg-white"}`}>
+          <div className={`shrink-0 border-t px-3 py-3 ${dark ? "border-white/5 bg-[#0d0d0d]" : "border-black/20 bg-white shadow-sm"}`}>
             <div className="flex items-center gap-2">
               <input
                 type="text"
