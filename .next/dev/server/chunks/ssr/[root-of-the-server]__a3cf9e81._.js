@@ -1674,27 +1674,239 @@ function AuthScreen() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "flex items-center gap-3 mb-12",
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex h-10 w-10 items-center justify-center rounded-lg bg-primary",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$video$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Video$3e$__["Video"], {
-                                    className: "h-6 w-6 text-white"
-                                }, void 0, false, {
-                                    fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
-                                    lineNumber: 38,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                xmlns: "http://www.w3.org/2000/svg",
+                                viewBox: "0 0 100 100",
+                                width: 36,
+                                height: 36,
+                                fill: "none",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("radialGradient", {
+                                            id: "bgN",
+                                            cx: "50%",
+                                            cy: "50%",
+                                            r: "50%",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
+                                                    offset: "0%",
+                                                    stopColor: "#1a1a2e"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
+                                                    lineNumber: 40,
+                                                    columnNumber: 7
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
+                                                    offset: "100%",
+                                                    stopColor: "#0d0d1a"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
+                                                    lineNumber: 41,
+                                                    columnNumber: 7
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
+                                            lineNumber: 39,
+                                            columnNumber: 5
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
+                                        lineNumber: 38,
+                                        columnNumber: 3
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                                        width: "100",
+                                        height: "100",
+                                        rx: "22",
+                                        fill: "url(#bgN)"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
+                                        lineNumber: 44,
+                                        columnNumber: 3
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                                        width: "100",
+                                        height: "100",
+                                        rx: "22",
+                                        fill: "none",
+                                        stroke: "#1e3a5f",
+                                        strokeWidth: "1.5"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
+                                        lineNumber: 45,
+                                        columnNumber: 3
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("polygon", {
+                                        points: "0,0 0,100 26,78 26,22",
+                                        fill: "#0f1629"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
+                                        lineNumber: 46,
+                                        columnNumber: 3
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("polygon", {
+                                        points: "100,0 100,100 74,78 74,22",
+                                        fill: "#131a2e"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
+                                        lineNumber: 47,
+                                        columnNumber: 3
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("polygon", {
+                                        points: "0,0 100,0 74,22 26,22",
+                                        fill: "#0c1220"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
+                                        lineNumber: 48,
+                                        columnNumber: 3
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("polygon", {
+                                        points: "0,100 100,100 74,78 26,78",
+                                        fill: "#0a0f1a"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
+                                        lineNumber: 49,
+                                        columnNumber: 3
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                                        x: "26",
+                                        y: "22",
+                                        width: "48",
+                                        height: "56",
+                                        fill: "#0d1117",
+                                        stroke: "#1e3a5f",
+                                        strokeWidth: "1"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
+                                        lineNumber: 50,
+                                        columnNumber: 3
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
+                                        x1: "0",
+                                        y1: "0",
+                                        x2: "50",
+                                        y2: "50",
+                                        stroke: "#3b82f6",
+                                        strokeWidth: "0.8",
+                                        opacity: "0.3"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
+                                        lineNumber: 51,
+                                        columnNumber: 3
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
+                                        x1: "100",
+                                        y1: "0",
+                                        x2: "50",
+                                        y2: "50",
+                                        stroke: "#3b82f6",
+                                        strokeWidth: "0.8",
+                                        opacity: "0.3"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
+                                        lineNumber: 52,
+                                        columnNumber: 3
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
+                                        x1: "0",
+                                        y1: "100",
+                                        x2: "50",
+                                        y2: "50",
+                                        stroke: "#3b82f6",
+                                        strokeWidth: "0.8",
+                                        opacity: "0.3"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
+                                        lineNumber: 53,
+                                        columnNumber: 3
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
+                                        x1: "100",
+                                        y1: "100",
+                                        x2: "50",
+                                        y2: "50",
+                                        stroke: "#3b82f6",
+                                        strokeWidth: "0.8",
+                                        opacity: "0.3"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
+                                        lineNumber: 54,
+                                        columnNumber: 3
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
+                                        cx: "50",
+                                        cy: "50",
+                                        rx: "3.5",
+                                        ry: "4.5",
+                                        fill: "#3b82f6",
+                                        opacity: "0.5"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
+                                        lineNumber: 55,
+                                        columnNumber: 3
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
+                                        cx: "50",
+                                        cy: "50",
+                                        rx: "1.5",
+                                        ry: "2",
+                                        fill: "#3b82f6"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
+                                        lineNumber: 56,
+                                        columnNumber: 3
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                                        cx: "50",
+                                        cy: "43",
+                                        r: "3.5",
+                                        fill: "#3b82f6"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
+                                        lineNumber: 57,
+                                        columnNumber: 3
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                                        x: "47",
+                                        y: "47.5",
+                                        width: "6",
+                                        height: "10",
+                                        rx: "1.5",
+                                        fill: "#3b82f6"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
+                                        lineNumber: 58,
+                                        columnNumber: 3
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                                        x: "63",
+                                        y: "40",
+                                        width: "9",
+                                        height: "22",
+                                        rx: "1.5",
+                                        fill: "none",
+                                        stroke: "#3b82f6",
+                                        strokeWidth: "1",
+                                        opacity: "0.5"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
+                                        lineNumber: 59,
+                                        columnNumber: 3
+                                    }, this)
+                                ]
+                            }, void 0, true, {
                                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
                                 lineNumber: 37,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "text-2xl font-bold text-white",
+                                className: "text-xl font-bold text-white",
                                 children: "Hallway"
                             }, void 0, false, {
                                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
-                                lineNumber: 40,
-                                columnNumber: 11
+                                lineNumber: 61,
+                                columnNumber: 1
                             }, this)
                         ]
                     }, void 0, true, {
@@ -1707,7 +1919,7 @@ function AuthScreen() {
                         children: "Verified Campus Community"
                     }, void 0, false, {
                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
-                        lineNumber: 42,
+                        lineNumber: 63,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1715,7 +1927,7 @@ function AuthScreen() {
                         children: "Join verified college students for real 1-on-1 video chats. Hallway requires a valid college email to keep our community safe and exclusive."
                     }, void 0, false, {
                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
-                        lineNumber: 43,
+                        lineNumber: 64,
                         columnNumber: 9
                     }, this),
                     [
@@ -1729,7 +1941,7 @@ function AuthScreen() {
                                     className: "h-5 w-5 text-primary shrink-0"
                                 }, void 0, false, {
                                     fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
-                                    lineNumber: 53,
+                                    lineNumber: 74,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1737,13 +1949,13 @@ function AuthScreen() {
                                     children: item
                                 }, void 0, false, {
                                     fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
-                                    lineNumber: 54,
+                                    lineNumber: 75,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, item, true, {
                             fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
-                            lineNumber: 52,
+                            lineNumber: 73,
                             columnNumber: 11
                         }, this))
                 ]
@@ -1766,12 +1978,12 @@ function AuthScreen() {
                                         className: "h-5 w-5 text-white"
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
-                                        lineNumber: 64,
+                                        lineNumber: 85,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
-                                    lineNumber: 63,
+                                    lineNumber: 84,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1779,13 +1991,13 @@ function AuthScreen() {
                                     children: "Hallway"
                                 }, void 0, false, {
                                     fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
-                                    lineNumber: 66,
+                                    lineNumber: 87,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
-                            lineNumber: 62,
+                            lineNumber: 83,
                             columnNumber: 11
                         }, this),
                         authState === "sent" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1795,7 +2007,7 @@ function AuthScreen() {
                                     className: "h-12 w-12 text-primary mx-auto mb-4"
                                 }, void 0, false, {
                                     fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
-                                    lineNumber: 71,
+                                    lineNumber: 92,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1803,7 +2015,7 @@ function AuthScreen() {
                                     children: "Check your email!"
                                 }, void 0, false, {
                                     fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
-                                    lineNumber: 72,
+                                    lineNumber: 93,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1811,7 +2023,7 @@ function AuthScreen() {
                                     children: "We sent a magic link to"
                                 }, void 0, false, {
                                     fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
-                                    lineNumber: 73,
+                                    lineNumber: 94,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1819,7 +2031,7 @@ function AuthScreen() {
                                     children: email
                                 }, void 0, false, {
                                     fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
-                                    lineNumber: 74,
+                                    lineNumber: 95,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1827,7 +2039,7 @@ function AuthScreen() {
                                     children: "Click the link to sign in. Check spam if you don't see it."
                                 }, void 0, false, {
                                     fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
-                                    lineNumber: 75,
+                                    lineNumber: 96,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1839,13 +2051,13 @@ function AuthScreen() {
                                     children: "Use a different email"
                                 }, void 0, false, {
                                     fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
-                                    lineNumber: 76,
+                                    lineNumber: 97,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
-                            lineNumber: 70,
+                            lineNumber: 91,
                             columnNumber: 13
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "rounded-2xl border border-border/40 bg-card p-8",
@@ -1855,7 +2067,7 @@ function AuthScreen() {
                                     children: "Sign in to Hallway"
                                 }, void 0, false, {
                                     fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
-                                    lineNumber: 83,
+                                    lineNumber: 104,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1863,7 +2075,7 @@ function AuthScreen() {
                                     children: "Use your college email to get started"
                                 }, void 0, false, {
                                     fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
-                                    lineNumber: 84,
+                                    lineNumber: 105,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1876,7 +2088,7 @@ function AuthScreen() {
                                                     children: "College Email"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
-                                                    lineNumber: 88,
+                                                    lineNumber: 109,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1886,7 +2098,7 @@ function AuthScreen() {
                                                             className: "absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
-                                                            lineNumber: 90,
+                                                            lineNumber: 111,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1901,13 +2113,13 @@ function AuthScreen() {
                                                             className: "w-full rounded-xl border border-border bg-secondary pl-10 pr-4 py-3 text-sm text-white placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
-                                                            lineNumber: 91,
+                                                            lineNumber: 112,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
-                                                    lineNumber: 89,
+                                                    lineNumber: 110,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1919,19 +2131,19 @@ function AuthScreen() {
                                                             children: ".edu · .ac.in · .edu.in · tnu.in"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
-                                                            lineNumber: 101,
+                                                            lineNumber: 122,
                                                             columnNumber: 31
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
-                                                    lineNumber: 100,
+                                                    lineNumber: 121,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
-                                            lineNumber: 87,
+                                            lineNumber: 108,
                                             columnNumber: 17
                                         }, this),
                                         authState === "error" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1941,7 +2153,7 @@ function AuthScreen() {
                                                     className: "h-4 w-4 mt-0.5 shrink-0 text-destructive"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
-                                                    lineNumber: 107,
+                                                    lineNumber: 128,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1949,13 +2161,13 @@ function AuthScreen() {
                                                     children: errorMsg
                                                 }, void 0, false, {
                                                     fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
-                                                    lineNumber: 108,
+                                                    lineNumber: 129,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
-                                            lineNumber: 106,
+                                            lineNumber: 127,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1968,7 +2180,7 @@ function AuthScreen() {
                                                         className: "h-4 w-4 animate-spin"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
-                                                        lineNumber: 118,
+                                                        lineNumber: 139,
                                                         columnNumber: 23
                                                     }, this),
                                                     "Sending magic link..."
@@ -1980,14 +2192,14 @@ function AuthScreen() {
                                                         className: "h-4 w-4"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
-                                                        lineNumber: 120,
+                                                        lineNumber: 141,
                                                         columnNumber: 51
                                                     }, this)
                                                 ]
                                             }, void 0, true)
                                         }, void 0, false, {
                                             fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
-                                            lineNumber: 112,
+                                            lineNumber: 133,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1995,30 +2207,30 @@ function AuthScreen() {
                                             children: "We'll send you a magic link — no password needed 🪄"
                                         }, void 0, false, {
                                             fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
-                                            lineNumber: 124,
+                                            lineNumber: 145,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
-                                    lineNumber: 86,
+                                    lineNumber: 107,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
-                            lineNumber: 82,
+                            lineNumber: 103,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
-                    lineNumber: 61,
+                    lineNumber: 82,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
-                lineNumber: 60,
+                lineNumber: 81,
                 columnNumber: 7
             }, this)
         ]
@@ -2058,7 +2270,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$inte
 var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mountain$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Mountain$3e$__ = __turbopack_context__.i("[project]/Downloads/hallway-integrated/v0-hallway/node_modules/lucide-react/dist/esm/icons/mountain.js [app-ssr] (ecmascript) <export default as Mountain>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__ = __turbopack_context__.i("[project]/Downloads/hallway-integrated/v0-hallway/node_modules/lucide-react/dist/esm/icons/sparkles.js [app-ssr] (ecmascript) <export default as Sparkles>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$out$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__LogOut$3e$__ = __turbopack_context__.i("[project]/Downloads/hallway-integrated/v0-hallway/node_modules/lucide-react/dist/esm/icons/log-out.js [app-ssr] (ecmascript) <export default as LogOut>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$video$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Video$3e$__ = __turbopack_context__.i("[project]/Downloads/hallway-integrated/v0-hallway/node_modules/lucide-react/dist/esm/icons/video.js [app-ssr] (ecmascript) <export default as Video>");
 "use client";
 ;
 ;
@@ -2174,16 +2385,228 @@ function InterestSelection({ onStart, user, onSignOut }) {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "flex items-center gap-3",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex h-9 w-9 items-center justify-center rounded-lg bg-primary",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$video$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Video$3e$__["Video"], {
-                                        className: "h-5 w-5 text-white"
-                                    }, void 0, false, {
-                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
-                                        lineNumber: 52,
-                                        columnNumber: 15
-                                    }, this)
-                                }, void 0, false, {
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                    xmlns: "http://www.w3.org/2000/svg",
+                                    viewBox: "0 0 100 100",
+                                    width: 36,
+                                    height: 36,
+                                    fill: "none",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("radialGradient", {
+                                                id: "bgN",
+                                                cx: "50%",
+                                                cy: "50%",
+                                                r: "50%",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
+                                                        offset: "0%",
+                                                        stopColor: "#1a1a2e"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
+                                                        lineNumber: 54,
+                                                        columnNumber: 7
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
+                                                        offset: "100%",
+                                                        stopColor: "#0d0d1a"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
+                                                        lineNumber: 55,
+                                                        columnNumber: 7
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
+                                                lineNumber: 53,
+                                                columnNumber: 5
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
+                                            lineNumber: 52,
+                                            columnNumber: 3
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                                            width: "100",
+                                            height: "100",
+                                            rx: "22",
+                                            fill: "url(#bgN)"
+                                        }, void 0, false, {
+                                            fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
+                                            lineNumber: 58,
+                                            columnNumber: 4
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                                            width: "100",
+                                            height: "100",
+                                            rx: "22",
+                                            fill: "none",
+                                            stroke: "#1e3a5f",
+                                            strokeWidth: "1.5"
+                                        }, void 0, false, {
+                                            fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
+                                            lineNumber: 59,
+                                            columnNumber: 5
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("polygon", {
+                                            points: "0,0 0,100 26,78 26,22",
+                                            fill: "#0f1629"
+                                        }, void 0, false, {
+                                            fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
+                                            lineNumber: 60,
+                                            columnNumber: 5
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("polygon", {
+                                            points: "100,0 100,100 74,78 74,22",
+                                            fill: "#131a2e"
+                                        }, void 0, false, {
+                                            fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
+                                            lineNumber: 61,
+                                            columnNumber: 5
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("polygon", {
+                                            points: "0,0 100,0 74,22 26,22",
+                                            fill: "#0c1220"
+                                        }, void 0, false, {
+                                            fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
+                                            lineNumber: 62,
+                                            columnNumber: 5
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("polygon", {
+                                            points: "0,100 100,100 74,78 26,78",
+                                            fill: "#0a0f1a"
+                                        }, void 0, false, {
+                                            fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
+                                            lineNumber: 63,
+                                            columnNumber: 5
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                                            x: "26",
+                                            y: "22",
+                                            width: "48",
+                                            height: "56",
+                                            fill: "#0d1117",
+                                            stroke: "#1e3a5f",
+                                            strokeWidth: "1"
+                                        }, void 0, false, {
+                                            fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
+                                            lineNumber: 64,
+                                            columnNumber: 5
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
+                                            x1: "0",
+                                            y1: "0",
+                                            x2: "50",
+                                            y2: "50",
+                                            stroke: "#3b82f6",
+                                            strokeWidth: "0.8",
+                                            opacity: "0.3"
+                                        }, void 0, false, {
+                                            fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
+                                            lineNumber: 65,
+                                            columnNumber: 5
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
+                                            x1: "100",
+                                            y1: "0",
+                                            x2: "50",
+                                            y2: "50",
+                                            stroke: "#3b82f6",
+                                            strokeWidth: "0.8",
+                                            opacity: "0.3"
+                                        }, void 0, false, {
+                                            fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
+                                            lineNumber: 66,
+                                            columnNumber: 5
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
+                                            x1: "0",
+                                            y1: "100",
+                                            x2: "50",
+                                            y2: "50",
+                                            stroke: "#3b82f6",
+                                            strokeWidth: "0.8",
+                                            opacity: "0.3"
+                                        }, void 0, false, {
+                                            fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
+                                            lineNumber: 67,
+                                            columnNumber: 5
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
+                                            x1: "100",
+                                            y1: "100",
+                                            x2: "50",
+                                            y2: "50",
+                                            stroke: "#3b82f6",
+                                            strokeWidth: "0.8",
+                                            opacity: "0.3"
+                                        }, void 0, false, {
+                                            fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
+                                            lineNumber: 68,
+                                            columnNumber: 5
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
+                                            cx: "50",
+                                            cy: "50",
+                                            rx: "3.5",
+                                            ry: "4.5",
+                                            fill: "#3b82f6",
+                                            opacity: "0.5"
+                                        }, void 0, false, {
+                                            fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
+                                            lineNumber: 69,
+                                            columnNumber: 5
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
+                                            cx: "50",
+                                            cy: "50",
+                                            rx: "1.5",
+                                            ry: "2",
+                                            fill: "#3b82f6"
+                                        }, void 0, false, {
+                                            fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
+                                            lineNumber: 70,
+                                            columnNumber: 5
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                                            cx: "50",
+                                            cy: "43",
+                                            r: "3.5",
+                                            fill: "#3b82f6"
+                                        }, void 0, false, {
+                                            fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
+                                            lineNumber: 71,
+                                            columnNumber: 5
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                                            x: "47",
+                                            y: "47.5",
+                                            width: "6",
+                                            height: "10",
+                                            rx: "1.5",
+                                            fill: "#3b82f6"
+                                        }, void 0, false, {
+                                            fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
+                                            lineNumber: 72,
+                                            columnNumber: 5
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                                            x: "63",
+                                            y: "40",
+                                            width: "9",
+                                            height: "22",
+                                            rx: "1.5",
+                                            fill: "none",
+                                            stroke: "#3b82f6",
+                                            strokeWidth: "1",
+                                            opacity: "0.5"
+                                        }, void 0, false, {
+                                            fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
+                                            lineNumber: 73,
+                                            columnNumber: 5
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
                                     lineNumber: 51,
                                     columnNumber: 13
@@ -2193,8 +2616,8 @@ function InterestSelection({ onStart, user, onSignOut }) {
                                     children: "Hallway"
                                 }, void 0, false, {
                                     fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
-                                    lineNumber: 54,
-                                    columnNumber: 13
+                                    lineNumber: 75,
+                                    columnNumber: 1
                                 }, this)
                             ]
                         }, void 0, true, {
@@ -2210,7 +2633,7 @@ function InterestSelection({ onStart, user, onSignOut }) {
                                     children: user.email
                                 }, void 0, false, {
                                     fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
-                                    lineNumber: 58,
+                                    lineNumber: 79,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2221,20 +2644,20 @@ function InterestSelection({ onStart, user, onSignOut }) {
                                             className: "h-3 w-3"
                                         }, void 0, false, {
                                             fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
-                                            lineNumber: 61,
+                                            lineNumber: 82,
                                             columnNumber: 17
                                         }, this),
                                         "Sign out"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
-                                    lineNumber: 59,
+                                    lineNumber: 80,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
-                            lineNumber: 57,
+                            lineNumber: 78,
                             columnNumber: 13
                         }, this)
                     ]
@@ -2259,7 +2682,7 @@ function InterestSelection({ onStart, user, onSignOut }) {
                                 children: "What are you into?"
                             }, void 0, false, {
                                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
-                                lineNumber: 71,
+                                lineNumber: 92,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2267,13 +2690,13 @@ function InterestSelection({ onStart, user, onSignOut }) {
                                 children: "Select your interests to find the right students to connect with."
                             }, void 0, false, {
                                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
-                                lineNumber: 72,
+                                lineNumber: 93,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
-                        lineNumber: 70,
+                        lineNumber: 91,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2300,20 +2723,20 @@ function InterestSelection({ onStart, user, onSignOut }) {
                                         } : {}
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
-                                        lineNumber: 92,
+                                        lineNumber: 113,
                                         columnNumber: 17
                                     }, this),
                                     label
                                 ]
                             }, label, true, {
                                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
-                                lineNumber: 81,
+                                lineNumber: 102,
                                 columnNumber: 15
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
-                        lineNumber: 77,
+                        lineNumber: 98,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2321,7 +2744,7 @@ function InterestSelection({ onStart, user, onSignOut }) {
                         children: selected.length === 0 ? "Pick at least one — or skip to chat randomly" : `${selected.length} selected · matching you with students who love ${selected.slice(0, 2).join(" & ")}${selected.length > 2 ? ` +${selected.length - 2} more` : ""}`
                     }, void 0, false, {
                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
-                        lineNumber: 99,
+                        lineNumber: 120,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2339,13 +2762,13 @@ function InterestSelection({ onStart, user, onSignOut }) {
                                         className: "h-4 w-4"
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
-                                        lineNumber: 110,
+                                        lineNumber: 131,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
-                                lineNumber: 106,
+                                lineNumber: 127,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2354,19 +2777,19 @@ function InterestSelection({ onStart, user, onSignOut }) {
                                 children: "Skip — chat randomly"
                             }, void 0, false, {
                                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
-                                lineNumber: 112,
+                                lineNumber: 133,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
-                        lineNumber: 105,
+                        lineNumber: 126,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
-                lineNumber: 69,
+                lineNumber: 90,
                 columnNumber: 7
             }, this)
         ]
@@ -2836,27 +3259,239 @@ function ChatRoom({ interests, onExit }) {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "flex items-center gap-3",
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex h-8 w-8 items-center justify-center rounded-lg bg-primary",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$video$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Video$3e$__["Video"], {
-                                    className: "h-4 w-4 text-white"
-                                }, void 0, false, {
-                                    fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                    lineNumber: 39,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                xmlns: "http://www.w3.org/2000/svg",
+                                viewBox: "0 0 100 100",
+                                width: 36,
+                                height: 36,
+                                fill: "none",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("radialGradient", {
+                                            id: "bgN",
+                                            cx: "50%",
+                                            cy: "50%",
+                                            r: "50%",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
+                                                    offset: "0%",
+                                                    stopColor: "#1a1a2e"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
+                                                    lineNumber: 41,
+                                                    columnNumber: 7
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
+                                                    offset: "100%",
+                                                    stopColor: "#0d0d1a"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
+                                                    lineNumber: 42,
+                                                    columnNumber: 7
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
+                                            lineNumber: 40,
+                                            columnNumber: 5
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
+                                        lineNumber: 39,
+                                        columnNumber: 3
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                                        width: "100",
+                                        height: "100",
+                                        rx: "22",
+                                        fill: "url(#bgN)"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
+                                        lineNumber: 45,
+                                        columnNumber: 3
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                                        width: "100",
+                                        height: "100",
+                                        rx: "22",
+                                        fill: "none",
+                                        stroke: "#1e3a5f",
+                                        strokeWidth: "1.5"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
+                                        lineNumber: 46,
+                                        columnNumber: 3
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("polygon", {
+                                        points: "0,0 0,100 26,78 26,22",
+                                        fill: "#0f1629"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
+                                        lineNumber: 47,
+                                        columnNumber: 3
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("polygon", {
+                                        points: "100,0 100,100 74,78 74,22",
+                                        fill: "#131a2e"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
+                                        lineNumber: 48,
+                                        columnNumber: 3
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("polygon", {
+                                        points: "0,0 100,0 74,22 26,22",
+                                        fill: "#0c1220"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
+                                        lineNumber: 49,
+                                        columnNumber: 3
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("polygon", {
+                                        points: "0,100 100,100 74,78 26,78",
+                                        fill: "#0a0f1a"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
+                                        lineNumber: 50,
+                                        columnNumber: 3
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                                        x: "26",
+                                        y: "22",
+                                        width: "48",
+                                        height: "56",
+                                        fill: "#0d1117",
+                                        stroke: "#1e3a5f",
+                                        strokeWidth: "1"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
+                                        lineNumber: 51,
+                                        columnNumber: 3
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
+                                        x1: "0",
+                                        y1: "0",
+                                        x2: "50",
+                                        y2: "50",
+                                        stroke: "#3b82f6",
+                                        strokeWidth: "0.8",
+                                        opacity: "0.3"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
+                                        lineNumber: 52,
+                                        columnNumber: 3
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
+                                        x1: "100",
+                                        y1: "0",
+                                        x2: "50",
+                                        y2: "50",
+                                        stroke: "#3b82f6",
+                                        strokeWidth: "0.8",
+                                        opacity: "0.3"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
+                                        lineNumber: 53,
+                                        columnNumber: 3
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
+                                        x1: "0",
+                                        y1: "100",
+                                        x2: "50",
+                                        y2: "50",
+                                        stroke: "#3b82f6",
+                                        strokeWidth: "0.8",
+                                        opacity: "0.3"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
+                                        lineNumber: 54,
+                                        columnNumber: 3
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
+                                        x1: "100",
+                                        y1: "100",
+                                        x2: "50",
+                                        y2: "50",
+                                        stroke: "#3b82f6",
+                                        strokeWidth: "0.8",
+                                        opacity: "0.3"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
+                                        lineNumber: 55,
+                                        columnNumber: 3
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
+                                        cx: "50",
+                                        cy: "50",
+                                        rx: "3.5",
+                                        ry: "4.5",
+                                        fill: "#3b82f6",
+                                        opacity: "0.5"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
+                                        lineNumber: 56,
+                                        columnNumber: 3
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
+                                        cx: "50",
+                                        cy: "50",
+                                        rx: "1.5",
+                                        ry: "2",
+                                        fill: "#3b82f6"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
+                                        lineNumber: 57,
+                                        columnNumber: 3
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                                        cx: "50",
+                                        cy: "43",
+                                        r: "3.5",
+                                        fill: "#3b82f6"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
+                                        lineNumber: 58,
+                                        columnNumber: 3
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                                        x: "47",
+                                        y: "47.5",
+                                        width: "6",
+                                        height: "10",
+                                        rx: "1.5",
+                                        fill: "#3b82f6"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
+                                        lineNumber: 59,
+                                        columnNumber: 3
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                                        x: "63",
+                                        y: "40",
+                                        width: "9",
+                                        height: "22",
+                                        rx: "1.5",
+                                        fill: "none",
+                                        stroke: "#3b82f6",
+                                        strokeWidth: "1",
+                                        opacity: "0.5"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
+                                        lineNumber: 60,
+                                        columnNumber: 3
+                                    }, this)
+                                ]
+                            }, void 0, true, {
                                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
                                 lineNumber: 38,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "font-bold text-white",
+                                className: "text-xl font-bold text-white",
                                 children: "Hallway"
                             }, void 0, false, {
                                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                lineNumber: 41,
-                                columnNumber: 11
+                                lineNumber: 62,
+                                columnNumber: 1
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "hidden items-center gap-1.5 rounded-full border border-border/40 bg-card px-2.5 py-1 text-xs sm:flex",
@@ -2865,14 +3500,14 @@ function ChatRoom({ interests, onExit }) {
                                         className: "h-1.5 w-1.5 animate-pulse rounded-full bg-primary"
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                        lineNumber: 43,
+                                        lineNumber: 64,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__["Users"], {
                                         className: "h-3 w-3 text-muted-foreground"
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                        lineNumber: 44,
+                                        lineNumber: 65,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2883,13 +3518,13 @@ function ChatRoom({ interests, onExit }) {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                        lineNumber: 45,
+                                        lineNumber: 66,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                lineNumber: 42,
+                                lineNumber: 63,
                                 columnNumber: 11
                             }, this)
                         ]
@@ -2909,7 +3544,7 @@ function ChatRoom({ interests, onExit }) {
                                             children: tag
                                         }, tag, false, {
                                             fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                            lineNumber: 52,
+                                            lineNumber: 73,
                                             columnNumber: 17
                                         }, this)),
                                     interests.length > 3 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2920,13 +3555,13 @@ function ChatRoom({ interests, onExit }) {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                        lineNumber: 56,
+                                        lineNumber: 77,
                                         columnNumber: 40
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                lineNumber: 50,
+                                lineNumber: 71,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2936,7 +3571,7 @@ function ChatRoom({ interests, onExit }) {
                                         className: "h-3 w-3 text-primary"
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                        lineNumber: 60,
+                                        lineNumber: 81,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2944,13 +3579,13 @@ function ChatRoom({ interests, onExit }) {
                                         children: "Verified"
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                        lineNumber: 61,
+                                        lineNumber: 82,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                lineNumber: 59,
+                                lineNumber: 80,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2960,18 +3595,18 @@ function ChatRoom({ interests, onExit }) {
                                     className: "h-4 w-4"
                                 }, void 0, false, {
                                     fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                    lineNumber: 65,
+                                    lineNumber: 86,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                lineNumber: 63,
+                                lineNumber: 84,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                        lineNumber: 48,
+                        lineNumber: 69,
                         columnNumber: 9
                     }, this)
                 ]
@@ -3000,7 +3635,7 @@ function ChatRoom({ interests, onExit }) {
                                                 className: "h-full w-full object-cover"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                lineNumber: 80,
+                                                lineNumber: 101,
                                                 columnNumber: 17
                                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "flex h-full flex-col items-center justify-center gap-2 text-muted-foreground",
@@ -3009,7 +3644,7 @@ function ChatRoom({ interests, onExit }) {
                                                         className: "h-8 w-8"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                        lineNumber: 83,
+                                                        lineNumber: 104,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3017,13 +3652,13 @@ function ChatRoom({ interests, onExit }) {
                                                         children: "No camera"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                        lineNumber: 84,
+                                                        lineNumber: 105,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                lineNumber: 82,
+                                                lineNumber: 103,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3033,7 +3668,7 @@ function ChatRoom({ interests, onExit }) {
                                                         className: "h-1.5 w-1.5 rounded-full bg-primary"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                        lineNumber: 88,
+                                                        lineNumber: 109,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3041,13 +3676,13 @@ function ChatRoom({ interests, onExit }) {
                                                         children: "You"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                        lineNumber: 89,
+                                                        lineNumber: 110,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                lineNumber: 87,
+                                                lineNumber: 108,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3060,18 +3695,18 @@ function ChatRoom({ interests, onExit }) {
                                                             className: "h-3.5 w-3.5"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                            lineNumber: 94,
+                                                            lineNumber: 115,
                                                             columnNumber: 28
                                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mic$2d$off$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MicOff$3e$__["MicOff"], {
                                                             className: "h-3.5 w-3.5"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                            lineNumber: 94,
+                                                            lineNumber: 115,
                                                             columnNumber: 62
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                        lineNumber: 92,
+                                                        lineNumber: 113,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3081,18 +3716,18 @@ function ChatRoom({ interests, onExit }) {
                                                             className: "h-3.5 w-3.5"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                            lineNumber: 98,
+                                                            lineNumber: 119,
                                                             columnNumber: 28
                                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$video$2d$off$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__VideoOff$3e$__["VideoOff"], {
                                                             className: "h-3.5 w-3.5"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                            lineNumber: 98,
+                                                            lineNumber: 119,
                                                             columnNumber: 64
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                        lineNumber: 96,
+                                                        lineNumber: 117,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3102,24 +3737,24 @@ function ChatRoom({ interests, onExit }) {
                                                             className: "h-3.5 w-3.5"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                            lineNumber: 102,
+                                                            lineNumber: 123,
                                                             columnNumber: 19
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                        lineNumber: 100,
+                                                        lineNumber: 121,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                lineNumber: 91,
+                                                lineNumber: 112,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                        lineNumber: 78,
+                                        lineNumber: 99,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3132,7 +3767,7 @@ function ChatRoom({ interests, onExit }) {
                                                 className: "h-full w-full object-cover"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                lineNumber: 110,
+                                                lineNumber: 131,
                                                 columnNumber: 17
                                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "flex h-full flex-col items-center justify-center gap-3 text-muted-foreground",
@@ -3142,7 +3777,7 @@ function ChatRoom({ interests, onExit }) {
                                                             className: "h-7 w-7 animate-spin rounded-full border-2 border-t-transparent border-primary"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                            lineNumber: 115,
+                                                            lineNumber: 136,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3150,7 +3785,7 @@ function ChatRoom({ interests, onExit }) {
                                                             children: "Finding a match..."
                                                         }, void 0, false, {
                                                             fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                            lineNumber: 116,
+                                                            lineNumber: 137,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
@@ -3160,7 +3795,7 @@ function ChatRoom({ interests, onExit }) {
                                                             className: "h-8 w-8"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                            lineNumber: 120,
+                                                            lineNumber: 141,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3168,14 +3803,14 @@ function ChatRoom({ interests, onExit }) {
                                                             children: "Waiting..."
                                                         }, void 0, false, {
                                                             fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                            lineNumber: 121,
+                                                            lineNumber: 142,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true)
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                lineNumber: 112,
+                                                lineNumber: 133,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3185,7 +3820,7 @@ function ChatRoom({ interests, onExit }) {
                                                         className: `h-1.5 w-1.5 rounded-full ${status === "connected" ? "bg-primary" : "bg-yellow-400"}`
                                                     }, void 0, false, {
                                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                        lineNumber: 127,
+                                                        lineNumber: 148,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3193,25 +3828,25 @@ function ChatRoom({ interests, onExit }) {
                                                         children: status === "waiting" ? "Searching..." : "Stranger"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                        lineNumber: 128,
+                                                        lineNumber: 149,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                lineNumber: 126,
+                                                lineNumber: 147,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                        lineNumber: 108,
+                                        lineNumber: 129,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                lineNumber: 75,
+                                lineNumber: 96,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3228,14 +3863,14 @@ function ChatRoom({ interests, onExit }) {
                                                         className: "h-3.5 w-3.5"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                        lineNumber: 140,
+                                                        lineNumber: 161,
                                                         columnNumber: 17
                                                     }, this),
                                                     "Report"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                lineNumber: 138,
+                                                lineNumber: 159,
                                                 columnNumber: 15
                                             }, this),
                                             showReport && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3246,7 +3881,7 @@ function ChatRoom({ interests, onExit }) {
                                                         children: "Report reason"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                        lineNumber: 145,
+                                                        lineNumber: 166,
                                                         columnNumber: 19
                                                     }, this),
                                                     [
@@ -3260,19 +3895,19 @@ function ChatRoom({ interests, onExit }) {
                                                             children: reason
                                                         }, reason, false, {
                                                             fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                            lineNumber: 147,
+                                                            lineNumber: 168,
                                                             columnNumber: 21
                                                         }, this))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                lineNumber: 144,
+                                                lineNumber: 165,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                        lineNumber: 137,
+                                        lineNumber: 158,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3283,7 +3918,7 @@ function ChatRoom({ interests, onExit }) {
                                                 children: "Connected with a student"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                lineNumber: 156,
+                                                lineNumber: 177,
                                                 columnNumber: 42
                                             }, this),
                                             status === "waiting" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3291,7 +3926,7 @@ function ChatRoom({ interests, onExit }) {
                                                 children: "Finding match..."
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                lineNumber: 157,
+                                                lineNumber: 178,
                                                 columnNumber: 40
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3302,32 +3937,32 @@ function ChatRoom({ interests, onExit }) {
                                                         className: "h-4 w-4"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                        lineNumber: 160,
+                                                        lineNumber: 181,
                                                         columnNumber: 17
                                                     }, this),
                                                     "Next"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                lineNumber: 158,
+                                                lineNumber: 179,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                        lineNumber: 155,
+                                        lineNumber: 176,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                lineNumber: 136,
+                                lineNumber: 157,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                        lineNumber: 74,
+                        lineNumber: 95,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3341,7 +3976,7 @@ function ChatRoom({ interests, onExit }) {
                                         children: "Room Chat"
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                        lineNumber: 170,
+                                        lineNumber: 191,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3351,7 +3986,7 @@ function ChatRoom({ interests, onExit }) {
                                                 className: "h-1.5 w-1.5 rounded-full bg-primary"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                lineNumber: 172,
+                                                lineNumber: 193,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3359,19 +3994,19 @@ function ChatRoom({ interests, onExit }) {
                                                 children: status === "connected" ? "2 online" : "1 online"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                lineNumber: 173,
+                                                lineNumber: 194,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                        lineNumber: 171,
+                                        lineNumber: 192,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                lineNumber: 169,
+                                lineNumber: 190,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3387,12 +4022,12 @@ function ChatRoom({ interests, onExit }) {
                                             children: status === "waiting" ? "Finding you a match..." : "Say hi! 👋"
                                         }, void 0, false, {
                                             fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                            lineNumber: 180,
+                                            lineNumber: 201,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                        lineNumber: 179,
+                                        lineNumber: 200,
                                         columnNumber: 15
                                     }, this),
                                     messages.map((msg, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3403,7 +4038,7 @@ function ChatRoom({ interests, onExit }) {
                                                     children: "S"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                    lineNumber: 188,
+                                                    lineNumber: 209,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3414,33 +4049,33 @@ function ChatRoom({ interests, onExit }) {
                                                             children: "Stranger"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                            lineNumber: 193,
+                                                            lineNumber: 214,
                                                             columnNumber: 33
                                                         }, this),
                                                         msg.text
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                    lineNumber: 190,
+                                                    lineNumber: 211,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, i, true, {
                                             fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                            lineNumber: 186,
+                                            lineNumber: 207,
                                             columnNumber: 15
                                         }, this)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         ref: messagesEndRef
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                        lineNumber: 198,
+                                        lineNumber: 219,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                lineNumber: 177,
+                                lineNumber: 198,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3458,7 +4093,7 @@ function ChatRoom({ interests, onExit }) {
                                             className: "flex-1 rounded-xl border border-border/40 bg-card px-4 py-2.5 text-sm text-white placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 disabled:opacity-40"
                                         }, void 0, false, {
                                             fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                            lineNumber: 203,
+                                            lineNumber: 224,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3469,35 +4104,35 @@ function ChatRoom({ interests, onExit }) {
                                                 className: "h-4 w-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                lineNumber: 214,
+                                                lineNumber: 235,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                            lineNumber: 212,
+                                            lineNumber: 233,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                    lineNumber: 202,
+                                    lineNumber: 223,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                lineNumber: 201,
+                                lineNumber: 222,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                        lineNumber: 168,
+                        lineNumber: 189,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                lineNumber: 71,
+                lineNumber: 92,
                 columnNumber: 7
             }, this)
         ]
