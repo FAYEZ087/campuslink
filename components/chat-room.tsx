@@ -234,6 +234,16 @@ export function ChatRoom({ interests, onExit }: ChatRoomProps) {
                 className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary text-white transition hover:bg-primary/90 disabled:opacity-30">
                 <Send className="h-4 w-4" />
               </button>
+              <p className="text-center text-xs text-muted-foreground py-3">
+                Made with 💝 by{" "}
+                <a href="https://github.com/FAYEZ087"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline"
+                >
+                  Fayez
+                </a>
+              </p>
             </div>
           </div>
         </div>

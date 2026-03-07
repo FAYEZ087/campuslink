@@ -145,6 +145,17 @@ export function AuthScreen() {
                 <p className="text-center text-xs text-muted-foreground">
                   We'll send you a magic link — no password needed 🪄
                 </p>
+                <p className="text-center text-xs text-muted-foreground py-3">
+                    Made with 💝 by{" "}
+  
+                  <a href="https://github.com/FAYEZ087"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline"
+                  >
+                    Fayez
+                  </a>
+                </p>
               </div>
             </div>
           )}

@@ -2290,6 +2290,28 @@ function AuthScreen() {
                                             fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
                                             lineNumber: 145,
                                             columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-center text-xs text-muted-foreground py-3",
+                                            children: [
+                                                "Made with 💝 by",
+                                                " ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                    href: "https://github.com/FAYEZ087",
+                                                    target: "_blank",
+                                                    rel: "noopener noreferrer",
+                                                    className: "text-primary hover:underline",
+                                                    children: "Fayez"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
+                                                    lineNumber: 151,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/auth-screen.tsx",
+                                            lineNumber: 148,
+                                            columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
@@ -2868,6 +2890,28 @@ function InterestSelection({ onStart, user, onSignOut }) {
                             }, void 0, false, {
                                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
                                 lineNumber: 133,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-center text-xs text-muted-foreground py-3",
+                                children: [
+                                    "Made with 💝 by",
+                                    " ",
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                        href: "https://github.com/FAYEZ087",
+                                        target: "_blank",
+                                        rel: "noopener noreferrer",
+                                        className: "text-primary hover:underline",
+                                        children: "Fayez"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
+                                        lineNumber: 140,
+                                        columnNumber: 14
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
+                                lineNumber: 137,
                                 columnNumber: 11
                             }, this)
                         ]
@@ -4197,6 +4241,28 @@ function ChatRoom({ interests, onExit }) {
                                         }, void 0, false, {
                                             fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
                                             lineNumber: 233,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-center text-xs text-muted-foreground py-3",
+                                            children: [
+                                                "Made with 💝 by",
+                                                " ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                    href: "https://github.com/FAYEZ087",
+                                                    target: "_blank",
+                                                    rel: "noopener noreferrer",
+                                                    className: "text-primary hover:underline",
+                                                    children: "Fayez"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
+                                                    lineNumber: 239,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
+                                            lineNumber: 237,
                                             columnNumber: 15
                                         }, this)
                                     ]
