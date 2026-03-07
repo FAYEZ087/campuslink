@@ -3383,7 +3383,7 @@ function ChatRoom({ interests, onExit }) {
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
                                         lineNumber: 45,
-                                        columnNumber: 3
+                                        columnNumber: 6
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
                                         width: "100",
@@ -3395,7 +3395,7 @@ function ChatRoom({ interests, onExit }) {
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
                                         lineNumber: 46,
-                                        columnNumber: 3
+                                        columnNumber: 6
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("polygon", {
                                         points: "0,0 0,100 26,78 26,22",
@@ -3403,7 +3403,7 @@ function ChatRoom({ interests, onExit }) {
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
                                         lineNumber: 47,
-                                        columnNumber: 3
+                                        columnNumber: 6
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("polygon", {
                                         points: "100,0 100,100 74,78 74,22",
@@ -3411,7 +3411,7 @@ function ChatRoom({ interests, onExit }) {
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
                                         lineNumber: 48,
-                                        columnNumber: 3
+                                        columnNumber: 6
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("polygon", {
                                         points: "0,0 100,0 74,22 26,22",
@@ -3419,7 +3419,7 @@ function ChatRoom({ interests, onExit }) {
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
                                         lineNumber: 49,
-                                        columnNumber: 3
+                                        columnNumber: 6
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("polygon", {
                                         points: "0,100 100,100 74,78 26,78",
@@ -3427,7 +3427,7 @@ function ChatRoom({ interests, onExit }) {
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
                                         lineNumber: 50,
-                                        columnNumber: 3
+                                        columnNumber: 6
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
                                         x: "26",
@@ -3440,7 +3440,7 @@ function ChatRoom({ interests, onExit }) {
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
                                         lineNumber: 51,
-                                        columnNumber: 3
+                                        columnNumber: 6
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
                                         x1: "0",
@@ -3453,7 +3453,7 @@ function ChatRoom({ interests, onExit }) {
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
                                         lineNumber: 52,
-                                        columnNumber: 3
+                                        columnNumber: 6
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
                                         x1: "100",
@@ -3466,7 +3466,7 @@ function ChatRoom({ interests, onExit }) {
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
                                         lineNumber: 53,
-                                        columnNumber: 3
+                                        columnNumber: 6
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
                                         x1: "0",
@@ -3479,7 +3479,7 @@ function ChatRoom({ interests, onExit }) {
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
                                         lineNumber: 54,
-                                        columnNumber: 3
+                                        columnNumber: 6
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
                                         x1: "100",
@@ -3492,7 +3492,7 @@ function ChatRoom({ interests, onExit }) {
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
                                         lineNumber: 55,
-                                        columnNumber: 3
+                                        columnNumber: 6
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
                                         cx: "50",
@@ -3504,7 +3504,7 @@ function ChatRoom({ interests, onExit }) {
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
                                         lineNumber: 56,
-                                        columnNumber: 3
+                                        columnNumber: 6
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
                                         cx: "50",
@@ -3515,7 +3515,7 @@ function ChatRoom({ interests, onExit }) {
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
                                         lineNumber: 57,
-                                        columnNumber: 3
+                                        columnNumber: 6
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
                                         cx: "50",
@@ -3525,7 +3525,7 @@ function ChatRoom({ interests, onExit }) {
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
                                         lineNumber: 58,
-                                        columnNumber: 3
+                                        columnNumber: 6
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
                                         x: "47",
@@ -3537,7 +3537,7 @@ function ChatRoom({ interests, onExit }) {
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
                                         lineNumber: 59,
-                                        columnNumber: 3
+                                        columnNumber: 6
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
                                         x: "63",
@@ -3552,7 +3552,7 @@ function ChatRoom({ interests, onExit }) {
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
                                         lineNumber: 60,
-                                        columnNumber: 3
+                                        columnNumber: 6
                                     }, this)
                                 ]
                             }, void 0, true, {
@@ -3566,7 +3566,7 @@ function ChatRoom({ interests, onExit }) {
                             }, void 0, false, {
                                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
                                 lineNumber: 62,
-                                columnNumber: 1
+                                columnNumber: 6
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "hidden items-center gap-1.5 rounded-full border border-border/40 bg-card px-2.5 py-1 text-xs sm:flex",
