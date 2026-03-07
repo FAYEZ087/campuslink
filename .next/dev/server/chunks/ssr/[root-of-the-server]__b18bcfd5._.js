@@ -74,22 +74,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$inte
 const metadata = {
     title: 'Hallway - Meet Students Who Share Your Vibe',
     description: 'The exclusive video chat platform for verified college students. Connect instantly with peers who share your interests through secure 1-on-1 video matching.',
-    generator: 'v0.app',
     icons: {
-        icon: [
-            {
-                url: '/icon-light-32x32.png',
-                media: '(prefers-color-scheme: light)'
-            },
-            {
-                url: '/icon-dark-32x32.png',
-                media: '(prefers-color-scheme: dark)'
-            },
-            {
-                url: '/icon.svg',
-                type: 'image/svg+xml'
-            }
-        ],
+        icon: '/icon.svg',
         apple: '/apple-icon.png'
     }
 };
@@ -102,18 +88,18 @@ function RootLayout({ children }) {
                 children,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f40$vercel$2f$analytics$2f$dist$2f$next$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Analytics"], {}, void 0, false, {
                     fileName: "[project]/Downloads/hallway-integrated/v0-hallway/app/layout.tsx",
-                    lineNumber: 41,
+                    lineNumber: 27,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/Downloads/hallway-integrated/v0-hallway/app/layout.tsx",
-            lineNumber: 39,
+            lineNumber: 25,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/app/layout.tsx",
-        lineNumber: 38,
+        lineNumber: 24,
         columnNumber: 5
     }, this);
 }
