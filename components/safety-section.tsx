@@ -58,13 +58,12 @@ export function SafetySection() {
               who you're talking to. By requiring university verification, we've eliminated 
               the noise and risks found on traditional social platforms.
             </p>
-            <Button
-              variant="outline"
-              className="mt-8 border-border bg-transparent text-white hover:bg-card hover:text-white"
-            >
-              Learn about our Trust & Safety
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
+           <a href="/trust-and-safety"
+  className="mt-8 inline-flex items-center gap-2 rounded-lg border border-border bg-transparent px-6 py-3 text-sm font-medium text-white transition hover:bg-card"
+>
+  Learn about our Trust & Safety
+  <ArrowRight className="h-4 w-4" />
+</a>
           </div>
         </div>
       </div>
