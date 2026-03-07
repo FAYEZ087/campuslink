@@ -43,7 +43,7 @@ export function InterestSelection({ onStart, user, onSignOut }: InterestSelectio
   }
 
   return (
-    <div className="min-h-screen bg-[#0a0e1a] text-white">
+    <div className="flex flex-col min-h-screen bg-[#0a0e1a] text-white">
       {/* Header */}
       <header className="sticky top-0 z-10 border-b border-border/40 bg-[#0a0e1a]/95 backdrop-blur-sm px-6 py-4">
         <div className="mx-auto flex max-w-5xl items-center justify-between">
