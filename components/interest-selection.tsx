@@ -135,18 +135,21 @@ export function InterestSelection({ onStart, user, onSignOut }: InterestSelectio
             Skip — chat randomly
           </button>
         </div>
-        <p className="text-center text-xs text-muted-foreground py-3">
-            Made with 💝 by{" "}
-  
-             <a href="https://github.com/FAYEZ087"
-             target="_blank"
-             rel="noopener noreferrer"
-             className="text-primary hover:underline"
-             >
-               Fayez
-             </a>
-          </p>
       </main>
+
+      {/* Footer Text correctly pushed to the bottom */}
+      <div className="mt-auto pb-6">
+        <p className="text-center text-xs text-muted-foreground">
+          Made with 💝 by{" "}
+          <a href="https://github.com/FAYEZ087"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary hover:underline"
+          >
+            Fayez
+          </a>
+        </p>
+      </div>
     </div>
   )
 }
