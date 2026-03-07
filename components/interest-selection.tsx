@@ -134,7 +134,8 @@ export function InterestSelection({ onStart, user, onSignOut }: InterestSelectio
             className="flex h-12 items-center justify-center gap-2 rounded-xl border border-border/40 px-8 text-sm font-medium text-muted-foreground transition hover:text-white">
             Skip — chat randomly
           </button>
-          <p className="text-center text-xs text-muted-foreground py-3">
+        </div>
+        <p className="text-center text-xs text-muted-foreground py-3">
             Made with 💝 by{" "}
   
              <a href="https://github.com/FAYEZ087"
@@ -145,7 +146,6 @@ export function InterestSelection({ onStart, user, onSignOut }: InterestSelectio
                Fayez
              </a>
           </p>
-        </div>
       </main>
     </div>
   )

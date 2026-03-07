@@ -2825,33 +2825,33 @@ function InterestSelection({ onStart, user, onSignOut }) {
                                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
                                 lineNumber: 133,
                                 columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-center text-xs text-muted-foreground py-3",
-                                children: [
-                                    "Made with 💝 by",
-                                    " ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                        href: "https://github.com/FAYEZ087",
-                                        target: "_blank",
-                                        rel: "noopener noreferrer",
-                                        className: "text-primary hover:underline",
-                                        children: "Fayez"
-                                    }, void 0, false, {
-                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
-                                        lineNumber: 140,
-                                        columnNumber: 14
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
-                                lineNumber: 137,
-                                columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
                         lineNumber: 126,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "text-center text-xs text-muted-foreground py-3",
+                        children: [
+                            "Made with 💝 by",
+                            " ",
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                href: "https://github.com/FAYEZ087",
+                                target: "_blank",
+                                rel: "noopener noreferrer",
+                                className: "text-primary hover:underline",
+                                children: "Fayez"
+                            }, void 0, false, {
+                                fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
+                                lineNumber: 141,
+                                columnNumber: 14
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/interest-selection.tsx",
+                        lineNumber: 138,
                         columnNumber: 9
                     }, this)
                 ]
@@ -4148,67 +4148,69 @@ function ChatRoom({ interests, onExit }) {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "shrink-0 border-t border-border/40 bg-[#060912] px-3 py-3",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex items-center gap-2",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                            type: "text",
-                                            value: inputText,
-                                            onChange: (e)=>setInputText(e.target.value),
-                                            onKeyDown: (e)=>e.key === "Enter" && handleSend(),
-                                            placeholder: status === "connected" ? "Type a message..." : "Waiting for connection...",
-                                            disabled: status !== "connected",
-                                            className: "flex-1 rounded-xl border border-border/40 bg-card px-4 py-2.5 text-sm text-white placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 disabled:opacity-40"
-                                        }, void 0, false, {
-                                            fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                            lineNumber: 224,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                            onClick: handleSend,
-                                            disabled: status !== "connected" || !inputText.trim(),
-                                            className: "flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary text-white transition hover:bg-primary/90 disabled:opacity-30",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$send$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Send$3e$__["Send"], {
-                                                className: "h-4 w-4"
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex items-center gap-2",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                type: "text",
+                                                value: inputText,
+                                                onChange: (e)=>setInputText(e.target.value),
+                                                onKeyDown: (e)=>e.key === "Enter" && handleSend(),
+                                                placeholder: status === "connected" ? "Type a message..." : "Waiting for connection...",
+                                                disabled: status !== "connected",
+                                                className: "flex-1 rounded-xl border border-border/40 bg-card px-4 py-2.5 text-sm text-white placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 disabled:opacity-40"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                lineNumber: 235,
-                                                columnNumber: 17
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                            lineNumber: 233,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-center text-xs text-muted-foreground py-3",
-                                            children: [
-                                                "Made with 💝 by",
-                                                " ",
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                    href: "https://github.com/FAYEZ087",
-                                                    target: "_blank",
-                                                    rel: "noopener noreferrer",
-                                                    className: "text-primary hover:underline",
-                                                    children: "Fayez"
+                                                lineNumber: 224,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                onClick: handleSend,
+                                                disabled: status !== "connected" || !inputText.trim(),
+                                                className: "flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary text-white transition hover:bg-primary/90 disabled:opacity-30",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$send$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Send$3e$__["Send"], {
+                                                    className: "h-4 w-4"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                                    lineNumber: 239,
+                                                    lineNumber: 235,
                                                     columnNumber: 17
                                                 }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                            lineNumber: 237,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
-                                    lineNumber: 223,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
+                                            }, void 0, false, {
+                                                fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
+                                                lineNumber: 233,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
+                                        lineNumber: 223,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-center text-xs text-muted-foreground py-3",
+                                        children: [
+                                            "Made with 💝 by",
+                                            " ",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$hallway$2d$integrated$2f$v0$2d$hallway$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                href: "https://github.com/FAYEZ087",
+                                                target: "_blank",
+                                                rel: "noopener noreferrer",
+                                                className: "text-primary hover:underline",
+                                                children: "Fayez"
+                                            }, void 0, false, {
+                                                fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
+                                                lineNumber: 241,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
+                                        lineNumber: 239,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
                                 fileName: "[project]/Downloads/hallway-integrated/v0-hallway/components/chat-room.tsx",
                                 lineNumber: 222,
                                 columnNumber: 11
