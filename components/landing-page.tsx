@@ -1,15 +1,15 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { ArrowRight, Shield, Zap, Users, CheckCircle, Moon, Sun } from "lucide-react"
+import { ArrowRight, Shield, Zap, Users, CheckCircle, Moon, Sun, MonitorPlay, HeartHandshake, ShieldCheck } from "lucide-react"
 
-function HallwayIcon({ size = 40 }: { size?: number }) {
+function HallwayIcon({ size = 40, className = "" }: { size?: number, className?: string }) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width={size} height={size} fill="none">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width={size} height={size} fill="none" className={className}>
       <defs>
         <radialGradient id="bgGradLP" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stopColor="#1a1a1a" />
-          <stop offset="100%" stopColor="#0d0d0d" />
+          <stop offset="0%" stopColor="currentColor" stopOpacity="0.15" />
+          <stop offset="100%" stopColor="currentColor" stopOpacity="0.05" />
         </radialGradient>
         <filter id="glowLP" x="-30%" y="-30%" width="160%" height="160%">
           <feGaussianBlur stdDeviation="3" result="coloredBlur" />
@@ -17,20 +17,20 @@ function HallwayIcon({ size = 40 }: { size?: number }) {
         </filter>
       </defs>
       <rect width="100" height="100" rx="22" fill="url(#bgGradLP)" />
-      <polygon points="0,0 0,100 26,78 26,22" fill="#181818" />
-      <polygon points="100,0 100,100 74,78 74,22" fill="#202020" />
-      <polygon points="0,0 100,0 74,22 26,22" fill="#161616" />
-      <polygon points="0,100 100,100 74,78 26,78" fill="#141414" />
-      <rect x="26" y="22" width="48" height="56" fill="#111111" stroke="#2a2a2a" strokeWidth="1.2" />
-      <line x1="0" y1="0" x2="50" y2="50" stroke="#00c896" strokeWidth="0.8" opacity="0.3" />
-      <line x1="100" y1="0" x2="50" y2="50" stroke="#00c896" strokeWidth="0.8" opacity="0.3" />
-      <line x1="0" y1="100" x2="50" y2="50" stroke="#00c896" strokeWidth="0.8" opacity="0.3" />
-      <line x1="100" y1="100" x2="50" y2="50" stroke="#00c896" strokeWidth="0.8" opacity="0.3" />
-      <ellipse cx="50" cy="50" rx="3.5" ry="4.5" fill="#00c896" opacity="0.6" filter="url(#glowLP)" />
-      <ellipse cx="50" cy="50" rx="1.5" ry="2" fill="#00c896" />
-      <circle cx="50" cy="43" r="3.5" fill="#00c896" />
-      <rect x="47" y="47.5" width="6" height="10" rx="1.5" fill="#00c896" />
-      <rect x="63" y="40" width="9" height="22" rx="1.5" fill="none" stroke="#00c896" strokeWidth="1" opacity="0.5" />
+      <polygon points="0,0 0,100 26,78 26,22" fill="currentColor" opacity="0.1" />
+      <polygon points="100,0 100,100 74,78 74,22" fill="currentColor" opacity="0.15" />
+      <polygon points="0,0 100,0 74,22 26,22" fill="currentColor" opacity="0.08" />
+      <polygon points="0,100 100,100 74,78 26,78" fill="currentColor" opacity="0.05" />
+      <rect x="26" y="22" width="48" height="56" fill="currentColor" opacity="0.03" stroke="currentColor" strokeWidth="1.2" />
+      <line x1="0" y1="0" x2="50" y2="50" stroke="currentColor" strokeWidth="0.8" opacity="0.3" />
+      <line x1="100" y1="0" x2="50" y2="50" stroke="currentColor" strokeWidth="0.8" opacity="0.3" />
+      <line x1="0" y1="100" x2="50" y2="50" stroke="currentColor" strokeWidth="0.8" opacity="0.3" />
+      <line x1="100" y1="100" x2="50" y2="50" stroke="currentColor" strokeWidth="0.8" opacity="0.3" />
+      <ellipse cx="50" cy="50" rx="3.5" ry="4.5" fill="currentColor" opacity="0.6" filter="url(#glowLP)" />
+      <ellipse cx="50" cy="50" rx="1.5" ry="2" fill="currentColor" />
+      <circle cx="50" cy="43" r="3.5" fill="currentColor" />
+      <rect x="47" y="47.5" width="6" height="10" rx="1.5" fill="currentColor" />
+      <rect x="63" y="40" width="9" height="22" rx="1.5" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.5" />
     </svg>
   )
 }
@@ -43,7 +43,6 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
   const [onlineCount, setOnlineCount] = useState(0)
 
   useEffect(() => {
-    // Animate counter
     let count = 0
     const target = 128
     const timer = setInterval(() => {
@@ -54,148 +53,235 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
     return () => clearInterval(timer)
   }, [])
 
-  const dark = darkMode
-
   return (
-    <div className={`min-h-dvh ${dark ? "bg-[#0a0a0a] text-white" : "bg-[#eef2ee] text-[#0d1a0d]"}`}
-      style={{ fontFamily: "'DM Sans', sans-serif", transition: "background 0.3s, color 0.3s" }}>
-
+    <div className="min-h-dvh bg-background text-foreground transition-colors duration-300 font-sans">
       {/* Ambient glow */}
       <div className="pointer-events-none fixed inset-0 overflow-hidden">
-        <div className="absolute -top-40 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full opacity-20 blur-3xl"
-          style={{ background: "radial-gradient(circle, #00c896, transparent)" }} />
+        <div className="absolute -top-40 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-primary/20 blur-[100px]" />
       </div>
 
       {/* Navbar */}
-      <nav className={`sticky top-0 z-50 border-b px-6 py-4 backdrop-blur-md ${dark ? "border-white/5 bg-[#0a0a0a]/80" : "border-black/15 bg-[#eef2ee]/90"}`}>
-        <div className="mx-auto flex max-w-5xl items-center justify-between">
-          <div className="flex items-center gap-3">
-            <HallwayIcon size={32} />
-            <span className="text-lg font-bold">
-              hall<span style={{ color: "#00c896" }}>way</span>
+      <nav className="sticky top-0 z-50 border-b border-border/40 bg-background/80 backdrop-blur-md px-6 py-4">
+        <div className="mx-auto flex max-w-6xl items-center justify-between">
+          <div className="flex items-center gap-3 cursor-pointer">
+            <HallwayIcon size={32} className="text-primary" />
+            <span className="text-xl font-bold tracking-tight">
+              hall<span className="text-primary">way</span>
             </span>
           </div>
-          <div className="flex items-center gap-3">
-            <div className={`flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-medium ${dark ? "bg-white/5" : "bg-black/5"}`}>
-              <div className="h-1.5 w-1.5 animate-pulse rounded-full bg-[#00c896]" />
-              <span className={dark ? "text-white/60" : "text-black/50"}>{onlineCount} online now</span>
+
+          <div className="hidden md:flex items-center gap-8 text-sm font-medium text-foreground/70">
+            <a href="#features" className="hover:text-foreground transition-colors">Features</a>
+            <a href="#safety" className="hover:text-foreground transition-colors">Safety</a>
+            <a href="#community" className="hover:text-foreground transition-colors">Community</a>
+          </div>
+
+          <div className="flex items-center gap-4">
+            <div className="hidden sm:flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-medium bg-secondary/30">
+              <div className="h-1.5 w-1.5 animate-pulse rounded-full bg-success" />
+              <span className="text-foreground/80">{onlineCount} online now</span>
             </div>
-            <button onClick={() => setDarkMode(!dark)}
-              className={`flex h-8 w-8 items-center justify-center rounded-full transition ${dark ? "bg-white/10 text-white hover:bg-white/20" : "bg-black/10 text-black hover:bg-black/20"}`}>
-              {dark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+            
+            <button onClick={() => setDarkMode(!darkMode)}
+              className="flex h-9 w-9 items-center justify-center rounded-full hover:bg-secondary transition-colors text-foreground/80">
+              {darkMode ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
             </button>
-            <button onClick={onGetStarted}
-              className="rounded-full px-5 py-2 text-sm font-semibold text-black transition hover:opacity-90"
-              style={{ background: "#00c896" }}>
-              Get Started
-            </button>
+
+            <div className="flex items-center gap-2">
+              <button onClick={onGetStarted} className="hidden sm:block px-4 py-2 text-sm font-semibold hover:text-primary transition-colors">
+                Log in
+              </button>
+              <button onClick={onGetStarted}
+                className="rounded-full bg-primary px-5 py-2.5 text-sm font-bold text-primary-foreground shadow-lg shadow-primary/20 transition hover:bg-primary/90">
+                Join Now
+              </button>
+            </div>
           </div>
         </div>
       </nav>
 
       {/* Hero */}
-      <section className="mx-auto max-w-5xl px-6 pb-20 pt-24 text-center">
-        <div className={`mb-4 inline-flex items-center gap-2 rounded-full border px-4 py-1.5 text-xs font-medium ${dark ? "border-[#00c896]/30 bg-[#00c896]/10 text-[#00c896]" : "border-[#00c896]/40 bg-[#00c896]/10 text-[#008c6a]"}`}>
-          <Shield className="h-3 w-3" />
-          Exclusive for verified college students
+      <section className="relative mx-auto max-w-6xl px-6 pb-24 pt-32 text-center lg:py-40">
+        <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary shadow-sm">
+          <ShieldCheck className="h-4 w-4" />
+          🛡️ Verified Students Only
         </div>
 
-        <h1 className="mt-6 text-6xl font-bold leading-tight tracking-tight">
+        <h1 className="mx-auto max-w-4xl text-5xl font-extrabold tracking-tight sm:text-7xl lg:leading-[1.1]">
           Meet students who<br />
-          <span style={{ color: "#00c896" }}>share your vibe.</span>
+          <span className="bg-gradient-to-r from-primary to-[#A0A5EB] bg-clip-text text-transparent drop-shadow-sm">
+            share your vibe.
+          </span>
         </h1>
 
-        <p className={`mx-auto mt-6 max-w-xl text-lg leading-relaxed ${dark ? "text-white/50" : "text-black/50"}`}>
-          Random 1-on-1 video chat exclusively for college students.
-          No bots, no randos — just verified peers from campuses worldwide.
+        <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-foreground/60 sm:text-xl">
+          Random 1-on-1 video chat exclusively for verified college students.
+          No bots, no randos — just genuine peers from campuses worldwide.
         </p>
 
-        <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+        <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">
           <button onClick={onGetStarted}
-            className="flex h-14 items-center gap-2 rounded-2xl px-10 text-base font-semibold text-black shadow-xl transition hover:opacity-90"
-            style={{ background: "#00c896", boxShadow: "0 8px 32px rgba(0,200,150,0.35)" }}>
+            className="group flex h-14 items-center gap-2 rounded-full bg-primary px-8 text-lg font-bold text-primary-foreground shadow-xl shadow-primary/25 transition-all hover:scale-105 hover:bg-primary/90">
             Start Chatting Free
-            <ArrowRight className="h-5 w-5" />
+            <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
           </button>
-          <div className={`flex items-center gap-2 text-sm ${dark ? "text-white/40" : "text-black/40"}`}>
-            <CheckCircle className="h-4 w-4 text-[#00c896]" />
-            No download needed
+          
+          <div className="flex items-center gap-2 text-sm font-medium text-foreground/50">
+            <CheckCircle className="h-5 w-5 text-success" />
+            No download required
           </div>
         </div>
-
-        {/* Social proof */}
-        <div className={`mt-8 flex items-center justify-center gap-2 text-sm ${dark ? "text-white/30" : "text-black/30"}`}>
-          <div className="flex -space-x-2">
-            {["#3b82f6","#ef4444","#a855f7","#f59e0b"].map((c, i) => (
-              <div key={i} className="h-7 w-7 rounded-full border-2 flex items-center justify-center text-xs font-bold text-white"
-                style={{ borderColor: dark ? "#0a0a0a" : "#f4f7f4", background: c }}>
+        
+        {/* Social proof embedded inside Hero */}
+        <div className="mt-16 flex items-center justify-center gap-3 text-sm text-foreground/50">
+          <div className="flex -space-x-3">
+            {["#1F2140","#30335C","#7C83FF","#5B62D1"].map((c, i) => (
+              <div key={i} className="h-9 w-9 rounded-full border-2 border-background flex items-center justify-center text-xs font-bold text-white shadow-sm"
+                style={{ background: c }}>
                 {["A","K","P","R"][i]}
               </div>
             ))}
           </div>
-          <span>Join students from KIIT, IIT, VIT and more</span>
+          <span>Join students from <strong className="text-foreground/80 font-semibold">KIIT, IIT, VIT</strong> & more</span>
+        </div>
+      </section>
+
+      {/* Stats Bar */}
+      <section className="border-y border-border/40 bg-secondary/10">
+        <div className="mx-auto grid max-w-6xl grid-cols-2 gap-8 px-6 py-12 sm:grid-cols-4 sm:py-16 text-center">
+          {[
+            { metric: "250K+", label: "Verified Users" },
+            { metric: "800+", label: "Universities" },
+            { metric: "35K+", label: "Daily Matches" },
+            { metric: "100%", label: "Safe & Secure" },
+          ].map((stat, i) => (
+            <div key={i}>
+              <div className="text-3xl font-extrabold text-primary sm:text-4xl">{stat.metric}</div>
+              <div className="mt-2 text-sm font-medium text-foreground/60">{stat.label}</div>
+            </div>
+          ))}
         </div>
       </section>
 
       {/* Features */}
-      <section className={`border-y px-6 py-20 ${dark ? "border-white/5 bg-white/[0.02]" : "border-black/15 bg-[#e5ece5]"}`}>
-        <div className="mx-auto max-w-5xl">
-          <h2 className="mb-12 text-center text-3xl font-bold">Why Hallway?</h2>
-          <div className="grid gap-6 sm:grid-cols-3">
+      <section id="features" className="px-6 py-24 sm:py-32">
+        <div className="mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold sm:text-4xl bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-transparent">Designed for the Student Experience</h2>
+            <p className="mt-4 text-lg text-foreground/60">Everything you need to make genuine connections gracefully.</p>
+          </div>
+          
+          <div className="grid gap-8 sm:grid-cols-3">
             {[
-              { icon: Shield, title: "Verified Students Only", desc: "Sign in with your college email. Every user is a real, verified student — no exceptions.", color: "#00c896" },
-              { icon: Zap, title: "Instant Matching", desc: "Get matched in seconds based on shared interests. No endless waiting, no empty rooms.", color: "#3b82f6" },
-              { icon: Users, title: "Interest-Based", desc: "Pick what you're into — CS, music, gaming, fitness — and meet students who get it.", color: "#a855f7" },
-            ].map(({ icon: Icon, title, desc, color }) => (
-              <div key={title} className={`rounded-2xl border p-6 transition ${dark ? "border-white/8 bg-white/3 hover:border-white/15" : "border-black/20 bg-white hover:border-black/30 shadow-sm"}`}>
-                <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl"
-                  style={{ background: color + "20" }}>
-                  <Icon className="h-5 w-5" style={{ color }} />
+              { icon: Shield, title: "Verified Identity", desc: "Rigorous .edu email validation ensures every user is a real, verified student. Zero exceptions.", color: "text-primary", bg: "bg-primary/10" },
+              { icon: MonitorPlay, title: "Instant High-Def Matching", desc: "Jump into crystal clear video calls in seconds based on shared interests. No endless waiting.", color: "text-[#A0A5EB]", bg: "bg-[#A0A5EB]/10" },
+              { icon: HeartHandshake, title: "Curated Interests", desc: "Pick what you're into — CS, music, gaming, fitness — and let the algorithm do the rest.", color: "text-foreground", bg: "bg-secondary" },
+            ].map(({ icon: Icon, title, desc, color, bg }) => (
+              <div key={title} className="group rounded-3xl border border-border/50 bg-card p-8 transition-all hover:border-primary/40 hover:shadow-2xl hover:shadow-primary/5 hover:-translate-y-1">
+                <div className={`mb-6 flex h-14 w-14 items-center justify-center rounded-2xl ${bg}`}>
+                  <Icon className={`h-7 w-7 ${color}`} />
                 </div>
-                <h3 className="mb-2 font-semibold">{title}</h3>
-                <p className={`text-sm leading-relaxed ${dark ? "text-white/40" : "text-black/50"}`}>{desc}</p>
+                <h3 className="mb-3 text-xl font-bold tracking-tight">{title}</h3>
+                <p className="text-base leading-relaxed text-foreground/60">{desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* How it works */}
-      <section className="mx-auto max-w-5xl px-6 py-20">
-        <h2 className="mb-12 text-center text-3xl font-bold">How it works</h2>
-        <div className="grid gap-8 sm:grid-cols-3">
+      {/* Steps */}
+      <section id="safety" className="mx-auto max-w-6xl px-6 py-24 border-t border-border/40">
+        <h2 className="mb-16 text-center text-3xl font-bold sm:text-4xl">How to join the community</h2>
+        <div className="grid gap-12 sm:grid-cols-3">
           {[
-            { step: "01", title: "Verify your email", desc: "Enter your college email. We send a magic link — click it and you're in." },
-            { step: "02", title: "Pick your vibe", desc: "Select interests from CS to coffee chats. The more you pick, the better your matches." },
-            { step: "03", title: "Start chatting", desc: "Instantly matched with a verified student. Don't vibe? Hit next." },
+            { step: "01", title: "Verify your email", desc: "Enter your official college email. We'll send a magic secure link straight to your inbox." },
+            { step: "02", title: "Pick your vibe", desc: "Select tags from your major to your hobbies. The more you pick, the deeper the match." },
+            { step: "03", title: "Drop into the hallway", desc: "Instantly connected with a verified peer. If the energy isn't right, just hit next." },
           ].map(({ step, title, desc }) => (
-            <div key={step} className="relative">
-              <div className="mb-3 text-4xl font-bold" style={{ color: "#00c896", opacity: 0.3 }}>{step}</div>
-              <h3 className="mb-2 font-semibold">{title}</h3>
-              <p className={`text-sm leading-relaxed ${dark ? "text-white/40" : "text-black/50"}`}>{desc}</p>
+            <div key={step} className="relative group">
+              <div className="absolute -left-4 -top-8 text-8xl font-black text-primary/5 transition-colors group-hover:text-primary/10 select-none pointer-events-none">{step}</div>
+              <div className="relative z-10">
+                <h3 className="mb-3 text-xl font-bold">{title}</h3>
+                <p className="text-base leading-relaxed text-foreground/60">{desc}</p>
+              </div>
             </div>
           ))}
         </div>
       </section>
 
       {/* CTA banner */}
-      <section className="px-6 py-16">
-        <div className="mx-auto max-w-3xl rounded-3xl p-12 text-center text-black"
-          style={{ background: "linear-gradient(135deg, #00c896, #00a87a)" }}>
-          <h2 className="mb-3 text-4xl font-bold">Ready to meet your people?</h2>
-          <p className="mb-8 text-black/60">Free forever. Verified students only. No downloads.</p>
-          <button onClick={onGetStarted}
-            className="rounded-2xl bg-black/90 px-10 py-4 text-base font-semibold text-white transition hover:bg-black">
-            Start Chatting Now →
-          </button>
+      <section className="px-6 py-20 lg:py-32">
+        <div className="mx-auto max-w-5xl overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-primary to-[#5B62D1] p-12 text-center text-primary-foreground shadow-2xl relative">
+          <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay"></div>
+          <div className="relative z-10">
+            <h2 className="mb-6 text-4xl font-extrabold tracking-tight sm:text-5xl">Ready to meet your people?</h2>
+            <p className="mb-10 text-lg sm:text-xl font-medium opacity-90">Free forever. Only verified students. Zero downloads required.</p>
+            <button onClick={onGetStarted}
+              className="rounded-full bg-background px-10 py-4 text-lg font-bold text-foreground shadow-2xl transition-transform hover:scale-105">
+              Start Chatting Now
+            </button>
+          </div>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className={`border-t px-6 py-8 text-center text-sm ${dark ? "border-white/5 text-white/20" : "border-black/15 text-black/40"}`}>
-        <div className="flex items-center justify-center gap-2">
-          <HallwayIcon size={20} />
-          <span>hallway · college video chat · {new Date().getFullYear()}</span>
+      {/* Footer (4-Column Layout) */}
+      <footer id="community" className="border-t border-border bg-card/60 pt-20 pb-10">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="grid gap-12 sm:grid-cols-2 md:grid-cols-4 lg:gap-8">
+            
+            {/* Brand Column */}
+            <div className="col-span-1 md:col-span-1">
+              <div className="flex items-center gap-2 mb-6">
+                <HallwayIcon size={28} className="text-primary" />
+                <span className="text-xl font-bold tracking-tight">hallway</span>
+              </div>
+              <p className="text-sm leading-relaxed text-muted-foreground mb-6">
+                The exclusive 1-on-1 video chat platform for verified college students worldwide.
+              </p>
+            </div>
+
+            {/* Product Column */}
+            <div>
+              <h4 className="mb-6 text-sm font-semibold text-foreground">Product</h4>
+              <ul className="space-y-4 text-sm text-foreground/60">
+                <li><a href="#features" className="hover:text-primary transition-colors">Features</a></li>
+                <li><a href="#safety" className="hover:text-primary transition-colors">Safety Guidelines</a></li>
+                <li><a href="#community" className="hover:text-primary transition-colors">Community</a></li>
+                <li><a href="#" className="hover:text-primary transition-colors">Premium (Coming Soon)</a></li>
+              </ul>
+            </div>
+
+            {/* Legal Column */}
+            <div>
+              <h4 className="mb-6 text-sm font-semibold text-foreground">Legal</h4>
+              <ul className="space-y-4 text-sm text-foreground/60">
+                <li><a href="#" className="hover:text-primary transition-colors">Privacy Policy</a></li>
+                <li><a href="#" className="hover:text-primary transition-colors">Terms of Service</a></li>
+                <li><a href="#" className="hover:text-primary transition-colors">Trust & Safety Options</a></li>
+                <li><a href="#" className="hover:text-primary transition-colors">Cookie Policy</a></li>
+              </ul>
+            </div>
+
+            {/* Support Column */}
+            <div>
+              <h4 className="mb-6 text-sm font-semibold text-foreground">Support</h4>
+              <ul className="space-y-4 text-sm text-foreground/60">
+                <li><a href="#" className="hover:text-primary transition-colors">Help Center</a></li>
+                <li><a href="#" className="hover:text-primary transition-colors">Contact Us</a></li>
+                <li><a href="#" className="hover:text-primary transition-colors">Report an Issue</a></li>
+                <li><a href="#" className="hover:text-primary transition-colors">Twitter Support</a></li>
+              </ul>
+            </div>
+            
+          </div>
+          
+          {/* Bottom Row */}
+          <div className="mt-20 flex flex-col items-center justify-between border-t border-border/60 pt-8 sm:flex-row text-xs text-foreground/40">
+            <p>© {new Date().getFullYear()} Hallway. All rights reserved.</p>
+            <p className="mt-4 sm:mt-0 flex items-center gap-1">
+              Made with <HeartHandshake className="h-3 w-3 text-destructive" /> by Fayez
+            </p>
+          </div>
         </div>
       </footer>
     </div>
