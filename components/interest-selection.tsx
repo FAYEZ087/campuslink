@@ -38,7 +38,7 @@ function HallwayIcon({ size = 32 }: { size?: number }) {
           <stop offset="100%" stopColor="#0d0d0d" />
         </radialGradient>
       </defs>
-      <rect width="100" height="100" rx="22" fill="url(#bgGradIS)" />
+      <rect width="100" height="100" rx="50" fill="url(#bgGradIS)" />
       <polygon points="0,0 0,100 26,78 26,22" fill="#181818" />
       <polygon points="100,0 100,100 74,78 74,22" fill="#202020" />
       <polygon points="0,0 100,0 74,22 26,22" fill="#161616" />
@@ -76,15 +76,17 @@ export function InterestSelection({ onStart, user, onSignOut, darkMode, setDarkM
   }
 
   return (
-    <div className={`min-h-dvh ${dark ? "bg-[#0a0a0a] text-white" : "bg-[#eef2ee] text-[#0d1a0d]"}`}
+    <div className="min-h-dvh bg-background text-foreground transition-colors duration-300"
       style={{ fontFamily: "'DM Sans', sans-serif" }}>
 
       {/* Header */}
-      <header className={`sticky top-0 z-10 border-b px-6 py-4 backdrop-blur-md ${dark ? "border-white/5 bg-[#0a0a0a]/80" : "border-black/15 bg-[#eef2ee]/80"}`}>
+      <header className="sticky top-0 z-10 border-b border-border/40 px-6 py-4 backdrop-blur-md bg-background/80">
         <div className="mx-auto flex max-w-4xl items-center justify-between">
           <div className="flex items-center gap-3">
             <HallwayIcon size={32} />
-            <span className="text-lg font-bold">hall<span style={{ color: "#00c896" }}>way</span></span>
+            <span className="text-lg font-bold">
+              <span className="text-foreground">hall</span><span style={{ color: "#00c896" }}>way</span>
+            </span>
           </div>
           <div className="flex items-center gap-3">
             <button onClick={() => setDarkMode(!dark)}

@@ -18,8 +18,8 @@ function HallwayIcon({ size = 64 }: { size?: number }) {
           <stop offset="100%" stopColor="#0d0d0d" />
         </radialGradient>
       </defs>
-      <rect width="100" height="100" rx="22" fill="url(#bgGrad-auth)" />
-      <rect width="100" height="100" rx="22" fill="none" stroke="#222222" strokeWidth="1" />
+      <rect width="100" height="100" rx="50" fill="url(#bgGrad-auth)" />
+      <rect width="100" height="100" rx="50" fill="none" stroke="#222222" strokeWidth="1" />
       <polygon points="0,0 0,100 26,78 26,22" fill="#181818" />
       <polygon points="100,0 100,100 74,78 74,22" fill="#202020" />
       <polygon points="0,0 100,0 74,22 26,22" fill="#161616" />

@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import { Inter, Space_Mono } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/next'
+
 import './globals.css'
 import { DM_Sans } from 'next/font/google'
 const dmSans = DM_Sans({ subsets: ['latin'], variable: '--font-dm-sans' })
@@ -30,10 +30,9 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <body suppressHydrationWarning className={`${dmSans.variable}${_inter.variable} ${_spaceMono.variable} font-sans antialiased`}>
         {children}
-        <Analytics />
       </body>
     </html>
   )

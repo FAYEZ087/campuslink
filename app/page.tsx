@@ -27,6 +27,14 @@ export default function Home() {
     return () => subscription.unsubscribe()
   }, [])
 
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add("dark")
+    } else {
+      document.documentElement.classList.remove("dark")
+    }
+  }, [darkMode])
+
   async function handleSignOut() {
     const supabase = createClient()
     await supabase.auth.signOut()
@@ -47,7 +55,7 @@ export default function Home() {
 
   if (screen === "loading") {
     return (
-      <div className="flex min-h-dvh items-center justify-center bg-[#0a0a0a]">
+      <div className="flex min-h-dvh items-center justify-center bg-[#1A2238]">
         <div className="h-8 w-8 animate-spin rounded-full border-2"
           style={{ borderColor: "#00c896", borderTopColor: "transparent" }} />
       </div>

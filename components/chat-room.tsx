@@ -13,7 +13,7 @@ function HallwayIcon({ size = 28 }: { size?: number }) {
           <stop offset="100%" stopColor="#0d0d0d" />
         </radialGradient>
       </defs>
-      <rect width="100" height="100" rx="22" fill="url(#bgGradCR)" />
+      <rect width="100" height="100" rx="50" fill="url(#bgGradCR)" />
       <polygon points="0,0 0,100 26,78 26,22" fill="#181818" />
       <polygon points="100,0 100,100 74,78 74,22" fill="#202020" />
       <polygon points="0,0 100,0 74,22 26,22" fill="#161616" />
@@ -61,15 +61,17 @@ export function ChatRoom({ interests, onExit, darkMode, setDarkMode }: ChatRoomP
   function handleReport(reason: string) { setShowReport(false); report(reason) }
 
   return (
-    <div className={`flex h-dvh flex-col ${dark ? "bg-[#0a0a0a] text-white" : "bg-[#eef2ee] text-[#0d1a0d]"}`}
+    <div className="flex h-dvh flex-col bg-background text-foreground transition-colors duration-300"
       style={{ fontFamily: "'DM Sans', sans-serif" }}>
 
       {/* Header */}
-      <header className={`flex shrink-0 items-center justify-between border-b px-4 py-3 ${dark ? "border-white/5 bg-[#0d0d0d]" : "border-black/20 bg-white shadow-sm"}`}>
+      <header className="flex shrink-0 items-center justify-between border-b border-border/40 px-4 py-3 bg-background/80 backdrop-blur-md">
         <div className="flex items-center gap-3">
           <HallwayIcon size={28} />
-          <span className="font-bold">hall<span style={{ color: "#00c896" }}>way</span></span>
-          <div className={`hidden items-center gap-1.5 rounded-full px-2.5 py-1 text-xs sm:flex ${dark ? "bg-white/5" : "bg-black/5"}`}>
+          <span className="font-bold">
+            <span className="text-foreground">hall</span><span style={{ color: "#00c896" }}>way</span>
+          </span>
+          <div className="hidden items-center gap-1.5 rounded-full px-2.5 py-1 text-xs sm:flex bg-secondary/30">
             <div className="h-1.5 w-1.5 animate-pulse rounded-full bg-[#00c896]" />
             <Users className="h-3 w-3 opacity-50" />
             <span className="opacity-50">{onlineCount || "..."} online</span>
@@ -111,7 +113,7 @@ export function ChatRoom({ interests, onExit, darkMode, setDarkMode }: ChatRoomP
           <div className="grid min-h-0 flex-1 grid-cols-2 gap-3">
 
             {/* Your video */}
-            <div className={`relative overflow-hidden rounded-2xl ${dark ? "bg-[#161616]" : "bg-[#e8ece8]"}`}>
+            <div className="relative overflow-hidden rounded-2xl bg-card border border-border/20">
               {localStream ? (
                 <video ref={localVideoRef} autoPlay muted playsInline className="h-full w-full object-cover" />
               ) : (
@@ -143,7 +145,7 @@ export function ChatRoom({ interests, onExit, darkMode, setDarkMode }: ChatRoomP
             </div>
 
             {/* Stranger video */}
-            <div className={`relative overflow-hidden rounded-2xl ${dark ? "bg-[#161616]" : "bg-[#e8ece8]"}`}>
+            <div className="relative overflow-hidden rounded-2xl bg-card border border-border/20">
               {remoteStream ? (
                 <video ref={remoteVideoRef} autoPlay playsInline className="h-full w-full object-cover" />
               ) : (
@@ -172,7 +174,7 @@ export function ChatRoom({ interests, onExit, darkMode, setDarkMode }: ChatRoomP
           </div>
 
           {/* Bottom controls */}
-          <div className={`flex shrink-0 items-center justify-between rounded-2xl border px-4 py-3 ${dark ? "border-white/5 bg-[#111]" : "border-black/15 bg-white"}`}>
+          <div className="flex shrink-0 items-center justify-between rounded-2xl border border-border/40 px-4 py-3 bg-card/60">
             <div className="relative">
               <button onClick={() => setShowReport(!showReport)}
                 className={`flex items-center gap-1.5 rounded-xl border px-3 py-2 text-xs font-medium transition hover:border-red-500/30 hover:text-red-400 ${dark ? "border-white/10 bg-white/5" : "border-black/10 bg-black/5"}`}>
@@ -210,7 +212,7 @@ export function ChatRoom({ interests, onExit, darkMode, setDarkMode }: ChatRoomP
         </div>
 
         {/* Right — Chat panel */}
-        <div className={`flex w-full shrink-0 flex-col border-t md:w-80 md:border-l md:border-t-0 lg:w-96 ${dark ? "border-white/5" : "border-black/8"}`}>
+        <div className="flex w-full shrink-0 flex-col border-t md:w-80 md:border-l md:border-t-0 lg:w-96 border-border/40">
 
           {/* Chat header */}
           <div className={`flex shrink-0 items-center justify-between border-b px-4 py-3 ${dark ? "border-white/5 bg-[#0d0d0d]" : "border-black/20 bg-white shadow-sm"}`}>
@@ -249,7 +251,7 @@ export function ChatRoom({ interests, onExit, darkMode, setDarkMode }: ChatRoomP
           </div>
 
           {/* Input */}
-          <div className={`shrink-0 border-t px-3 py-3 ${dark ? "border-white/5 bg-[#0d0d0d]" : "border-black/20 bg-white shadow-sm"}`}>
+          <div className="shrink-0 border-t border-border/40 px-3 py-3 bg-card/40">
             <div className="flex items-center gap-2">
               <input
                 type="text"
@@ -258,10 +260,7 @@ export function ChatRoom({ interests, onExit, darkMode, setDarkMode }: ChatRoomP
                 onKeyDown={(e) => e.key === "Enter" && handleSend()}
                 placeholder={status === "connected" ? "Type a message..." : "Waiting for connection..."}
                 disabled={status !== "connected"}
-                className={`flex-1 rounded-xl border px-4 py-2.5 text-sm outline-none transition disabled:opacity-40 ${dark
-                  ? "border-white/8 bg-white/5 text-white placeholder:text-white/25 focus:border-[#00c896]/50"
-                  : "border-black/8 bg-black/5 text-black placeholder:text-black/25 focus:border-[#00c896]/50"
-                }`}
+                className="flex-1 rounded-xl border border-border/40 bg-background/50 px-4 py-2.5 text-sm outline-none transition disabled:opacity-40 focus:ring-2 focus:ring-primary/20"
               />
               <button onClick={handleSend} disabled={status !== "connected" || !inputText.trim()}
                 className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-black transition hover:opacity-90 disabled:opacity-30"
