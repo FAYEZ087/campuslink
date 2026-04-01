@@ -5,7 +5,14 @@ import { io, Socket } from "socket.io-client"
 
 export type MatchStatus = "idle" | "waiting" | "connected"
 
-const SERVER_URL = "https://campuslink-server-1.onrender.com"
+export interface LiveStats {
+  onlineNow: number
+  totalConnections: number
+  totalMatches: number
+  matchesToday: number
+}
+
+export const SERVER_URL = "https://campuslink-server-1.onrender.com"
 
 export function useSocket(interests: string[]) {
   const socketRef = useRef<Socket | null>(null)
@@ -168,7 +175,7 @@ export function useSocket(interests: string[]) {
     const socket = io(SERVER_URL)
     socketRef.current = socket
 
-    socket.on("online-count", (count: number) => setOnlineCount(count))
+    socket.on("live-stats", (stats: LiveStats) => setOnlineCount(stats.onlineNow))
     socket.on("waiting", () => setStatus("waiting"))
 
     socket.on("match-found", async ({ partnerId, isInitiator, sharedInterests }) => {

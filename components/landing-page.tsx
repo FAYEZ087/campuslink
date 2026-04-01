@@ -5,8 +5,9 @@ import {
   ArrowRight, Shield, Zap, Users, CheckCircle, Moon, Sun, MonitorPlay,
   HeartHandshake, ShieldCheck, BookOpen, MapPin, MoonStar, CalendarDays,
   Trophy, AlertTriangle, Lock, X, Flag, Mail, HelpCircle, FileText,
-  Cookie, Scale, MessageCircle, Flame, Instagram
+  Cookie, Scale, MessageCircle, Flame, Instagram, Wifi
 } from "lucide-react"
+import { useLiveStats } from "@/hooks/useLiveStats"
 
 function HallwayIcon({ size = 40, className = "" }: { size?: number, className?: string }) {
   return (
@@ -49,11 +50,11 @@ const MODAL_CONTENT: Record<string, { title: string; icon: React.ElementType; bo
       <div className="space-y-6 text-foreground/80 text-[15px] leading-relaxed">
         <p>Hallway is packed with features designed to help verified college students connect in meaningful ways.</p>
         <ul className="list-disc pl-5 space-y-3">
-          <li><strong>Verified-Only Access</strong> — Every user is authenticated through their .edu email. No exceptions.</li>
+          <li><strong>Verified-Only Access</strong> — Every user is authenticated through their .edu, .ac.in, or .in email. No exceptions.</li>
           <li><strong>Interest-Based Matching</strong> — Select topics you care about and get matched with peers who share them.</li>
           <li><strong>HD Video Chat</strong> — Crystal clear, low-latency video calls powered by WebRTC.</li>
           <li><strong>Study Together Mode</strong> — Find accountability partners and study buddies in real-time.</li>
-          <li><strong>Campus Filters</strong> — Choose to match with students from your own university or go global.</li>
+          <li><strong>Campus Filters</strong> — Choose to match with students from your own university or across India.</li>
           <li><strong>Night Owl Badge</strong> — Earn badges for late-night activity and more.</li>
           <li><strong>Events & Hackathons</strong> — Discover student-run events and hackathons near you.</li>
           <li><strong>Streaks & Badges</strong> — Gamify your experience with connection streaks and achievement badges.</li>
@@ -98,9 +99,7 @@ const MODAL_CONTENT: Record<string, { title: string; icon: React.ElementType; bo
         <p>Want to bring Hallway to your campus? Join our ambassador program and help grow the community. Ambassadors get early access to features, exclusive swag, and a direct line to our team.</p>
         <h4 className="font-bold text-foreground text-lg mt-4">By the Numbers</h4>
         <ul className="list-disc pl-5 space-y-2">
-          <li>250K+ verified student users</li>
-          <li>800+ universities worldwide</li>
-          <li>35K+ daily matches</li>
+          <li>Real-time stats displayed on the homepage</li>
           <li>Growing every single day</li>
         </ul>
         <p className="mt-4">Got feedback? We'd love to hear from you. Reach out at <strong className="text-primary">hello@hallwaychat.online</strong></p>
@@ -115,7 +114,7 @@ const MODAL_CONTENT: Record<string, { title: string; icon: React.ElementType; bo
         <p className="text-foreground/50 text-sm">Last updated: March 30, 2026</p>
         <h4 className="font-bold text-foreground text-lg">1. Information We Collect</h4>
         <ul className="list-disc pl-5 space-y-2">
-          <li><strong>Account Data:</strong> Your .edu email address, display name, and selected interests.</li>
+          <li><strong>Account Data:</strong> Your .edu, .ac.in, or .in email address, display name, and selected interests.</li>
           <li><strong>Usage Data:</strong> Session duration, matching preferences, and feature interactions.</li>
           <li><strong>Device Data:</strong> Browser type, operating system, and IP address (for security only).</li>
         </ul>
@@ -144,7 +143,7 @@ const MODAL_CONTENT: Record<string, { title: string; icon: React.ElementType; bo
       <div className="space-y-6 text-foreground/80 text-[15px] leading-relaxed">
         <p className="text-foreground/50 text-sm">Last updated: March 30, 2026</p>
         <h4 className="font-bold text-foreground text-lg">1. Eligibility</h4>
-        <p>You must be a currently enrolled college or university student with a valid .edu email address to use Hallway. You must be at least 18 years old.</p>
+        <p>You must be a currently enrolled college or university student with a valid .edu, .ac.in, or .in email address to use Hallway. You must be at least 18 years old.</p>
         <h4 className="font-bold text-foreground text-lg">2. Account Responsibilities</h4>
         <ul className="list-disc pl-5 space-y-2">
           <li>You are responsible for maintaining the security of your account.</li>
@@ -185,7 +184,7 @@ const MODAL_CONTENT: Record<string, { title: string; icon: React.ElementType; bo
           <li><strong>End-to-End Encryption:</strong> All video, audio, and text messages are encrypted. Nobody — not even us — can see your conversations.</li>
           <li><strong>1-Tap Block:</strong> Instantly block any user. They'll never be able to contact you again.</li>
           <li><strong>Skip Anytime:</strong> Don't feel a connection? Hit "Next" — no questions asked.</li>
-          <li><strong>Verified-Only Access:</strong> Only authenticated .edu users can access the platform.</li>
+          <li><strong>Verified-Only Access:</strong> Only authenticated student users (.edu, .ac.in, .in) can access the platform.</li>
         </ul>
         <h4 className="font-bold text-foreground text-lg">Moderation</h4>
         <p>Our dedicated trust & safety team reviews every report within 24 hours. Serious violations result in immediate permanent bans.</p>
@@ -223,11 +222,11 @@ const MODAL_CONTENT: Record<string, { title: string; icon: React.ElementType; bo
         <div className="space-y-4">
           <div className="rounded-xl border border-border/50 bg-secondary/20 p-4">
             <p className="font-semibold text-foreground mb-1">How do I sign up?</p>
-            <p>Click "Join Now" and enter your .edu email. We'll send you a magic link — click it and you're in! No passwords needed.</p>
+            <p>Click "Join Now" and enter your student email (.edu, .ac.in, or .in). We'll send you a magic link — click it and you're in! No passwords needed.</p>
           </div>
           <div className="rounded-xl border border-border/50 bg-secondary/20 p-4">
-            <p className="font-semibold text-foreground mb-1">What if my college doesn't use .edu emails?</p>
-            <p>We're expanding support for international university emails. Contact us at <strong className="text-primary">support@hallwaychat.online</strong> and we'll help verify your student status.</p>
+            <p className="font-semibold text-foreground mb-1">What if my college doesn't use .edu, .ac.in, or .in emails?</p>
+            <p>We're expanding support for more Indian university emails. Contact us at <strong className="text-primary">support@hallwaychat.online</strong> and we'll help verify your student status.</p>
           </div>
           <div className="rounded-xl border border-border/50 bg-secondary/20 p-4">
             <p className="font-semibold text-foreground mb-1">Is Hallway free?</p>
@@ -256,22 +255,22 @@ const MODAL_CONTENT: Record<string, { title: string; icon: React.ElementType; bo
         <p>We'd love to hear from you! Here's how to reach the Hallway team:</p>
         <div className="grid gap-4 sm:grid-cols-2">
           <div className="rounded-xl border border-border/50 bg-secondary/20 p-6 text-center">
-            <Mail className="h-8 w-8 text-primary mx-auto mb-3" />
+            <Mail className="h-8 w-8 text-success mx-auto mb-3" />
             <p className="font-bold text-foreground mb-1">General Inquiries</p>
             <p className="text-primary font-medium">hello@hallwaychat.online</p>
           </div>
           <div className="rounded-xl border border-border/50 bg-secondary/20 p-6 text-center">
-            <Shield className="h-8 w-8 text-primary mx-auto mb-3" />
+            <Shield className="h-8 w-8 text-success mx-auto mb-3" />
             <p className="font-bold text-foreground mb-1">Trust & Safety</p>
             <p className="text-primary font-medium">safety@hallwaychat.online</p>
           </div>
           <div className="rounded-xl border border-border/50 bg-secondary/20 p-6 text-center">
-            <HelpCircle className="h-8 w-8 text-primary mx-auto mb-3" />
+            <HelpCircle className="h-8 w-8 text-success mx-auto mb-3" />
             <p className="font-bold text-foreground mb-1">Technical Support</p>
             <p className="text-primary font-medium">support@hallwaychat.online</p>
           </div>
           <div className="rounded-xl border border-border/50 bg-secondary/20 p-6 text-center">
-            <Lock className="h-8 w-8 text-primary mx-auto mb-3" />
+            <Lock className="h-8 w-8 text-success mx-auto mb-3" />
             <p className="font-bold text-foreground mb-1">Privacy Requests</p>
             <p className="text-primary font-medium">privacy@hallwaychat.online</p>
           </div>
@@ -295,14 +294,14 @@ const MODAL_CONTENT: Record<string, { title: string; icon: React.ElementType; bo
               <p>Tap the 🚩 <strong>Report</strong> button visible on screen during any video call. Select the reason and submit — it takes less than 5 seconds.</p>
             </div>
           </div>
-          <div className="rounded-xl border border-primary/30 bg-primary/5 p-4 flex gap-3 items-start">
-            <Mail className="h-5 w-5 text-primary mt-0.5 shrink-0" />
+          <div className="rounded-xl border border-success/30 bg-success/5 p-4 flex gap-3 items-start">
+            <Mail className="h-5 w-5 text-success mt-0.5 shrink-0" />
             <div>
               <p className="font-bold text-foreground mb-1">After a Call</p>
               <p>Email us at <strong className="text-primary">safety@hallwaychat.online</strong> with the approximate time and description of what happened.</p>
             </div>
           </div>
-          <div className="rounded-xl border border-primary/30 bg-primary/5 p-4 flex gap-3 items-start">
+          <div className="rounded-xl border border-warning/30 bg-warning/5 p-4 flex gap-3 items-start">
             <AlertTriangle className="h-5 w-5 text-warning mt-0.5 shrink-0" />
             <div>
               <p className="font-bold text-foreground mb-1">Technical Issues</p>
@@ -348,13 +347,13 @@ const MODAL_CONTENT: Record<string, { title: string; icon: React.ElementType; bo
     body: (
       <div className="space-y-6 text-foreground/80 text-[15px] leading-relaxed text-center">
         <div className="rounded-2xl border border-border/50 bg-secondary/20 p-8">
-          <MessageCircle className="h-12 w-12 text-primary mx-auto mb-4" />
+          <MessageCircle className="h-12 w-12 text-success mx-auto mb-4" />
           <h3 className="text-xl font-bold text-foreground mb-3">Stay Connected</h3>
           <p>Follow us on social media for the latest updates, feature announcements, and community highlights.</p>
           <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-center">
-            <a href="https://twitter.com/hallwaychat" target="_blank" rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-primary/10 border border-primary/30 px-6 py-3 text-primary font-semibold hover:bg-primary/20 transition-colors">
-              𝕏 @hallwaychat
+            <a href="https://twitter.com/hallway_chat_" target="_blank" rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-black/10 border border-foreground/20 px-6 py-3 text-foreground font-semibold hover:bg-black/20 transition-colors">
+              <span className="text-black dark:text-white font-bold">𝕏</span> @hallway_chat_
             </a>
             <a href="https://www.instagram.com/hallwaychat_online?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-pink-500/10 border border-pink-500/30 px-6 py-3 text-pink-500 font-semibold hover:bg-pink-500/20 transition-colors">
@@ -393,8 +392,8 @@ function FooterModal({ id, onClose }: { id: string; onClose: () => void }) {
         {/* Header */}
         <div className="sticky top-0 z-20 flex items-center justify-between border-b border-border/40 bg-card/95 backdrop-blur-md px-6 py-4">
           <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10">
-              <Icon className="h-5 w-5 text-primary" />
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-success/10">
+              <Icon className="h-5 w-5 text-success" />
             </div>
             <h2 className="text-xl font-bold">{content.title}</h2>
           </div>
@@ -417,19 +416,8 @@ interface LandingPageProps {
 }
 
 export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPageProps & { darkMode: boolean, setDarkMode: (v: boolean) => void }) {
-  const [onlineCount, setOnlineCount] = useState(0)
+  const { stats, isConnected } = useLiveStats()
   const [activeModal, setActiveModal] = useState<string | null>(null)
-
-  useEffect(() => {
-    let count = 0
-    const target = 128
-    const timer = setInterval(() => {
-      count += Math.ceil((target - count) / 8)
-      if (count >= target) { count = target; clearInterval(timer) }
-      setOnlineCount(count)
-    }, 50)
-    return () => clearInterval(timer)
-  }, [])
 
   return (
     <div className="min-h-dvh bg-background text-foreground transition-colors duration-300 font-sans">
@@ -460,8 +448,12 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
 
           <div className="flex items-center gap-4">
             <div className="hidden sm:flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-medium bg-secondary/30">
-              <div className="h-1.5 w-1.5 animate-pulse rounded-full bg-success" />
-              <span className="text-foreground/80">{onlineCount} online now</span>
+              {isConnected ? (
+                <div className="h-1.5 w-1.5 animate-pulse rounded-full bg-success" />
+              ) : (
+                <Wifi className="h-3 w-3 text-muted-foreground animate-pulse" />
+              )}
+              <span className="text-foreground/80">{stats.onlineNow} online now</span>
             </div>
             
 
@@ -494,7 +486,7 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
 
         <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-foreground/60 sm:text-xl">
           Random 1‑on‑1 video chat exclusively for verified college students.
-          No bots, no randos — just real students from campuses worldwide.
+          No bots, no randos — just real students from campuses all around <span className="font-bold text-green-500">INDIA</span>.
         </p>
 
         <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">
@@ -533,13 +525,18 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
       <section className="border-y border-border/40 bg-secondary/10">
         <div className="mx-auto grid max-w-6xl grid-cols-2 gap-8 px-6 py-12 sm:grid-cols-4 sm:py-16 text-center">
           {[
-            { metric: "250K+", label: "Verified Users" },
-            { metric: "800+", label: "Universities" },
-            { metric: "35K+", label: "Daily Matches" },
+            { metric: "1,200+", label: "Verified Users", live: true },
+            { metric: "50+", label: "Universities" },
+            { metric: "500+", label: "Daily Matches" },
             { metric: "100%", label: "Safe & Secure" },
           ].map((stat, i) => (
             <div key={i}>
-              <div className="text-3xl font-extrabold text-primary sm:text-4xl">{stat.metric}</div>
+              <div className="text-3xl font-extrabold text-primary sm:text-4xl flex items-center justify-center gap-2">
+                {"live" in stat && stat.live && (
+                  <span className="h-2 w-2 rounded-full bg-success animate-pulse" />
+                )}
+                {stat.metric}
+              </div>
               <div className="mt-2 text-sm font-medium text-foreground/60">{stat.label}</div>
             </div>
           ))}
@@ -603,7 +600,7 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
                 <MapPin className="h-7 w-7 text-[#FFB020]" />
               </div>
               <h3 className="mb-3 text-xl font-bold tracking-tight">🎯 Campus Filters</h3>
-              <p className="text-base leading-relaxed text-foreground/60">Meet peers from your own university or explore globally. Toggle between campus-only and worldwide matching whenever you want.</p>
+              <p className="text-base leading-relaxed text-foreground/60">Meet peers from your own university or explore across India. Toggle between campus-only and India-wide matching whenever you want.</p>
             </div>
 
             {/* Night Owl */}
@@ -771,7 +768,7 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
                 </span>
               </div>
               <p className="text-sm leading-relaxed text-foreground/70 mb-6">
-                The exclusive 1-on-1 video chat platform for verified college students worldwide.
+                The exclusive 1-on-1 video chat platform for verified college students across India.
               </p>
               <div className="flex items-center gap-2 text-xs text-foreground/50">
                 <Lock className="h-3.5 w-3.5" />
@@ -783,10 +780,10 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
             <div>
               <h4 className="mb-6 text-sm font-semibold text-foreground">Product</h4>
               <ul className="space-y-4 text-sm text-foreground/70">
-                <li><button onClick={() => setActiveModal("features")} className="hover:text-primary transition-colors text-left">Features</button></li>
-                <li><button onClick={() => setActiveModal("safety")} className="hover:text-primary transition-colors text-left">Safety Guidelines</button></li>
-                <li><button onClick={() => setActiveModal("community")} className="hover:text-primary transition-colors text-left">Community</button></li>
-                <li><button onClick={() => setActiveModal("premium")} className="hover:text-primary transition-colors text-left">Premium (Coming Soon)</button></li>
+                <li><button onClick={() => setActiveModal("features")} className="hover:text-primary transition-colors text-left cursor-pointer">Features</button></li>
+                <li><button onClick={() => setActiveModal("safety")} className="hover:text-primary transition-colors text-left cursor-pointer">Safety Guidelines</button></li>
+                <li><button onClick={() => setActiveModal("community")} className="hover:text-primary transition-colors text-left cursor-pointer">Community</button></li>
+                <li><button onClick={() => setActiveModal("premium")} className="hover:text-primary transition-colors text-left cursor-pointer">Premium (Coming Soon)</button></li>
               </ul>
             </div>
 
@@ -794,10 +791,10 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
             <div>
               <h4 className="mb-6 text-sm font-semibold text-foreground">Legal</h4>
               <ul className="space-y-4 text-sm text-foreground/70">
-                <li><button onClick={() => setActiveModal("privacy")} className="hover:text-primary transition-colors text-left">Privacy Policy</button></li>
-                <li><button onClick={() => setActiveModal("terms")} className="hover:text-primary transition-colors text-left">Terms of Service</button></li>
-                <li><button onClick={() => setActiveModal("trust")} className="hover:text-primary transition-colors text-left">Trust & Safety Options</button></li>
-                <li><button onClick={() => setActiveModal("cookies")} className="hover:text-primary transition-colors text-left">Cookie Policy</button></li>
+                <li><button onClick={() => setActiveModal("privacy")} className="hover:text-primary transition-colors text-left cursor-pointer">Privacy Policy</button></li>
+                <li><button onClick={() => setActiveModal("terms")} className="hover:text-primary transition-colors text-left cursor-pointer">Terms of Service</button></li>
+                <li><button onClick={() => setActiveModal("trust")} className="hover:text-primary transition-colors text-left cursor-pointer">Trust & Safety Options</button></li>
+                <li><button onClick={() => setActiveModal("cookies")} className="hover:text-primary transition-colors text-left cursor-pointer">Cookie Policy</button></li>
               </ul>
             </div>
 
@@ -805,10 +802,10 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
             <div>
               <h4 className="mb-6 text-sm font-semibold text-foreground">Support</h4>
               <ul className="space-y-4 text-sm text-foreground/70">
-                <li><button onClick={() => setActiveModal("help")} className="hover:text-primary transition-colors text-left">Help Center</button></li>
-                <li><button onClick={() => setActiveModal("contact")} className="hover:text-primary transition-colors text-left">Contact Us</button></li>
-                <li><button onClick={() => setActiveModal("report")} className="hover:text-primary transition-colors text-left">Report an Issue</button></li>
-                <li><button onClick={() => setActiveModal("twitter")} className="hover:text-primary transition-colors text-left">Twitter / Social</button></li>
+                <li><button onClick={() => setActiveModal("help")} className="hover:text-primary transition-colors text-left cursor-pointer">Help Center</button></li>
+                <li><button onClick={() => setActiveModal("contact")} className="hover:text-primary transition-colors text-left cursor-pointer">Contact Us</button></li>
+                <li><button onClick={() => setActiveModal("report")} className="hover:text-primary transition-colors text-left cursor-pointer">Report an Issue</button></li>
+                <li><button onClick={() => setActiveModal("twitter")} className="hover:text-primary transition-colors text-left cursor-pointer">Social</button></li>
               </ul>
             </div>
             
