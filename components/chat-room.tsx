@@ -111,7 +111,7 @@ export function ChatRoom({ interests, onExit, darkMode, setDarkMode }: ChatRoomP
             {/* Your video */}
             <div className="relative overflow-hidden rounded-2xl bg-[#111111] border border-white/5">
               {localStream ? (
-                <video ref={localVideoRef} autoPlay muted playsInline className="h-full w-full object-cover" />
+                <video ref={localVideoRef} autoPlay muted playsInline className="h-full w-full object-cover scale-x-[-1]" />
               ) : (
                 <div className="flex h-full flex-col items-center justify-center gap-2 opacity-30">
                   <VideoOff className="h-8 w-8" />

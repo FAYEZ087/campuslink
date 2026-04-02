@@ -5,7 +5,7 @@ import {
   ArrowRight, Shield, Zap, Users, CheckCircle, Moon, Sun, MonitorPlay,
   HeartHandshake, ShieldCheck, BookOpen, MapPin, MoonStar, CalendarDays,
   Trophy, AlertTriangle, Lock, X, Flag, Mail, HelpCircle, FileText,
-  Cookie, Scale, MessageCircle, Flame, Instagram, Wifi
+  Cookie, Scale, MessageCircle, Flame, Instagram, Wifi, Pencil, Code2, UserPlus
 } from "lucide-react"
 import { useLiveStats } from "@/hooks/useLiveStats"
 
@@ -329,10 +329,24 @@ const MODAL_CONTENT: Record<string, { title: string; icon: React.ElementType; bo
           <h3 className="text-2xl font-bold text-foreground mb-3">Hallway Premium</h3>
           <p className="text-foreground/60 mb-6">We're cooking up something special. Premium features are in development and will roll out soon.</p>
           <div className="grid gap-3 sm:grid-cols-2 text-left max-w-md mx-auto">
-            {["Priority Matching", "Extended Call Time", "Custom Themes", "Exclusive Badges", "Advanced Filters", "Ad-Free Experience"].map(f => (
-              <div key={f} className="flex items-center gap-2 text-sm">
-                <CheckCircle className="h-4 w-4 text-primary shrink-0" />
-                <span>{f}</span>
+            {[
+              { name: "Priority Matching", color: "#f59e0b" },
+              { name: "Extended Call Time", color: "#3b82f6" },
+              { name: "Custom Themes", color: "#a855f7" },
+              { name: "Exclusive Badges", color: "#eab308" },
+              { name: "Advanced Filters", color: "#06b6d4" },
+              { name: "Ad-Free Experience", color: "#10b981" },
+              { name: "Whiteboard", icon: Pencil, color: "#ec4899" },
+              { name: "Code Viewer", icon: Code2, color: "#8b5cf6" },
+              { name: "Add Friends", icon: UserPlus, color: "#22c55e" },
+            ].map(f => (
+              <div key={f.name} className="flex items-center gap-2 text-sm">
+                {f.icon ? (
+                  <f.icon className="h-4 w-4 shrink-0" style={{ color: f.color }} />
+                ) : (
+                  <CheckCircle className="h-4 w-4 shrink-0" style={{ color: f.color }} />
+                )}
+                <span style={{ color: f.color }}>{f.name}</span>
               </div>
             ))}
           </div>
