@@ -1,31 +1,62 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { useRouter } from "next/navigation"
 import { LandingPage } from "@/components/landing-page"
 import { AuthScreen } from "@/components/auth-screen"
-import { InterestSelection } from "@/components/interest-selection"
-import { ChatRoom } from "@/components/chat-room"
 import { createClient } from "@/lib/supabase"
-import type { User } from "@supabase/supabase-js"
 
 export default function Home() {
-  const [screen, setScreen] = useState<"loading" | "landing" | "auth" | "interests" | "chat">("loading")
-  const [selectedInterests, setSelectedInterests] = useState<string[]>([])
-  const [user, setUser] = useState<User | null>(null)
+  const router = useRouter()
+  const [screen, setScreen] = useState<"loading" | "landing" | "auth">("loading")
   const [darkMode, setDarkMode] = useState(true)
 
   useEffect(() => {
     const supabase = createClient()
-    supabase.auth.getSession().then(({ data: { session } }) => {
-      if (session?.user) { setUser(session.user); setScreen("interests") }
-      else setScreen("landing")
+    
+    async function checkSession() {
+      const { data: { session } } = await supabase.auth.getSession()
+      
+      if (session?.user) {
+        // Check if profile is complete
+        const { data: profile } = await supabase
+          .from("profiles")
+          .select("is_profile_complete")
+          .eq("id", session.user.id)
+          .single()
+
+        if (profile?.is_profile_complete) {
+          router.push("/match")
+        } else {
+          router.push("/setup")
+        }
+      } else {
+        setScreen("landing")
+      }
+    }
+
+    checkSession()
+
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(async (_event, session) => {
+      if (session?.user) {
+        const { data: profile } = await supabase
+          .from("profiles")
+          .select("is_profile_complete")
+          .eq("id", session.user.id)
+          .single()
+
+        if (profile?.is_profile_complete) {
+          router.push("/match")
+        } else {
+          router.push("/setup")
+        }
+      } else {
+        setScreen("landing")
+      }
     })
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
-      if (session?.user) { setUser(session.user); setScreen("interests") }
-      else { setUser(null); setScreen("landing") }
-    })
+
     return () => subscription.unsubscribe()
-  }, [])
+  }, [router])
 
   useEffect(() => {
     if (darkMode) {
@@ -34,24 +65,6 @@ export default function Home() {
       document.documentElement.classList.remove("dark")
     }
   }, [darkMode])
-
-  async function handleSignOut() {
-    const supabase = createClient()
-    await supabase.auth.signOut()
-    setScreen("landing")
-    setUser(null)
-    setSelectedInterests([])
-  }
-
-  function handleStart(interests: string[]) {
-    setSelectedInterests(interests)
-    setScreen("chat")
-  }
-
-  function handleExit() {
-    setScreen("interests")
-    setSelectedInterests([])
-  }
 
   if (screen === "loading") {
     return (
@@ -62,8 +75,6 @@ export default function Home() {
     )
   }
 
-  if (screen === "landing") return <LandingPage onGetStarted={() => setScreen("auth")} darkMode={darkMode} setDarkMode={setDarkMode} />
   if (screen === "auth") return <AuthScreen />
-  if (screen === "chat") return <ChatRoom interests={selectedInterests} onExit={handleExit} darkMode={darkMode} setDarkMode={setDarkMode} />
-  return <InterestSelection onStart={handleStart} user={user} onSignOut={handleSignOut} darkMode={darkMode} setDarkMode={setDarkMode} />
+  return <LandingPage onGetStarted={() => setScreen("auth")} darkMode={darkMode} setDarkMode={setDarkMode} />
 }

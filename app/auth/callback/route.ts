@@ -24,8 +24,28 @@ export async function GET(request: NextRequest) {
       }
     )
     const { error } = await supabase.auth.exchangeCodeForSession(code)
+    
     if (!error) {
-      return NextResponse.redirect(`${origin}/`)
+      // Get user and check profile completion status
+      const { data: { user } } = await supabase.auth.getUser()
+      
+      if (user) {
+        const { data: profile } = await supabase
+          .from("profiles")
+          .select("is_profile_complete")
+          .eq("id", user.id)
+          .single()
+
+        // Redirect based on profile completion
+        if (profile?.is_profile_complete) {
+          return NextResponse.redirect(`${origin}/match`)
+        } else {
+          return NextResponse.redirect(`${origin}/setup`)
+        }
+      }
+      
+      // Fallback to setup if we can't determine profile status
+      return NextResponse.redirect(`${origin}/setup`)
     }
   }
 
