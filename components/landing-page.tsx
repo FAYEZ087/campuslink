@@ -434,16 +434,16 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
         <div className="mx-auto flex max-w-6xl items-center justify-between">
           <div className="flex items-center gap-3 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             <HallwayIcon size={32} className="text-[#00c896]" />
-            <span className="text-xl font-bold tracking-tight">
+            <span className="text-xl font-bold tracking-tight font-display">
               <span className="text-foreground">hall</span>
               <span className="text-[#00c896]">way</span>
             </span>
           </div>
 
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-foreground/70">
-            <button onClick={() => document.getElementById('more-features')?.scrollIntoView({ behavior: 'smooth' })} className="hover:text-foreground transition-colors">Features</button>
-            <button onClick={() => document.getElementById('trust')?.scrollIntoView({ behavior: 'smooth' })} className="hover:text-foreground transition-colors">Trust & Safety</button>
-            <button onClick={() => document.getElementById('how-to-join')?.scrollIntoView({ behavior: 'smooth' })} className="hover:text-foreground transition-colors">Community</button>
+            <button onClick={() => document.getElementById('more-features')?.scrollIntoView({ behavior: 'smooth' })} className="cursor-pointer hover:text-foreground transition-colors">Features</button>
+            <button onClick={() => document.getElementById('trust')?.scrollIntoView({ behavior: 'smooth' })} className="cursor-pointer hover:text-foreground transition-colors">Trust & Safety</button>
+            <button onClick={() => document.getElementById('how-to-join')?.scrollIntoView({ behavior: 'smooth' })} className="cursor-pointer hover:text-foreground transition-colors">Community</button>
           </div>
 
           <div className="flex items-center gap-4">
@@ -458,11 +458,11 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
             
 
             <div className="flex items-center gap-2">
-              <button onClick={onGetStarted} className="hidden sm:block px-4 py-2 text-sm font-semibold hover:text-primary transition-colors">
+              <button onClick={onGetStarted} className="hidden sm:block px-4 py-2 text-sm font-semibold cursor-pointer hover:text-primary transition-colors">
                 Log in
               </button>
               <button onClick={onGetStarted}
-                className="rounded-full bg-primary px-5 py-2.5 text-sm font-bold text-primary-foreground shadow-lg shadow-primary/20 transition hover:bg-primary/90">
+                className="rounded-full cursor-pointer bg-primary px-5 py-2.5 text-sm font-bold text-primary-foreground shadow-lg shadow-primary/20 transition hover:bg-primary/90">
                 Join Now
               </button>
             </div>
@@ -477,7 +477,7 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
           🛡️ Verified Students Only
         </div>
 
-        <h1 className="mx-auto max-w-4xl text-5xl font-extrabold tracking-tight sm:text-7xl lg:leading-[1.1]">
+        <h1 className="mx-auto max-w-4xl text-5xl font-extrabold tracking-tight sm:text-7xl lg:leading-[1.1] font-display">
           Meet students who<br />
           <span className="bg-gradient-to-r from-primary to-[#A0A5EB] bg-clip-text text-transparent drop-shadow-sm">
             share your vibe.
@@ -547,7 +547,7 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
       <section id="features" className="px-6 py-24 sm:py-32">
         <div className="mx-auto max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold sm:text-4xl bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-transparent">Designed for the Student Experience</h2>
+            <h2 className="text-3xl font-bold sm:text-4xl bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-transparent font-display">Designed for the Student Experience</h2>
             <p className="mt-4 text-lg text-foreground/60 max-w-2xl mx-auto">
               Unlike random chat sites or generic social apps, Hallway is built for verified students only — so every match is a real peer, not a stranger from the internet.
             </p>
@@ -579,7 +579,7 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
               <Zap className="h-4 w-4" />
               New & Exciting
             </div>
-            <h2 className="text-3xl font-bold sm:text-4xl bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-transparent">More Ways to Connect</h2>
+            <h2 className="text-3xl font-bold sm:text-4xl bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-transparent font-display">More Ways to Connect</h2>
             <p className="mt-4 text-lg text-foreground/60">Features that make Hallway more than just video chat.</p>
           </div>
 
@@ -650,7 +650,7 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
               <Lock className="h-4 w-4" />
               Your Safety Matters
             </div>
-            <h2 className="text-3xl font-bold sm:text-4xl bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-transparent">Built with Trust & Safety First</h2>
+            <h2 className="text-3xl font-bold sm:text-4xl bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-transparent font-display">Built with Trust & Safety First</h2>
             <p className="mt-4 text-lg text-foreground/60">We take your safety seriously. Here's how we've got your back.</p>
           </div>
 
@@ -720,7 +720,7 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
 
       {/* Steps */}
       <section id="how-to-join" className="mx-auto max-w-6xl px-6 py-24 border-t border-border/40">
-        <h2 className="mb-16 text-center text-3xl font-bold sm:text-4xl">How to join the community</h2>
+        <h2 className="mb-16 text-center text-3xl font-bold sm:text-4xl font-display">How to join the community</h2>
         <div className="grid gap-12 sm:grid-cols-3">
           {[
             { step: "01", title: "Verify your email", desc: "Use your official college email so we can confirm you’re a real student.", color: "hover:border-primary/40" },
@@ -743,7 +743,7 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
         <div className="mx-auto max-w-5xl overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-primary to-[#5B62D1] p-12 text-center text-primary-foreground shadow-2xl relative">
           <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay"></div>
           <div className="relative z-10">
-            <h2 className="mb-6 text-4xl font-extrabold tracking-tight sm:text-5xl">Ready to meet your people?</h2>
+            <h2 className="mb-6 text-4xl font-extrabold tracking-tight sm:text-5xl font-display">Ready to meet your people?</h2>
             <p className="mb-10 text-lg sm:text-xl font-medium opacity-90">Free forever. Only verified students. Zero downloads required.</p>
             <button onClick={onGetStarted}
               className="group mx-auto flex h-14 items-center gap-2 rounded-full bg-background px-10 py-4 text-lg font-bold text-foreground shadow-2xl transition-all hover:scale-105 active:scale-95">
@@ -755,15 +755,15 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
       </section>
 
       {/* Footer (4-Column Layout) */}
-      <footer className="border-t border-border/10 bg-[#0A0E1A] pt-20 pb-10">
+      <footer className="border-t border-border/10 bg-[#0A0E1A] pt-20">
         <div className="mx-auto max-w-6xl px-6">
-          <div className="grid gap-12 sm:grid-cols-2 md:grid-cols-4 lg:gap-8">
+          <div className="grid gap-12 sm:grid-cols-2 md:grid-cols-4 lg:gap-8 mb-20">
             
             {/* Brand Column */}
             <div className="col-span-1 md:col-span-1">
               <div className="flex items-center gap-2 mb-6">
                 <HallwayIcon size={28} className="text-[#00c896]" />
-                <span className="text-xl font-bold tracking-tight">
+                <span className="text-xl font-bold tracking-tight font-display">
                   <span className="text-foreground">hall</span><span className="text-[#00c896]">way</span>
                 </span>
               </div>
@@ -810,14 +810,14 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
             </div>
             
           </div>
-          
-          {/* Bottom Row */}
-          <div className="mt-20 flex flex-col items-center justify-center gap-6 border-t border-border/10 bg-black/20 pt-8 sm:flex-row sm:gap-12 text-xs text-foreground/50 text-center">
-            <p>© {new Date().getFullYear()} hallway. All rights reserved.</p>
-            <p className="mt-4 sm:mt-0 flex items-center gap-1">
-              Made with <HeartHandshake className="h-3 w-3 text-destructive" /> by <a href="https://github.com/FAYEZ087" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors font-medium">Fayez</a>
-            </p>
-          </div>
+        </div>
+        
+        {/* Bottom Row */}
+        <div className="w-full flex-col sm:flex-row flex items-center justify-center gap-6 sm:gap-12 border-t border-border/10 bg-black/20 py-6 text-xs text-foreground/50 text-center">
+          <p>© {new Date().getFullYear()} hallway. All rights reserved.</p>
+          <p className="flex items-center gap-1">
+            Made with <HeartHandshake className="h-3 w-3 text-destructive" /> by <a href="https://github.com/FAYEZ087" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors font-medium">Fayez</a>
+          </p>
         </div>
       </footer>
 

@@ -82,14 +82,14 @@ export function AuthScreen() {
         {/* Logo */}
         <div className="flex flex-col items-center gap-3">
           <HallwayIcon size={64} />
-          <h1 className="text-4xl font-bold tracking-tight">
+          <h1 className="text-4xl font-bold tracking-tight font-display">
             <span className="text-foreground">hall</span>
             <span style={{ color: "#00c896" }}>way</span>
           </h1>
           <p className="text-center text-sm text-muted-foreground">
             Random video chat exclusively for college students
           </p>
-          <span className="text-xs tracking-widest uppercase font-medium" style={{ color: "#00c896", opacity: 0.7 }}>
+          <span className="text-xs tracking-widest uppercase font-medium font-display" style={{ color: "#00c896", opacity: 0.7 }}>
             college video chat
           </span>
         </div>
