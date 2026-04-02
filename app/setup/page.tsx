@@ -148,13 +148,13 @@ export default function SetupPage() {
   }
 
   return (
-    <div className="flex min-h-dvh flex-col items-center justify-center bg-background px-4 py-12">
-      <div className="mx-auto flex w-full max-w-md flex-col items-center gap-8">
+    <div className="flex min-h-dvh flex-col items-center justify-center bg-background px-4 py-12 relative overflow-hidden">
+      <div className="mx-auto flex w-full max-w-md flex-col items-center gap-8 z-10 w-full mb-16">
         
         {/* Logo */}
         <div className="flex flex-col items-center gap-3">
           <HallwayIcon size={56} />
-          <h1 className="text-3xl font-bold tracking-tight font-display">
+          <h1 className="text-3xl tracking-tight font-display">
             <span className="text-foreground">Complete Your </span>
             <span style={{ color: "#00c896" }}>Profile</span>
           </h1>
@@ -277,8 +277,16 @@ export default function SetupPage() {
         </div>
 
         {/* Footer */}
-        <p className="text-center text-xs text-muted-foreground">
+        <p className="text-center text-xs text-muted-foreground mb-4">
           Your real name is only visible to you 🔒
+        </p>
+      </div>
+
+      {/* Bottom Footer */}
+      <div className="absolute bottom-0 w-full flex-col sm:flex-row flex items-center justify-center gap-6 sm:gap-12 border-t border-border/10 bg-black/20 py-6 text-xs text-foreground/50 text-center">
+        <p>© {new Date().getFullYear()} hallway. All rights reserved.</p>
+        <p className="flex items-center gap-1">
+          Made with <span className="text-destructive inline-block">❤️</span> by <a href="https://github.com/FAYEZ087" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors font-medium">Fayez</a>
         </p>
       </div>
     </div>
