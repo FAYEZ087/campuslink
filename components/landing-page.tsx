@@ -5,7 +5,8 @@ import {
   ArrowRight, Shield, Zap, Users, CheckCircle, Moon, Sun, MonitorPlay,
   HeartHandshake, ShieldCheck, BookOpen, MapPin, MoonStar, CalendarDays,
   Trophy, AlertTriangle, Lock, X, Flag, Mail, HelpCircle, FileText,
-  Cookie, Scale, MessageCircle, Flame, Instagram, Wifi, Pencil, Code2, UserPlus
+  Cookie, Scale, MessageCircle, Flame, Instagram, Wifi, Pencil, Code2, UserPlus,
+  Music
 } from "lucide-react"
 import { useLiveStats } from "@/hooks/useLiveStats"
 
@@ -48,16 +49,16 @@ const MODAL_CONTENT: Record<string, { title: string; icon: React.ElementType; bo
     icon: Zap,
     body: (
       <div className="space-y-6 text-foreground/80 text-[15px] leading-relaxed">
-        <p>Hallway is packed with features designed to help verified college students connect in meaningful ways.</p>
+        <p>Hallway helps verified students meet and talk without the usual spam or fake accounts.</p>
         <ul className="list-disc pl-5 space-y-3">
-          <li><strong>Verified-Only Access</strong> — Every user is authenticated through their .edu, .ac.in, or .in email. No exceptions.</li>
-          <li><strong>Interest-Based Matching</strong> — Select topics you care about and get matched with peers who share them.</li>
-          <li><strong>HD Video Chat</strong> — Crystal clear, low-latency video calls powered by WebRTC.</li>
-          <li><strong>Study Together Mode</strong> — Find accountability partners and study buddies in real-time.</li>
-          <li><strong>Campus Filters</strong> — Choose to match with students from your own university or across India.</li>
-          <li><strong>Night Owl Badge</strong> — Earn badges for late-night activity and more.</li>
-          <li><strong>Events & Hackathons</strong> — Discover student-run events and hackathons near you.</li>
-          <li><strong>Streaks & Badges</strong> — Gamify your experience with connection streaks and achievement badges.</li>
+          <li><strong>Verified-Only Access</strong> — You need a valid .edu, .ac.in, or .in email to join.</li>
+          <li><strong>Interest-Based Matching</strong> — Pick your interests and get matched with people who like similar things.</li>
+          <li><strong>HD Video Chat</strong> — Fast 1-on-1 calls with clear audio and video.</li>
+          <li><strong>Study Together Mode</strong> — Find someone to study with and stay focused.</li>
+          <li><strong>Campus Filters</strong> — Match within your campus or across India.</li>
+          <li><strong>Night Owl Badge</strong> — Get badges if you are active late at night.</li>
+          <li><strong>Events & Hackathons</strong> — See student events happening around you.</li>
+          <li><strong>Streaks & Badges</strong> — Keep a streak and unlock small rewards.</li>
         </ul>
       </div>
     ),
@@ -67,23 +68,23 @@ const MODAL_CONTENT: Record<string, { title: string; icon: React.ElementType; bo
     icon: Shield,
     body: (
       <div className="space-y-6 text-foreground/80 text-[15px] leading-relaxed">
-        <p>Your safety is our #1 priority. Here's how we keep Hallway a secure space:</p>
+        <p>Your safety comes first. Here is what we do to keep things safe:</p>
         <h4 className="font-bold text-foreground text-lg mt-4">Community Standards</h4>
         <ul className="list-disc pl-5 space-y-2">
-          <li>Be respectful and kind. Harassment, hate speech, and discrimination are never tolerated.</li>
-          <li>Keep conversations appropriate. Nudity, sexual content, and graphic violence are strictly prohibited.</li>
+          <li>Be respectful. Harassment, hate speech, and discrimination are not allowed.</li>
+          <li>Keep it appropriate. Nudity, sexual content, and graphic violence are not allowed.</li>
           <li>Protect personal information — yours and others'.</li>
-          <li>No recording or screenshotting of video calls without consent.</li>
+          <li>Do not record or screenshot calls without consent.</li>
         </ul>
         <h4 className="font-bold text-foreground text-lg mt-4">Our Safety Tools</h4>
         <ul className="list-disc pl-5 space-y-2">
-          <li><strong>1-Tap Report</strong> — Report inappropriate behavior instantly during any call.</li>
-          <li><strong>Instant Block</strong> — Block any user and they'll never be matched with you again.</li>
+          <li><strong>1-Tap Report</strong> — Report bad behavior during a call.</li>
+          <li><strong>Instant Block</strong> — Block anyone and you will not be matched with them again.</li>
           <li><strong>End-to-End Encryption</strong> — All video and text communications are fully encrypted.</li>
-          <li><strong>24/7 Moderation</strong> — Our team reviews reports and acts within hours.</li>
+          <li><strong>24/7 Moderation</strong> — Our team reviews reports and takes action quickly.</li>
         </ul>
         <h4 className="font-bold text-foreground text-lg mt-4">Consequences</h4>
-        <p>Violations can result in warnings, temporary suspensions, or permanent bans depending on severity. We take a zero-tolerance approach to serious misconduct.</p>
+        <p>Depending on severity, violations can lead to warnings, temporary suspension, or a permanent ban.</p>
       </div>
     ),
   },
@@ -92,17 +93,17 @@ const MODAL_CONTENT: Record<string, { title: string; icon: React.ElementType; bo
     icon: Users,
     body: (
       <div className="space-y-6 text-foreground/80 text-[15px] leading-relaxed">
-        <p>Hallway isn't just a platform — it's a movement. Built by students, for students.</p>
+        <p>Hallway is made by students, for students.</p>
         <h4 className="font-bold text-foreground text-lg mt-4">Our Mission</h4>
-        <p>We believe college should be about connections. Whether you're looking for a study partner, a friend who shares your love of indie music, or just someone to chat with at 2 AM — Hallway makes it happen.</p>
+        <p>College is easier when you know more people. Use Hallway to find a study buddy, a new friend, or someone to talk to at night.</p>
         <h4 className="font-bold text-foreground text-lg mt-4">Campus Ambassadors</h4>
-        <p>Want to bring Hallway to your campus? Join our ambassador program and help grow the community. Ambassadors get early access to features, exclusive swag, and a direct line to our team.</p>
+        <p>Want Hallway on your campus? Join the ambassador program and help spread the word. You will get early access to new features.</p>
         <h4 className="font-bold text-foreground text-lg mt-4">By the Numbers</h4>
         <ul className="list-disc pl-5 space-y-2">
-          <li>Real-time stats displayed on the homepage</li>
-          <li>Growing every single day</li>
+          <li>Live stats on the homepage</li>
+          <li>More students joining every day</li>
         </ul>
-        <p className="mt-4">Got feedback? We'd love to hear from you. Reach out at <strong className="text-primary">hello@hallwaychat.online</strong></p>
+        <p className="mt-4">Got feedback? Email us at <strong className="text-primary">hello@hallwaychat.online</strong></p>
       </div>
     ),
   },
@@ -122,17 +123,17 @@ const MODAL_CONTENT: Record<string, { title: string; icon: React.ElementType; bo
         <ul className="list-disc pl-5 space-y-2">
           <li>To verify your student status and create your account.</li>
           <li>To match you with compatible peers based on your interests.</li>
-          <li>To improve our matching algorithms and platform experience.</li>
+          <li>To improve matching and app quality.</li>
           <li>To enforce safety guidelines and investigate reports.</li>
         </ul>
         <h4 className="font-bold text-foreground text-lg">3. Data Sharing</h4>
-        <p>We never sell your personal data. Period. We only share data with service providers (hosting, analytics) who are bound by strict privacy agreements.</p>
+        <p>We do not sell your personal data. We only share limited data with trusted services we use to run the app.</p>
         <h4 className="font-bold text-foreground text-lg">4. Your Rights</h4>
-        <p>You can request access to, correction of, or deletion of your personal data at any time by contacting <strong className="text-primary">privacy@hallwaychat.online</strong>.</p>
+        <p>You can ask to view, update, or delete your data anytime by emailing <strong className="text-primary">privacy@hallwaychat.online</strong>.</p>
         <h4 className="font-bold text-foreground text-lg">5. Data Retention</h4>
         <p>We retain your account data for as long as your account is active. After account deletion, data is permanently erased within 30 days.</p>
         <h4 className="font-bold text-foreground text-lg">6. Security</h4>
-        <p>All communications are protected with end-to-end encryption. We use industry-standard security measures to protect your data at rest and in transit.</p>
+        <p>Calls and messages use end-to-end encryption. We also protect account data in storage and in transit.</p>
       </div>
     ),
   },
@@ -143,10 +144,10 @@ const MODAL_CONTENT: Record<string, { title: string; icon: React.ElementType; bo
       <div className="space-y-6 text-foreground/80 text-[15px] leading-relaxed">
         <p className="text-foreground/50 text-sm">Last updated: March 30, 2026</p>
         <h4 className="font-bold text-foreground text-lg">1. Eligibility</h4>
-        <p>You must be a currently enrolled college or university student with a valid .edu, .ac.in, or .in email address to use Hallway. You must be at least 18 years old.</p>
+        <p>You must be an enrolled college student with a valid .edu, .ac.in, or .in email. You must also be at least 18.</p>
         <h4 className="font-bold text-foreground text-lg">2. Account Responsibilities</h4>
         <ul className="list-disc pl-5 space-y-2">
-          <li>You are responsible for maintaining the security of your account.</li>
+          <li>Keep your account secure.</li>
           <li>You agree not to share your account with others.</li>
           <li>You must provide accurate information during registration.</li>
         </ul>
@@ -163,7 +164,7 @@ const MODAL_CONTENT: Record<string, { title: string; icon: React.ElementType; bo
         <h4 className="font-bold text-foreground text-lg">5. Limitation of Liability</h4>
         <p>Hallway is provided "as is" without warranties. We are not liable for any damages arising from platform use, including but not limited to interactions with other users.</p>
         <h4 className="font-bold text-foreground text-lg">6. Changes</h4>
-        <p>We may update these terms periodically. Continued use of the platform constitutes acceptance of any changes.</p>
+        <p>We may update these terms. If you keep using Hallway, you agree to the updated terms.</p>
       </div>
     ),
   },
@@ -172,22 +173,22 @@ const MODAL_CONTENT: Record<string, { title: string; icon: React.ElementType; bo
     icon: ShieldCheck,
     body: (
       <div className="space-y-6 text-foreground/80 text-[15px] leading-relaxed">
-        <p>Hallway is committed to creating the safest possible environment for student connections.</p>
+        <p>We want Hallway to be a safe place for student conversations.</p>
         <h4 className="font-bold text-foreground text-lg">Reporting</h4>
         <ul className="list-disc pl-5 space-y-2">
-          <li><strong>In-Call Reporting:</strong> Tap the 🚩 flag icon during any video call to instantly report inappropriate behavior.</li>
-          <li><strong>Post-Call Reporting:</strong> Reports can also be submitted after a call ends.</li>
+          <li><strong>In-Call Reporting:</strong> Tap the report button during a call to report bad behavior.</li>
+          <li><strong>Post-Call Reporting:</strong> You can also report after a call ends.</li>
           <li><strong>Anonymous Reporting:</strong> Your identity is never shared with the reported user.</li>
         </ul>
         <h4 className="font-bold text-foreground text-lg">Safety Features</h4>
         <ul className="list-disc pl-5 space-y-2">
-          <li><strong>End-to-End Encryption:</strong> All video, audio, and text messages are encrypted. Nobody — not even us — can see your conversations.</li>
-          <li><strong>1-Tap Block:</strong> Instantly block any user. They'll never be able to contact you again.</li>
-          <li><strong>Skip Anytime:</strong> Don't feel a connection? Hit "Next" — no questions asked.</li>
+          <li><strong>End-to-End Encryption:</strong> Video, audio, and text are encrypted.</li>
+          <li><strong>1-Tap Block:</strong> Block any user instantly.</li>
+          <li><strong>Skip Anytime:</strong> If it is not a good match, tap "Next".</li>
           <li><strong>Verified-Only Access:</strong> Only authenticated student users (.edu, .ac.in, .in) can access the platform.</li>
         </ul>
         <h4 className="font-bold text-foreground text-lg">Moderation</h4>
-        <p>Our dedicated trust & safety team reviews every report within 24 hours. Serious violations result in immediate permanent bans.</p>
+        <p>Our team reviews reports within 24 hours. Serious violations lead to a permanent ban.</p>
       </div>
     ),
   },
@@ -198,17 +199,17 @@ const MODAL_CONTENT: Record<string, { title: string; icon: React.ElementType; bo
       <div className="space-y-6 text-foreground/80 text-[15px] leading-relaxed">
         <p className="text-foreground/50 text-sm">Last updated: March 30, 2026</p>
         <h4 className="font-bold text-foreground text-lg">What Are Cookies?</h4>
-        <p>Cookies are small text files stored on your device when you visit a website. They help the site remember your preferences and improve your experience.</p>
+        <p>Cookies are small files saved on your device. They help the site remember settings and keep things working.</p>
         <h4 className="font-bold text-foreground text-lg">Cookies We Use</h4>
         <ul className="list-disc pl-5 space-y-2">
           <li><strong>Essential Cookies:</strong> Required for authentication and basic platform functionality. They cannot be disabled.</li>
-          <li><strong>Analytics Cookies:</strong> Help us understand how students use Hallway so we can improve the experience. These are anonymous.</li>
-          <li><strong>Preference Cookies:</strong> Remember your settings like dark mode, interests, and notification preferences.</li>
+          <li><strong>Analytics Cookies:</strong> Help us understand usage and improve the app. These are anonymous.</li>
+          <li><strong>Preference Cookies:</strong> Remember your settings like interests, and notification preferences.</li>
         </ul>
         <h4 className="font-bold text-foreground text-lg">Third-Party Cookies</h4>
-        <p>We use Vercel Analytics for usage insights. No advertising cookies or third-party trackers are ever used on Hallway.</p>
+        <p>We use Vercel Analytics for basic usage insights. We do not use ad trackers.</p>
         <h4 className="font-bold text-foreground text-lg">Managing Cookies</h4>
-        <p>You can manage cookies through your browser settings. Note that disabling essential cookies may prevent you from using Hallway.</p>
+        <p>You can manage cookies in your browser settings. If essential cookies are off, Hallway may not work correctly.</p>
       </div>
     ),
   },
@@ -222,26 +223,26 @@ const MODAL_CONTENT: Record<string, { title: string; icon: React.ElementType; bo
         <div className="space-y-4">
           <div className="rounded-xl border border-border/50 bg-secondary/20 p-4">
             <p className="font-semibold text-foreground mb-1">How do I sign up?</p>
-            <p>Click "Join Now" and enter your student email (.edu, .ac.in, or .in). We'll send you a magic link — click it and you're in! No passwords needed.</p>
+              <p>Click "Join Now" and use your student email. We send a magic link. Open it and you are in.</p>
           </div>
           <div className="rounded-xl border border-border/50 bg-secondary/20 p-4">
             <p className="font-semibold text-foreground mb-1">What if my college doesn't use .edu, .ac.in, or .in emails?</p>
-            <p>We're expanding support for more Indian university emails. Contact us at <strong className="text-primary">support@hallwaychat.online</strong> and we'll help verify your student status.</p>
+              <p>We are adding support for more domains. Email <strong className="text-primary">support@hallwaychat.online</strong> and we will help verify you.</p>
           </div>
           <div className="rounded-xl border border-border/50 bg-secondary/20 p-4">
             <p className="font-semibold text-foreground mb-1">Is Hallway free?</p>
-            <p>Yes! Hallway is free forever for all verified students. We may introduce optional premium features in the future, but core functionality will always be free.</p>
+              <p>Yes! Hallway is free forever for all verified students. We may introduce optional premium features in the future, but core functionality will always be free.</p>
           </div>
         </div>
         <h4 className="font-bold text-foreground text-lg">Troubleshooting</h4>
         <div className="space-y-4">
           <div className="rounded-xl border border-border/50 bg-secondary/20 p-4">
             <p className="font-semibold text-foreground mb-1">My camera/mic isn't working</p>
-            <p>Make sure you've granted browser permissions. Go to your browser settings → Privacy & Security → Site Settings → Camera/Microphone and allow access for Hallway.</p>
+              <p>Make sure you've granted browser permissions. Go to your browser settings → Privacy & Security → Site Settings → Camera/Microphone and allow access for Hallway.</p>
           </div>
           <div className="rounded-xl border border-border/50 bg-secondary/20 p-4">
             <p className="font-semibold text-foreground mb-1">I'm not getting matched</p>
-            <p>Try selecting more interests to widen your match pool. Also make sure you're not in Campus-Only mode if your campus has few active users.</p>
+              <p>Pick more interests to widen your matches. Or just tap "Skip" to see more people.</p>
           </div>
         </div>
       </div>
@@ -256,7 +257,7 @@ const MODAL_CONTENT: Record<string, { title: string; icon: React.ElementType; bo
         <div className="grid gap-4 sm:grid-cols-2">
           <div className="rounded-xl border border-border/50 bg-secondary/20 p-6 text-center">
             <Mail className="h-8 w-8 text-success mx-auto mb-3" />
-            <p className="font-bold text-foreground mb-1">General Inquiries</p>
+            <p className="font-bold text-foreground mb-1">General Questions</p>
             <p className="text-primary font-medium">hello@hallwaychat.online</p>
           </div>
           <div className="rounded-xl border border-border/50 bg-secondary/20 p-6 text-center">
@@ -266,7 +267,7 @@ const MODAL_CONTENT: Record<string, { title: string; icon: React.ElementType; bo
           </div>
           <div className="rounded-xl border border-border/50 bg-secondary/20 p-6 text-center">
             <HelpCircle className="h-8 w-8 text-success mx-auto mb-3" />
-            <p className="font-bold text-foreground mb-1">Technical Support</p>
+            <p className="font-bold text-foreground mb-1">Tech Support</p>
             <p className="text-primary font-medium">support@hallwaychat.online</p>
           </div>
           <div className="rounded-xl border border-border/50 bg-secondary/20 p-6 text-center">
@@ -275,7 +276,7 @@ const MODAL_CONTENT: Record<string, { title: string; icon: React.ElementType; bo
             <p className="text-primary font-medium">privacy@hallwaychat.online</p>
           </div>
         </div>
-        <p className="text-foreground/50 text-sm mt-4">We typically respond within 24 hours during business days. For urgent safety concerns, use the in-app report feature for immediate action.</p>
+        <p className="text-foreground/50 text-sm mt-4">We usually reply within 24 hours on business days. For urgent safety issues, use the in-app report button.</p>
       </div>
     ),
   },
@@ -291,30 +292,30 @@ const MODAL_CONTENT: Record<string, { title: string; icon: React.ElementType; bo
             <Flag className="h-5 w-5 text-destructive mt-0.5 shrink-0" />
             <div>
               <p className="font-bold text-foreground mb-1">During a Call</p>
-              <p>Tap the 🚩 <strong>Report</strong> button visible on screen during any video call. Select the reason and submit — it takes less than 5 seconds.</p>
+              <p>Tap the <strong>Report</strong> button on screen, choose a reason, and send it.</p>
             </div>
           </div>
           <div className="rounded-xl border border-success/30 bg-success/5 p-4 flex gap-3 items-start">
             <Mail className="h-5 w-5 text-success mt-0.5 shrink-0" />
             <div>
               <p className="font-bold text-foreground mb-1">After a Call</p>
-              <p>Email us at <strong className="text-primary">safety@hallwaychat.online</strong> with the approximate time and description of what happened.</p>
+              <p>Email <strong className="text-primary">safety@hallwaychat.online</strong> with the time and what happened.</p>
             </div>
           </div>
           <div className="rounded-xl border border-warning/30 bg-warning/5 p-4 flex gap-3 items-start">
             <AlertTriangle className="h-5 w-5 text-warning mt-0.5 shrink-0" />
             <div>
               <p className="font-bold text-foreground mb-1">Technical Issues</p>
-              <p>For bugs, camera/mic issues, or platform glitches, email <strong className="text-primary">support@hallwaychat.online</strong> with your browser info and a description of the issue.</p>
+              <p>For bugs, camera/mic issues, or platform glitches, email <strong className="text-primary">support@hallwaychat.online</strong>  with your browser info and a description of the issue.</p>
             </div>
           </div>
         </div>
         <h4 className="font-bold text-foreground text-lg">What Happens Next</h4>
         <ul className="list-disc pl-5 space-y-2">
-          <li>Reports are reviewed by our trust & safety team within 24 hours.</li>
+          <li>Our team reviews reports within 24 hours.</li>
           <li>Your identity is always kept anonymous from the reported user.</li>
           <li>Confirmed violations result in warnings, suspensions, or permanent bans.</li>
-          <li>You'll receive an update on the action taken via email.</li>
+          <li>We will email you after action is taken.</li>
         </ul>
       </div>
     ),
@@ -327,13 +328,12 @@ const MODAL_CONTENT: Record<string, { title: string; icon: React.ElementType; bo
         <div className="rounded-2xl border border-primary/30 bg-gradient-to-br from-primary/10 to-[#5B62D1]/10 p-8 text-center">
           <Zap className="h-12 w-12 text-primary mx-auto mb-4" />
           <h3 className="text-2xl font-bold text-foreground mb-3">Hallway Premium</h3>
-          <p className="text-foreground/60 mb-6">We're cooking up something special. Premium features are in development and will roll out soon.</p>
+          <p className="text-foreground/60 mb-6">Premium features are in development and will be released soon.</p>
           <div className="grid gap-3 sm:grid-cols-2 text-left max-w-md mx-auto">
             {[
               { name: "Priority Matching", color: "#f59e0b" },
               { name: "Extended Call Time", color: "#3b82f6" },
-              { name: "Custom Themes", color: "#a855f7" },
-              { name: "Exclusive Badges", color: "#eab308" },
+              { name: "Special Badges", color: "#eab308" },
               { name: "Advanced Filters", color: "#06b6d4" },
               { name: "Ad-Free Experience", color: "#10b981" },
               { name: "Whiteboard", icon: Pencil, color: "#ec4899" },
@@ -350,7 +350,7 @@ const MODAL_CONTENT: Record<string, { title: string; icon: React.ElementType; bo
               </div>
             ))}
           </div>
-          <p className="mt-6 text-sm text-foreground/40">Core Hallway features will always remain free.</p>
+          <p className="mt-6 text-sm text-foreground/40">Core Hallway features will stay free.</p>
         </div>
       </div>
     ),
@@ -363,18 +363,18 @@ const MODAL_CONTENT: Record<string, { title: string; icon: React.ElementType; bo
         <div className="rounded-2xl border border-border/50 bg-secondary/20 p-8">
           <MessageCircle className="h-12 w-12 text-success mx-auto mb-4" />
           <h3 className="text-xl font-bold text-foreground mb-3">Stay Connected</h3>
-          <p>Follow us on social media for the latest updates, feature announcements, and community highlights.</p>
+          <p>Follow us for the latest updates, feature announcements, and community highlights.</p>
           <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-center">
             <a href="https://twitter.com/hallway_chat_" target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-black/10 border border-foreground/20 px-6 py-3 text-foreground font-semibold hover:bg-black/20 transition-colors">
-              <span className="text-black dark:text-white font-bold">𝕏</span> @hallway_chat_
+              <span className="text-black dark:text-white font-bold">𝕏</span>
             </a>
             <a href="https://www.instagram.com/hallwaychat_online?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-pink-500/10 border border-pink-500/30 px-6 py-3 text-pink-500 font-semibold hover:bg-pink-500/20 transition-colors">
               <Instagram className="h-4 w-4" /> Instagram
             </a>
           </div>
-          <p className="mt-6 text-sm text-foreground/40">DM us for quick support or just to say hi 👋</p>
+          <p className="mt-6 text-sm text-foreground/40">DM us for quick support or just to say hii!</p>
         </div>
       </div>
     ),
@@ -457,7 +457,9 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-foreground/70">
             <button onClick={() => document.getElementById('more-features')?.scrollIntoView({ behavior: 'smooth' })} className="cursor-pointer hover:text-foreground transition-colors">Features</button>
             <button onClick={() => document.getElementById('trust')?.scrollIntoView({ behavior: 'smooth' })} className="cursor-pointer hover:text-foreground transition-colors">Trust & Safety</button>
-            <button onClick={() => document.getElementById('how-to-join')?.scrollIntoView({ behavior: 'smooth' })} className="cursor-pointer hover:text-foreground transition-colors">Community</button>
+            <button onClick={() => document.getElementById('faq')?.scrollIntoView({ behavior: 'smooth' })} className="cursor-pointer hover:text-foreground transition-colors">FAQ</button>
+            <button onClick={() => document.getElementById('how-to-join')?.scrollIntoView({ behavior: 'smooth' })} className="cursor-pointer hover:text-foreground transition-colors">How it Works</button>
+
           </div>
 
           <div className="flex items-center gap-4">
@@ -472,9 +474,6 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
             
 
             <div className="flex items-center gap-2">
-              <button onClick={onGetStarted} className="hidden sm:block px-4 py-2 text-sm font-semibold cursor-pointer hover:text-primary transition-colors">
-                Log in
-              </button>
               <button onClick={onGetStarted}
                 className="rounded-full cursor-pointer bg-primary px-5 py-2.5 text-sm font-bold text-primary-foreground shadow-lg shadow-primary/20 transition hover:bg-primary/90">
                 Join Now
@@ -488,7 +487,7 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
       <section className="relative mx-auto max-w-6xl px-6 pb-24 pt-32 text-center lg:py-40">
         <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary shadow-sm">
           <ShieldCheck className="h-4 w-4" />
-          🛡️ Verified Students Only
+          Verified Students Only
         </div>
 
         <h1 className="mx-auto max-w-4xl text-5xl font-extrabold tracking-tight sm:text-7xl lg:leading-[1.1] font-display">
@@ -499,8 +498,7 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
         </h1>
 
         <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-foreground/60 sm:text-xl">
-          Random 1‑on‑1 video chat exclusively for verified college students.
-          No bots, no randos — just real students from campuses all around <span className="font-bold text-green-500">INDIA</span>.
+          Make new friends, find study buddies, and meet people from campuses across <span className="text-success font-semibold">INDIA </span> — no bots, no outsiders.
         </p>
 
         <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">
@@ -516,9 +514,12 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
           </div>
         </div>
 
-        <p className="mt-8 text-sm text-foreground/40 font-medium">
-          Hallway’s core matching is <span className="text-success font-semibold">free forever</span> for students.
-          Optional perks coming soon.
+        <p className="mt-5 text-sm text-foreground/50 font-medium">
+          1‑on‑1 random video chats with verified college students.
+        </p>
+
+        <p className="mt-3 text-sm text-foreground/45 font-semibold">
+          Join <span className="text-primary">1,200+ verified students</span> from <span className="text-primary">50+ universities</span>.
         </p>
         
         {/* Social proof */}
@@ -527,11 +528,11 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
             {["#1F2140","#30335C","#7C83FF","#5B62D1"].map((c, i) => (
               <div key={i} className="h-9 w-9 rounded-full border-2 border-background flex items-center justify-center text-xs font-bold text-white shadow-sm"
                 style={{ background: c }}>
-                {["A","K","P","R"][i]}
+                {["IIT","KIIT","IIIT","DU"][i]}
               </div>
             ))}
           </div>
-          <span>Join students from <strong className="text-foreground/80 font-semibold">KIIT, IIT, VIT</strong> & more</span>
+          <span>Join students from <strong className="text-foreground/80 font-semibold">KIIT, IIT, IIIT</strong> & more</span>
         </div>
       </section>
 
@@ -569,9 +570,9 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
           
           <div className="grid gap-8 sm:grid-cols-3">
             {[
-              { icon: Shield, title: "Verified Identity", desc: "Only real students get in. Your official university email is your key — no bots, no outsiders, ever.", color: "text-[#28D080]", bg: "bg-[#28D080]/10", hoverBorder: "hover:border-[#28D080]/40", hoverShadow: "hover:shadow-[#28D080]/5" },
-              { icon: MonitorPlay, title: "Instant High-Def Matching", desc: "Jump into crystal clear video calls in seconds based on shared interests. No endless waiting.", color: "text-[#FFB020]", bg: "bg-[#FFB020]/10", hoverBorder: "hover:border-[#FFB020]/40", hoverShadow: "hover:shadow-[#FFB020]/5" },
-              { icon: HeartHandshake, title: "Curated Interests", desc: "From late-night coding sessions to campus memes — find people who just get it.", color: "text-[#FF4A4A]", bg: "bg-[#FF4A4A]/10", hoverBorder: "hover:border-[#FF4A4A]/40", hoverShadow: "hover:shadow-[#FF4A4A]/5" },
+              { icon: Shield, title: "Verified Identity", desc: "Only real students get in. Official college email required.", color: "text-[#28D080]", bg: "bg-[#28D080]/10", hoverBorder: "hover:border-[#28D080]/40", hoverShadow: "hover:shadow-[#28D080]/5" },
+              { icon: MonitorPlay, title: "Instant High-Def Matching", desc: "Jump into clear 1-on-1 video calls in seconds.", color: "text-[#FFB020]", bg: "bg-[#FFB020]/10", hoverBorder: "hover:border-[#FFB020]/40", hoverShadow: "hover:shadow-[#FFB020]/5" },
+              { icon: HeartHandshake, title: "Curated Interests", desc: "Get matched with students who share your vibe.", color: "text-[#FF4A4A]", bg: "bg-[#FF4A4A]/10", hoverBorder: "hover:border-[#FF4A4A]/40", hoverShadow: "hover:shadow-[#FF4A4A]/5" },
             ].map(({ icon: Icon, title, desc, color, bg, hoverBorder, hoverShadow }) => (
               <div key={title} className={`group rounded-3xl border border-border/50 bg-card p-8 transition-all ${hoverBorder} hover:shadow-2xl ${hoverShadow} hover:-translate-y-1`}>
                 <div className={`mb-6 flex h-14 w-14 items-center justify-center rounded-2xl ${bg}`}>
@@ -585,14 +586,61 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
         </div>
       </section>
 
-      {/* Extra Features — New Section */}
+      {/* Why Students Love Hallway */}
+      <section className="px-6 py-24 sm:py-28 border-t border-border/40 bg-secondary/5">
+        <div className="mx-auto max-w-6xl">
+          <div className="text-center mb-14">
+            <h2 className="text-3xl font-bold sm:text-4xl font-display">Why Students Love Hallway</h2>
+            <p className="mt-4 text-lg text-foreground/60">Hear it from the people who use Hallway every day.</p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-3">
+            {[
+              "I met more people in one week on Hallway than in my entire first semester.",
+              "It’s like a real campus hallway, but with students from all over India.",
+              "Perfect for late-night study breaks. I found project teammates and friends here.",
+            ].map((quote, i) => (
+              <div key={i} className="rounded-3xl border border-border/50 bg-card p-7 transition-all hover:-translate-y-1 hover:shadow-xl hover:border-primary/20">
+                <p className="text-base leading-relaxed text-foreground/70">“{quote}”</p>
+                <p className="mt-4 text-xs font-semibold text-foreground/45">
+                  {["CSE • 1st Year", "ECE • 3rd Year", "BBA • 2nd Year"][i]}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Who is Hallway For */}
+      <section className="px-6 py-24 sm:py-28 border-t border-border/40">
+        <div className="mx-auto max-w-6xl">
+          <div className="text-center mb-14">
+            <h2 className="text-3xl font-bold sm:text-4xl font-display">Who is Hallway For?</h2>
+          </div>
+
+          <div className="grid gap-6 sm:grid-cols-2">
+            {[
+              { icon: UserPlus, title: "Freshers", desc: "Don't know anyone? Make friends beyond your classroom from day one." },
+              { icon: MoonStar, title: "Hostel Students", desc: "Couldn't sleep? Find late-night chats and real study buddies." },
+              { icon: BookOpen, title: "Exam Warriors", desc: "Stressed about exams? Get accountability partners to stay on track." },
+              { icon: Users, title: "Club Members", desc: "Need someone creative? Meet like-minded students across campuses." },
+            ].map(({ icon: Icon, title, desc }) => (
+              <div key={title} className="rounded-3xl border border-border/50 bg-card p-7 transition-all hover:-translate-y-1 hover:shadow-lg hover:border-primary/30">
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10">
+                  <Icon className="h-6 w-6 text-primary" />
+                </div>
+                <h3 className="mb-2 text-lg font-bold">{title}</h3>
+                <p className="text-sm text-foreground/65">{desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/*Features*/}
       <section id="more-features" className="px-6 py-24 sm:py-32 border-t border-border/40 bg-secondary/5">
         <div className="mx-auto max-w-6xl">
           <div className="text-center mb-16">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
-              <Zap className="h-4 w-4" />
-              New & Exciting
-            </div>
             <h2 className="text-3xl font-bold sm:text-4xl bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-transparent font-display">More Ways to Connect</h2>
             <p className="mt-4 text-lg text-foreground/60">Features that make Hallway more than just video chat.</p>
           </div>
@@ -604,26 +652,26 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
               <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#28D080]/10">
                 <BookOpen className="h-7 w-7 text-[#28D080]" />
               </div>
-              <h3 className="mb-3 text-xl font-bold tracking-tight">📚 Study Together</h3>
-              <p className="text-base leading-relaxed text-foreground/60">Find accountability partners and crush your study goals together. Shared focus sessions with fellow students who get the grind.</p>
+              <h3 className="mb-3 text-xl font-bold tracking-tight">Study Together</h3>
+              <p className="text-base leading-relaxed text-foreground/60">Find accountability partners and shared focus sessions with students who get the grind.</p>
+            </div>            
+            {/* Interest Rooms*/}
+            <div className="group relative overflow-hidden rounded-3xl border border-border/50 bg-card p-8 transition-all hover:border-primary/40 hover:shadow-2xl">
+              <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10">
+                <Music className="h-7 w-7 text-primary" />
+              </div>
+              <h3 className="mb-3 text-xl font-bold tracking-tight">Interest Rooms</h3>
+              <p className="text-base leading-relaxed text-foreground/60">Drop into themed rooms — from DSA grind to Anime fans. Match with your vibe.</p>
             </div>
 
-            {/* Campus Filters */}
-            <div className="group rounded-3xl border border-border/50 bg-card p-8 transition-all hover:border-[#FFB020]/40 hover:shadow-2xl hover:shadow-[#FFB020]/5 hover:-translate-y-1">
-              <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#FFB020]/10">
-                <MapPin className="h-7 w-7 text-[#FFB020]" />
+            {/* Reconnect - Coming Soon */}
+            <div className="group relative overflow-hidden rounded-3xl border border-border/50 bg-card p-8 transition-all hover:border-primary/40 hover:shadow-2xl">
+              <div className="absolute top-4 right-4 rounded-full bg-primary/10 px-2.5 py-0.5 text-[10px] font-bold text-primary uppercase tracking-wider">Coming Soon</div>
+              <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10">
+                <HeartHandshake className="h-7 w-7 text-primary" />
               </div>
-              <h3 className="mb-3 text-xl font-bold tracking-tight">🎯 Campus Filters</h3>
-              <p className="text-base leading-relaxed text-foreground/60">Meet peers from your own university or explore across India. Toggle between campus-only and India-wide matching whenever you want.</p>
-            </div>
-
-            {/* Night Owl */}
-            <div className="group rounded-3xl border border-border/50 bg-card p-8 transition-all hover:border-[#A0A5EB]/40 hover:shadow-2xl hover:shadow-[#A0A5EB]/5 hover:-translate-y-1">
-              <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#A0A5EB]/10">
-                <MoonStar className="h-7 w-7 text-[#A0A5EB]" />
-              </div>
-              <h3 className="mb-3 text-xl font-bold tracking-tight">🌙 Night Owl Badge</h3>
-              <p className="text-base leading-relaxed text-foreground/60">Active at 2 AM? Own it. Earn the Night Owl badge and connect with fellow late-night warriors. We see you, insomniacs. 🦉</p>
+              <h3 className="mb-3 text-xl font-bold tracking-tight">Reconnect</h3>
+              <p className="text-base leading-relaxed text-foreground/60">Had a great chat? Add them to friends without sharing personal contact details and connect with them anytime.</p>
             </div>
 
             {/* Events & Hackathons */}
@@ -631,17 +679,8 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
               <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#FF4A4A]/10">
                 <CalendarDays className="h-7 w-7 text-[#FF4A4A]" />
               </div>
-              <h3 className="mb-3 text-xl font-bold tracking-tight">📅 Events & Hackathons</h3>
-              <p className="text-base leading-relaxed text-foreground/60">Discover student-run hackathons, meetups, and campus events happening near you. Never miss the action.</p>
-            </div>
-
-            {/* Streaks & Badges */}
-            <div className="group rounded-3xl border border-border/50 bg-card p-8 transition-all hover:border-primary/40 hover:shadow-2xl hover:shadow-primary/5 hover:-translate-y-1">
-              <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10">
-                <Trophy className="h-7 w-7 text-primary" />
-              </div>
-              <h3 className="mb-3 text-xl font-bold tracking-tight">🏆 Streaks & Badges</h3>
-              <p className="text-base leading-relaxed text-foreground/60">Keep your connection streak alive and unlock achievement badges. The more you connect, the more you earn. Gotta collect 'em all.</p>
+              <h3 className="mb-3 text-xl font-bold tracking-tight">Events & Hackathons</h3>
+              <p className="text-base leading-relaxed text-foreground/60">Discover student-run hackathons, meetups, and campus events near you.</p>
             </div>
 
             {/* Connection Streaks */}
@@ -649,12 +688,13 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
               <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#FF6B35]/10">
                 <Flame className="h-7 w-7 text-[#FF6B35]" />
               </div>
-              <h3 className="mb-3 text-xl font-bold tracking-tight">🔥 Connection Streaks</h3>
-              <p className="text-base leading-relaxed text-foreground/60">Chat daily to build your streak. Hit milestones like 7-day, 30-day, and legendary 100-day streaks for exclusive rewards.</p>
+              <h3 className="mb-3 text-xl font-bold tracking-tight">Connection Streaks</h3>
+              <p className="text-base leading-relaxed text-foreground/60">Chat daily to hit 7-day, 30-day, and 100-day streak milestones.</p>
             </div>
           </div>
         </div>
       </section>
+
 
       {/* Trust & Safety Section */}
       <section id="trust" className="px-6 py-24 sm:py-32 border-t border-border/40">
@@ -664,7 +704,7 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
               <Lock className="h-4 w-4" />
               Your Safety Matters
             </div>
-            <h2 className="text-3xl font-bold sm:text-4xl bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-transparent font-display">Built with Trust & Safety First</h2>
+            <h2 className="text-3xl font-bold sm:text-4xl bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-transparent font-display">Built with Trust and Safety first</h2>
             <p className="mt-4 text-lg text-foreground/60">We take your safety seriously. Here's how we've got your back.</p>
           </div>
 
@@ -676,11 +716,11 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
                   <Flag className="h-7 w-7 text-destructive" />
                 </div>
                 <div>
-                  <h3 className="mb-2 text-xl font-bold tracking-tight">🚩 Report in 1 Tap</h3>
-                  <p className="text-base leading-relaxed text-foreground/60">See something wrong? Hit the report button visible on screen during any call. It takes less than 5 seconds, and your report is anonymous.</p>
+                  <h3 className="mb-2 text-xl font-bold tracking-tight">Report in one tap</h3>
+                  <p className="text-base leading-relaxed text-foreground/60">See something wrong? Hit the report button on your screen during a call. It takes just a few seconds and it's anonymous.</p>
                   <div className="mt-4 inline-flex items-center gap-2 rounded-full bg-destructive/10 px-3 py-1.5 text-xs font-bold text-destructive">
                     <AlertTriangle className="h-3.5 w-3.5" />
-                    Always visible during calls
+                    Always there during calls
                   </div>
                 </div>
               </div>
@@ -693,11 +733,11 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
                   <Lock className="h-7 w-7 text-success" />
                 </div>
                 <div>
-                  <h3 className="mb-2 text-xl font-bold tracking-tight">🔒 End-to-End Encrypted</h3>
-                  <p className="text-base leading-relaxed text-foreground/60">Every video call, every text message — fully encrypted end-to-end. Nobody can see your conversations. Not even us. Your privacy is non-negotiable.</p>
+                  <h3 className="mb-2 text-xl font-bold tracking-tight">Private and secure</h3>
+                  <p className="text-base leading-relaxed text-foreground/60">Every call and text is encrypted correctly. This means nobody else can see your calls — not even us.</p>
                   <div className="mt-4 inline-flex items-center gap-2 rounded-full bg-success/10 px-3 py-1.5 text-xs font-bold text-success">
                     <Lock className="h-3.5 w-3.5" />
-                    E2E encryption on all communications
+                    Encrypted communications
                   </div>
                 </div>
               </div>
@@ -710,7 +750,7 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
                   <ShieldCheck className="h-7 w-7 text-primary" />
                 </div>
                 <div>
-                  <h3 className="mb-2 text-xl font-bold tracking-tight">✅ Verified Students Only</h3>
+                  <h3 className="mb-2 text-xl font-bold tracking-tight">Verified Students Only</h3>
                   <p className="text-base leading-relaxed text-foreground/60">Every user is verified through their official university email. No burner accounts, no fake profiles, no outsiders. Just real students.</p>
                 </div>
               </div>
@@ -723,8 +763,8 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
                   <Shield className="h-7 w-7 text-warning" />
                 </div>
                 <div>
-                  <h3 className="mb-2 text-xl font-bold tracking-tight">🛡️ 24/7 Moderation</h3>
-                  <p className="text-base leading-relaxed text-foreground/60">Our trust & safety team reviews every report within 24 hours. Serious violations mean an instant permanent ban. Zero tolerance. Period.</p>
+                  <h3 className="mb-2 text-xl font-bold tracking-tight">We're always here</h3>
+                  <p className="text-base leading-relaxed text-foreground/60">Our team looks at every report within a day. If someone breaks a major rule, they're gone from the site for good.</p>
                 </div>
               </div>
             </div>
@@ -732,9 +772,46 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
         </div>
       </section>
 
+      {/* FAQ */}
+      <section id="faq" className="mx-auto max-w-6xl px-6 py-24 border-t border-border/40">
+        <div className="text-center mb-14">
+          <h2 className="text-3xl font-bold sm:text-4xl font-display">Frequently Asked Questions</h2>
+        </div>
+
+        <div className="grid gap-5 sm:grid-cols-2">
+          {[
+            {
+              q: "Is Hallway free?",
+              a: "Yes. Core 1-on-1 matching is free for verified students. Optional premium perks may be added later.",
+            },
+            {
+              q: "How do you verify students?",
+              a: "You sign up using your official college email and verify via a one-time link sent there.",
+            },
+            {
+              q: "Can non-students join?",
+              a: "No. Without a valid college email verification, access is not allowed.",
+            },
+            {
+              q: "What if I meet someone creepy?",
+              a: "Use the Report button during the call. Every report is reviewed and severe violations are permanently banned.",
+            },
+            {
+              q: "Do you record or store my calls?",
+              a: "No. Calls are end-to-end encrypted and are not recorded by default.",
+            },
+          ].map(({ q, a }) => (
+            <div key={q} className="rounded-2xl border border-border/50 bg-card p-6 transition-all hover:-translate-y-1 hover:shadow-md hover:border-primary/20">
+              <h3 className="text-base font-bold">{q}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-foreground/65">{a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Steps */}
       <section id="how-to-join" className="mx-auto max-w-6xl px-6 py-24 border-t border-border/40">
-        <h2 className="mb-16 text-center text-3xl font-bold sm:text-4xl font-display">How to join the community</h2>
+            <h2 className="mb-16 text-center text-3xl font-bold sm:text-4xl font-display">How to get started</h2>
         <div className="grid gap-12 sm:grid-cols-3">
           {[
             { step: "01", title: "Verify your email", desc: "Use your official college email so we can confirm you’re a real student.", color: "hover:border-primary/40" },
@@ -752,13 +829,55 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
         </div>
       </section>
 
+      {/* Built for India’s Campus Life */}
+      <section className="px-6 py-24 sm:py-32 bg-secondary/5 border-t border-border/40">
+        <div className="mx-auto max-w-6xl">
+          <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+            <div>
+              <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
+                <MapPin className="h-4 w-4" />
+                Local Experience
+              </div>
+              <h2 className="text-3xl font-bold sm:text-4xl font-display mb-6">Built for India’s Campus Life</h2>
+              <p className="text-lg text-foreground/60 mb-8">
+                Hallway is made for the chaos and fun of Indian colleges. From late-night hostel grinds to the buzz of fests and hackathons.
+              </p>
+              <ul className="space-y-4">
+                {[
+                  "Match with students from IITs, NITs, KIIT, VIT, SRM, DU, and 50+ more.",
+                  "Discover events and meetups happening near you."
+                ].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3 text-sm font-medium text-foreground/80">
+                    <CheckCircle className="h-5 w-5 text-success" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="rounded-[2.5rem] border border-border/50 bg-card/50 p-8 lg:p-12 text-center transition-all hover:shadow-2xl hover:border-primary/30">
+              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-3xl bg-primary/10 mx-auto">
+                <Users className="h-8 w-8 text-primary" />
+              </div>
+              <h3 className="text-2xl font-bold mb-4">A Network of Colleges</h3>
+              <p className="text-sm text-foreground/50 leading-relaxed mb-8">
+                We are rapidly expanding support for more Indian university emails. Contact us if your college isn't supported yet.
+              </p>
+              <button onClick={() => window.open('mailto:hello@hallwaychat.online')} className="text-sm font-bold text-primary hover:underline cursor-pointer">
+                Suggest your college &rarr;
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       {/* CTA banner */}
       <section id="community" className="px-6 py-20 lg:py-32">
         <div className="mx-auto max-w-5xl overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-primary to-[#5B62D1] p-12 text-center text-primary-foreground shadow-2xl relative">
           <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay"></div>
           <div className="relative z-10">
-            <h2 className="mb-6 text-4xl font-extrabold tracking-tight sm:text-5xl font-display">Ready to meet your people?</h2>
-            <p className="mb-10 text-lg sm:text-xl font-medium opacity-90">Free forever. Only verified students. Zero downloads required.</p>
+            <h2 className="mb-6 text-4xl font-extrabold tracking-tight sm:text-5xl font-display">Stop scrolling. Start connecting. </h2>
+            <p className="mb-10 text-lg sm:text-xl font-medium opacity-90">The hallway never sleeps..</p>
             <button onClick={onGetStarted}
               className="group mx-auto flex h-14 items-center gap-2 rounded-full bg-background px-10 py-4 text-lg font-bold text-foreground shadow-2xl transition-all hover:scale-105 active:scale-95">
               Start Chatting Free
@@ -782,7 +901,7 @@ export function LandingPage({ onGetStarted, darkMode, setDarkMode }: LandingPage
                 </span>
               </div>
               <p className="text-sm leading-relaxed text-foreground/70 mb-6">
-                The exclusive 1-on-1 video chat platform for verified college students across India.
+                1-on-1 video chat for verified college students across India.
               </p>
               <div className="flex items-center gap-2 text-xs text-foreground/50">
                 <Lock className="h-3.5 w-3.5" />

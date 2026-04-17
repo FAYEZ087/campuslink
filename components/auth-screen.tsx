@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { createClient, isCollegeEmail, getDomainError } from "@/lib/supabase"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Mail, CheckCircle, AlertCircle, Loader2 } from "lucide-react"
+import { ArrowRight, Mail, CheckCircle, AlertCircle, Loader2, HeartHandshake } from "lucide-react"
 
 function HallwayIcon({ size = 64 }: { size?: number }) {
   return (
@@ -96,7 +96,7 @@ export function AuthScreen() {
 
         {authState === "sent" ? (
           // ── Success state ───────────────────────────────────────────────────
-          <div className="flex w-full flex-col items-center gap-4 rounded-2xl border border-border bg-secondary/50 p-6 text-center">
+          <div className="flex w-full flex-col items-center gap-4 rounded-2xl border border-border bg-secondary/50 p-6 text-center transition-all hover:shadow-lg hover:border-[#00c896]/30">
             <CheckCircle className="h-12 w-12" style={{ color: "#00c896" }} />
             <div>
               <p className="font-semibold text-foreground">Check your email!</p>
@@ -174,16 +174,26 @@ export function AuthScreen() {
             </Button>
 
             <p className="text-center text-xs text-muted-foreground">
-              We'll send you a magic link — no password needed 🪄
+              We'll send you a magic link — no password needed..
             </p>
           </div>
-        )}
+        )}      
 
         {/* Footer */}
         <p className="text-center text-xs text-muted-foreground">
-          By continuing you agree to keep it respectful 🤝
+          By continuing you agree to our Terms of Service and Privacy Policy and Keep it respectful 🤝
         </p>
+
+         {/* Bottom Row */}
+        <div className="w-full flex-col sm:flex-row flex items-center justify-center gap-6 sm:gap-12   py-6 text-xs text-foreground/50 text-center">
+          <p>© {new Date().getFullYear()} hallway. All rights reserved.</p>
+          <p className="flex items-center gap-1">
+            Made with <HeartHandshake className="h-3 w-3 text-destructive" /> by <a href="https://github.com/FAYEZ087" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors font-medium">Fayez</a>
+          </p>
+
+        </div>
       </div>
     </div>
+    
   )
 }

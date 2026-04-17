@@ -25,10 +25,17 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+!.env.example
 
 # OS Files
 .DS_Store
 *.pem
+*.key
+*.crt
+*.cert
+*.p12
+*.pfx
+certificates/
 
 # IDEs
 .vscode/

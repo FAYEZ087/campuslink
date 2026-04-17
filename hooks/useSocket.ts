@@ -12,7 +12,10 @@ export interface LiveStats {
   matchesToday: number
 }
 
-export const SERVER_URL = "https://campuslink-server-1.onrender.com"
+const configuredSocketUrl = process.env.NEXT_PUBLIC_SOCKET_URL?.trim()
+export const SERVER_URL = configuredSocketUrl
+  ? configuredSocketUrl.replace(/\/+$/, "")
+  : "https://campuslink-server-1.onrender.com"
 
 export function useSocket(interests: string[]) {
   const socketRef = useRef<Socket | null>(null)
